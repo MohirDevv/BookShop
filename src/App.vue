@@ -10,7 +10,6 @@
 
 <script>
 import EntranceSection from "./components/EntranceSection.vue";
-import MainSection from "./components/Mainsection.vue";
 import YoutubeSection from "./components/YoutubeSection.vue";
 import AboutShs from "./components/AboutShs.vue";
 import RefreshSection from "./components/RefreshSection.vue";
@@ -23,7 +22,6 @@ export default {
     return {};
   },
   components: {
-    MainSection,
     EntranceSection,
     YoutubeSection,
     AboutShs,
