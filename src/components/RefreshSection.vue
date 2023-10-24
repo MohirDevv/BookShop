@@ -21,8 +21,8 @@
     </div>
 
     <div class="slice_images flex items-center justify-center gap-[2.5px]">
-      <img src="../../public/images/mobile/book_one.png" alt="#" />
-      <img src="../../public/images/mobile/book_two.png" alt="#" />
+      <img src="../assets/images/mobile/book_one.png" alt="#" />
+      <img src="../assets/images/mobile/book_two.png" alt="#" />
     </div>
 
     <div
@@ -37,18 +37,18 @@
       </div>
     </div>
 
-    <div class="loading m-auto max-w-[390px]">
+    <div class="loading m-auto max-w-[380px]">
       <div
         class="car flex items-center justify-start pt-[40px] pl-[15px] gap-2"
       >
         <p class="text-[#47474F] text-[14px] font-medium">
           O'zbekiston bo'ylab bepul yetkazib berish
         </p>
-        <img class="" src="../../public/icons/fast_delivery_dark.png" alt="#" />
+        <img class="" src="../assets/icons/fast_delivery_dark.png" alt="#" />
       </div>
       <img
-        class="m-auto max-w-[390px] pb-[25px]"
-        src="../../public/images/mobile/line.png"
+        class="m-auto max-w-[380px] pb-[25px]"
+        src="../assets/images/mobile/line.png"
         alt="#"
       />
     </div>
@@ -67,37 +67,37 @@ export default {
     return {
       cardsArray: [
         {
-          image: "../../public/icons/trash.png",
+          image: "src/assets/icons/trash.png",
           text: "To'sqinlar va chiqindilar",
           day: "1-kun",
         },
         {
-          image: "../../public/icons/stressed.png",
+          image: "src/assets/icons/stressed.png",
           text: "Qo'rquvlarimiz",
           day: "2-kun",
         },
         {
-          image: "../../public/icons/lonely.png",
+          image: "src/assets/icons/lonely.png",
           text: "Qarorlar",
           day: "3-kun",
         },
         {
-          image: "../../public/icons/time.png",
+          image: "src/assets/icons/time.png",
           text: "O'tmishdagi asosiy kechinmalar",
           day: "4-kun",
         },
         {
-          image: "../../public/icons/backspace.png",
+          image: "src/assets/icons/backspace.png",
           text: "Krutilka usuli",
           day: "5-kun",
         },
         {
-          image: "../../public/icons/grees.png",
+          image: "src/assets/icons/grees.png",
           text: "Obrazlarni almashtirish usuli",
           day: "6-kun",
         },
         {
-          image: "../../public/icons/increasing.png",
+          image: "src/assets/icons/increasing.png",
           text: "Rivojlanisshda bardavom bo'lish",
           day: "7-kun",
         },

@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        mainBg: "url('./public/images/desktop/main_bg.png')",
-        tubeBg: "url('./public/images/desktop/tube_bg.png')",
-        textBg: "url('./public/images/mobile/text_bg.png')",
-        shSBg: "url('./public/images/mobile/shS_bg.png')",
+        mainBg: "url('./src/assets/images/desktop/main_bg.png')",
+        tubeBg: "url('./src/assets/images/desktop/tube_bg.png')",
+        textBg: "url('./src/assets/images/mobile/text_bg.png')",
+        shSBg: "url('./src/assets/images/mobile/shS_bg.png')",
       },
       backgroundColors: {
         shSbg:

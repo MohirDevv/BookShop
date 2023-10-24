@@ -1,26 +1,26 @@
 <template>
   <div class="wrapper m-auto pb-[50px]">
     <div class="success m-auto flex items-center justify-center gap-2 py-[13px]">
-      <img src="../../public/icons/success.png" alt="#">
+      <img src="../assets/icons/success.png" alt="#">
       <h1 class="text-white text-[16px] font-bold">Muvaffaqiyatli yuborildi!</h1>
     </div>
-    <div class="payment max-w-[390px] m-auto flex items-center flex-col p-[20px] bg-[#FFFFFF1A] rounded-[10px] backdrop-blur-[39px]">
+    <div class="payment max-w-[380px] m-auto flex items-center flex-col p-[20px] bg-[#FFFFFF1A] rounded-[10px] backdrop-blur-[39px]">
       <h1 class="text-white text-[24px] font-bold text-center">Kursga to'lov qilish</h1>
       <div class="card_num flex items-center justify-between px-[15px] py-[12px] bg-[#FFFFFF1A] backdrop-blur-[8px] rounded-[10px] mt-[30px]">
         <div class="part_one flex items-center">
-        <img class="w-[32px] h-[30px]" src="../../public/icons/card.png" alt="#">
+        <img class="w-[32px] h-[30px]" src="../assets/icons/card.png" alt="#">
         <div class="subtitle pl-[10px] pr-[50px]">
           <h2 class="text-white text-[12px] font-medium">Nurmatova Zulfiya</h2>
           <h1 class="text-white text-[16px] font-bold">9860 6004 0167 2297</h1>
         </div>
           <div class="copy">
-            <img src="../../public/icons/copy.png" alt="#" >
+            <img src="../assets/icons/copy.png" alt="#" >
           </div>
         </div>
       </div>
       <div class="price_list flex items-center justify-evenly pt-[30px] gap-4">
         <div class="money flex items-center ">
-          <img class="w-[35px] h-[30px] pr-[10px]" src="../../public/icons/money.png" alt="#">
+          <img class="w-[35px] h-[30px] pr-[10px]" src="../assets/icons/money.png" alt="#">
           <div class="subtitle flex items-start justify-center flex-col">
             <h2 class="text-white text-[14px] font-normal">Kurs narxi:</h2>
             <h1 class="text-white text-[16px] font-semibold">79.000 so'm</h1>
@@ -28,31 +28,31 @@
         </div>
 
         <div class="info w-[178px] flex  items-center">
-          <img class="w-[40px] h-[30px] pr-[10px]" src="../../public/icons/info.png" alt="#">
+          <img class="w-[40px] h-[30px] pr-[10px]" src="../assets/icons/info.png" alt="#">
           <h1 class="text-white text-[14px] font-normal">To'lovni qilib bo'lgach, skrinshotni jo'nating</h1>
         </div>
       </div>
-      <div class="btn pt-[30px]">
-        <button class="w-[310px] text-white text-[14px] font-bold px-[35px] py-[21px] flex
+      <div class="btn mt-[30px] px-[35px] py-[21px] flex
          items-center justify-center bg-[#0ACCBA] border-[#7AE4D980] border-[3px] rounded-[5px]">
+        <button class="text-white text-[14px] font-bold ">
           <a href="https://t.me/shaxnoza_siddiqova_manager">Chekni Yuborish</a>
         </button>
       </div>
     </div>
-    <div class="send_info m-auto max-w-[390px] flex items-center justify-center flex-col gap-3 p-[20px] mt-[50px]  bg-[#FFFFFF1A] rounded-[10px]">
+    <div class="send_info m-auto max-w-[380px] flex items-center justify-center flex-col gap-3 p-[20px] mt-[50px]  bg-[#FFFFFF1A] rounded-[10px]">
       <h1 class="text-white text-[24px] font-bold">Ma'lumot olish</h1>
       <form >
         <div class="name flex items-center justify-center px-[15px] py-[8px] mb-[20px] bg-[#FFFFFF1A] rounded-[10px]">
-          <img src="../../public/icons/user.png" alt="#">
+          <img src="../assets/icons/user.png" alt="#">
         <input class="w-[246px] flex items-center outline-none bg-[#FFFFFF1A] gap-[8px]" type="text" placeholder="Ism familiyangiz *">
       </div>
       <div class="num flex items-center justify-center px-[15px] py-[8px] mb-[20px] bg-[#FFFFFF1A] rounded-[10px]">
-        <img src="../../public/icons/phone.png" alt="#">
+        <img src="../assets/icons/phone.png" alt="#">
         <input class="w-[246px] flex items-center outline-none bg-[#FFFFFF1A] gap-[8px] pl-2" type="number" placeholder="Telefon raqamingiz *">
       </div>
       </form>
 
-      <button class="w-[310px] text-white text-[14px] font-bold px-[35px] py-[21px] flex
+      <button class="btn w-[310px] text-white text-[14px] font-bold px-[35px] py-[21px] flex
          items-center justify-center bg-[#0ACCBA] border-[#7AE4D980] border-[3px] rounded-[5px]">
          Yuborish
         </button>

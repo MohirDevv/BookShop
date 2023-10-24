@@ -1,8 +1,8 @@
 <template>
-  <div class="wrapper bg-shSBg bg-cover bg-no-repeat pt-[230px]">
+  <div class="wrapper bg-[[/src/assets/images/mobile/shS_bg.png]] bg-cover bg-no-repeat pt-[230px]">
     <img
       class="shS relative pb-[190px]"
-      src="../../public/images/mobile/shS.png"
+      src="/src/assets/images/mobile/shS.png"
       alt="#"
     />
 
@@ -12,12 +12,12 @@
       <h1 class="text-white text-[24px] font-extrabold px-[20px] py-[15px]">
         Shahnoza Siddiqova
       </h1>
-      <img src="../../public/icons/checkmark_blue.png" alt="#" />
+      <img src="../assets/icons/checkmark_blue.png" alt="#" />
     </div>
 
     <div class="cards py-[24px]">
       <div
-        class="card flex items-center mt-[10px] py-[8px] mx-[16px] px-[10px] rounded-[10px] gap-[10px]"
+        class="card m-auto max-w-[380px] flex items-center mt-[10px] py-[8px] px-[10px] rounded-[10px] gap-[10px]"
         v-for="item in cardsArray"
         :key="item"
       >
@@ -40,35 +40,35 @@ export default {
     return {
       cardsArray: [
         {
-          image: "../../public/icons/mentoring.png",
+          image: "src/assets/icons/mentoring.png",
           text: "O'zbekistonda yagona Mentorlik klubi asoschisiasd asd",
         },
         {
-          image: "../../public/icons/target.png",
+          image: "src/assets/icons/target.png",
           text: "Tadbirkor, bir necha biznes egasi.",
         },
         {
-          image: "../../public/icons/student.png",
+          image: "src/assets/icons/student.png",
           text: "100 dan ortiq shogirdlar ustozi",
         },
         {
-          image: "../../public/icons/business.png",
+          image: "src/assets/icons/business.png",
           text: "Biznes + Psixologiya bo'yicha trening yaratgan birinchi murabbiy",
         },
         {
-          image: "../../public/icons/portfolio.png",
+          image: "src/assets/icons/portfolio.png",
           text: "Ishbilarmon ayol 2019 ko'rik tanlovi Toshkent shaxar g'olibasi va shu yil Respublikada 2-o'rin sohibasi",
         },
         {
-          image: "../../public/icons/cub.png",
+          image: "src/assets/icons/cub.png",
           text: "100 ta eng yaxshi Innovasion  loyiha ko'rik tanlovi Respublika 1-o'rin g'olibasi",
         },
         {
-          image: "../../public/icons/user.png",
+          image: "src/assets/icons/user.png",
           text: `2020-2022 yil tuman Deputati. Tadbirkor ayol "Xalqaro ishbilarmon ayollar assotsiatsiyasi biznes va marketing murabbiysi".`,
         },
         {
-          image: "../../public/icons/checked.png",
+          image: "src/assets/icons/checked.png",
           text: `O'zbekiston Respublikasi "Чернобыль" jamoat xayriya fond iqtisod va investitsiya bo'yicha Rais o'rinbosari.`,
         },
       ],

@@ -9,7 +9,7 @@
 
   <div class="container m-auto pb-[50px]">
 
-    <div class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[390px]">
+    <div class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]">
       <input
         class="faq-drawer__trigger"
         id="faq-drawer"
@@ -27,7 +27,7 @@
       </div>
     </div>
 
-    <div class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[390px]">
+    <div class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]">
       <input
         class="faq-drawer__trigger"
         id="faq-drawer-2"
@@ -42,7 +42,7 @@
       </div>
     </div>
 
-    <div class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[390px]">
+    <div class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]">
       <input
         class="faq-drawer__trigger"
         id="faq-drawer-3"
@@ -56,7 +56,7 @@
         </div>
       </div>
     </div>
-    <div class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[390px]">
+    <div class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]">
       <input
         class="faq-drawer__trigger"
         id="faq-drawer-4"
@@ -99,20 +99,22 @@
 }
 
 .faq-drawer__title::after {
-  border-style: solid;
-  border-width: 1px 1px 0 0;
+  /* border-style: solid;
+  border-width: 1px 1px 0 0; */
+  background-image: url('../assets/icons/add-circle.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   content: " ";
   display: block;
   float: right;
-  height: 10px;
-  left: -10px;
   position: relative;
-  right: 20px;
-  top: 2px;
-  transform: rotate(135deg);
+  right: 0px;
+  top: -23px;
+  /* transform: rotate(135deg); */
   transition: 0.35s ease-in-out;
-  width: 10px;
-  background-color: #DEDEE4;
+  width: 25px;
+  height: 25px;
 }
 
 /* OPTIONAL HOVER STATE */
@@ -127,8 +129,13 @@
 }
 
 .faq-drawer__trigger:checked + .faq-drawer__title::after {
-  transform: rotate(-45deg);
+  transform: rotate(-180deg);
   transition: 0.25s ease-in-out;
+  background-image: url('../assets/icons/clear-circle.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 
 input[type="checkbox"] {
