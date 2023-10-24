@@ -67,37 +67,37 @@ export default {
     return {
       cardsArray: [
         {
-          image: "src/assets/icons/trash.png",
+          image: "/src/assets/icons/trash.png",
           text: "To'sqinlar va chiqindilar",
           day: "1-kun",
         },
         {
-          image: "src/assets/icons/stressed.png",
+          image: "/src/assets/icons/stressed.png",
           text: "Qo'rquvlarimiz",
           day: "2-kun",
         },
         {
-          image: "src/assets/icons/lonely.png",
+          image: "/src/assets/icons/lonely.png",
           text: "Qarorlar",
           day: "3-kun",
         },
         {
-          image: "src/assets/icons/time.png",
+          image: "/src/assets/icons/time.png",
           text: "O'tmishdagi asosiy kechinmalar",
           day: "4-kun",
         },
         {
-          image: "src/assets/icons/backspace.png",
+          image: "/src/assets/icons/backspace.png",
           text: "Krutilka usuli",
           day: "5-kun",
         },
         {
-          image: "src/assets/icons/grees.png",
+          image: "/src/assets/icons/grees.png",
           text: "Obrazlarni almashtirish usuli",
           day: "6-kun",
         },
         {
-          image: "src/assets/icons/increasing.png",
+          image: "/src/assets/icons/increasing.png",
           text: "Rivojlanisshda bardavom bo'lish",
           day: "7-kun",
         },

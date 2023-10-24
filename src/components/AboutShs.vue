@@ -40,35 +40,35 @@ export default {
     return {
       cardsArray: [
         {
-          image: "src/assets/icons/mentoring.png",
+          image: "/src/assets/icons/mentoring.png",
           text: "O'zbekistonda yagona Mentorlik klubi asoschisiasd asd",
         },
         {
-          image: "src/assets/icons/target.png",
+          image: "/src/assets/icons/target.png",
           text: "Tadbirkor, bir necha biznes egasi.",
         },
         {
-          image: "src/assets/icons/student.png",
+          image: "/src/assets/icons/student.png",
           text: "100 dan ortiq shogirdlar ustozi",
         },
         {
-          image: "src/assets/icons/business.png",
+          image: "/src/assets/icons/business.png",
           text: "Biznes + Psixologiya bo'yicha trening yaratgan birinchi murabbiy",
         },
         {
-          image: "src/assets/icons/portfolio.png",
+          image: "/src/assets/icons/portfolio.png",
           text: "Ishbilarmon ayol 2019 ko'rik tanlovi Toshkent shaxar g'olibasi va shu yil Respublikada 2-o'rin sohibasi",
         },
         {
-          image: "src/assets/icons/cub.png",
+          image: "/src/assets/icons/cub.png",
           text: "100 ta eng yaxshi Innovasion  loyiha ko'rik tanlovi Respublika 1-o'rin g'olibasi",
         },
         {
-          image: "src/assets/icons/user.png",
+          image: "/src/assets/icons/user.png",
           text: `2020-2022 yil tuman Deputati. Tadbirkor ayol "Xalqaro ishbilarmon ayollar assotsiatsiyasi biznes va marketing murabbiysi".`,
         },
         {
-          image: "src/assets/icons/checked.png",
+          image: "/src/assets/icons/checked.png",
           text: `O'zbekiston Respublikasi "Чернобыль" jamoat xayriya fond iqtisod va investitsiya bo'yicha Rais o'rinbosari.`,
         },
       ],
