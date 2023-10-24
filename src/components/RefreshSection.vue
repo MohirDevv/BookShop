@@ -28,11 +28,53 @@
     <div
       class="seven_tasks gap-2 max-w-[360px] flex items-start justify-center flex-col m-auto pt-[28px]"
     >
-      <div class="task flex gap-2" v-for="item in cardsArray" :key="item">
-        <img :src="item.image" alt="#" />
+      <div class="task flex gap-2" >
+        <img src="/src/assets/icons/trash.png" alt="#" />
         <div class="subtitl">
-          <h1 class="text-[#009789] text-[18px] font-medium">{{ item.day }}</h1>
-          <p class="text-[#47474F] text-[14px] font-medium">{{ item.text }}</p>
+          <h1 class="text-[#009789] text-[18px] font-medium">1-kun</h1>
+          <p class="text-[#47474F] text-[14px] font-medium">To'sqinlar va chiqindilar</p>
+        </div>
+      </div>
+      <div class="task flex gap-2" >
+        <img src="/src/assets/icons/stressed.png" alt="#" />
+        <div class="subtitl">
+          <h1 class="text-[#009789] text-[18px] font-medium">2-kun</h1>
+          <p class="text-[#47474F] text-[14px] font-medium">Qo'rquvlarimiz</p>
+        </div>
+      </div>
+      <div class="task flex gap-2" >
+        <img src="/src/assets/icons/lonely.png" alt="#" />
+        <div class="subtitl">
+          <h1 class="text-[#009789] text-[18px] font-medium">3-kun</h1>
+          <p class="text-[#47474F] text-[14px] font-medium">Qarorlar</p>
+        </div>
+      </div>
+      <div class="task flex gap-2" >
+        <img src="/src/assets/icons/time.png" alt="#" />
+        <div class="subtitl">
+          <h1 class="text-[#009789] text-[18px] font-medium">4-kun</h1>
+          <p class="text-[#47474F] text-[14px] font-medium">O'tmishdagi asosiy kechinmalar</p>
+        </div>
+      </div>
+      <div class="task flex gap-2" >
+        <img src="/src/assets/icons/backspace.png" alt="#" />
+        <div class="subtitl">
+          <h1 class="text-[#009789] text-[18px] font-medium">5-kun</h1>
+          <p class="text-[#47474F] text-[14px] font-medium">Krutilka usuli</p>
+        </div>
+      </div>
+      <div class="task flex gap-2" >
+        <img src="/src/assets/icons/grees.png" alt="#" />
+        <div class="subtitl">
+          <h1 class="text-[#009789] text-[18px] font-medium">6-kun</h1>
+          <p class="text-[#47474F] text-[14px] font-medium">Obrazlarni almashtirish usuli</p>
+        </div>
+      </div>
+      <div class="task flex gap-2" >
+        <img src="/src/assets/icons/increasing.png" alt="#" />
+        <div class="subtitl">
+          <h1 class="text-[#009789] text-[18px] font-medium">7-kun</h1>
+          <p class="text-[#47474F] text-[14px] font-medium">Rivojlanisshda bardavom bo'lish</p>
         </div>
       </div>
     </div>
@@ -65,43 +107,6 @@
 export default {
   data() {
     return {
-      cardsArray: [
-        {
-          image: "/src/assets/icons/trash.png",
-          text: "To'sqinlar va chiqindilar",
-          day: "1-kun",
-        },
-        {
-          image: "/src/assets/icons/stressed.png",
-          text: "Qo'rquvlarimiz",
-          day: "2-kun",
-        },
-        {
-          image: "/src/assets/icons/lonely.png",
-          text: "Qarorlar",
-          day: "3-kun",
-        },
-        {
-          image: "/src/assets/icons/time.png",
-          text: "O'tmishdagi asosiy kechinmalar",
-          day: "4-kun",
-        },
-        {
-          image: "/src/assets/icons/backspace.png",
-          text: "Krutilka usuli",
-          day: "5-kun",
-        },
-        {
-          image: "/src/assets/icons/grees.png",
-          text: "Obrazlarni almashtirish usuli",
-          day: "6-kun",
-        },
-        {
-          image: "/src/assets/icons/increasing.png",
-          text: "Rivojlanisshda bardavom bo'lish",
-          day: "7-kun",
-        },
-      ],
     };
   },
 };
