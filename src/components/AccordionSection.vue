@@ -1,0 +1,137 @@
+<template>
+  <div class="container m-auto pt-[50px] bg-white">
+    <h1
+      class="m-auto max-w-[300px] text-[28px] text-center font-bold text-[#152221] pb-[24px]"
+    >
+      Tez-tez so'raladigan savollar
+    </h1>
+  </div>
+
+  <div class="container m-auto pb-[50px]">
+
+    <div class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[390px]">
+      <input
+        class="faq-drawer__trigger"
+        id="faq-drawer"
+        type="checkbox"
+      /><label class="faq-drawer__title " for="faq-drawer"
+        >Kitob olganimdan keyin to'lov qilsam bo'ladimi?</label
+      >
+      <div class="faq-drawer__content-wrapper ">
+        <div class="faq-drawer__content ">
+          <p class=" m-auto max-w-[330px] pl-[13px]">
+            Albatta, qo'lingizga kitob yetib kelgandan keyin to'lov qilish
+            imkoniyati ham bor
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[390px]">
+      <input
+        class="faq-drawer__trigger"
+        id="faq-drawer-2"
+        type="checkbox"
+      /><label class="faq-drawer__title border-[#DEDEE4] border-t-[2px]" for="faq-drawer-2"
+        >Bir nechta kitobdan xarid qilsam chegirma bormi?</label
+      >
+      <div class="faq-drawer__content-wrapper">
+        <div class="faq-drawer__content">
+          <p class=" m-auto max-w-[330px] pl-[13px]">Agar siz 2 ta kitob xarid qilsanigz 1 ta kitobni BEPUL qo’lga kiritasiz.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[390px]">
+      <input
+        class="faq-drawer__trigger"
+        id="faq-drawer-3"
+        type="checkbox"
+      /><label class="faq-drawer__title border-[#DEDEE4] border-t-[2px]" for="faq-drawer-3"
+        >Chegirma muddati qancha vaqt davom etadi?</label
+      >
+      <div class="faq-drawer__content-wrapper">
+        <div class="faq-drawer__content">
+          <p class=" m-auto max-w-[330px] pl-[13px]"> Chegirmamiz joylar soni tugaguncha davom etadi.</p>
+        </div>
+      </div>
+    </div>
+    <div class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[390px]">
+      <input
+        class="faq-drawer__trigger"
+        id="faq-drawer-4"
+        type="checkbox"
+      /><label class="faq-drawer__title border-[#DEDEE4] border-t-[2px]" for="faq-drawer-4"
+        >Kitob qanday yetkazib beriladi?</label
+      >
+      <div class="faq-drawer__content-wrapper">
+        <div class="faq-drawer__content">
+          <p class=" m-auto max-w-[330px] pl-[13px]"> Pochta orqali O’zbekistoning istalgan joyiga 1 kun ichida yetkazib beriladi. Kitob kelishi bilan sizga pochtadan telefon qilishadi va pochtaga kelib olib ketishingiz kerak bo’ladi.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.faq-drawer {
+  margin-bottom: 30px;
+}
+
+.faq-drawer__content-wrapper {
+  font-size: 1.25em;
+  line-height: 1.4em;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.25s ease-in-out;
+}
+
+.faq-drawer__title {
+  width: 300px;
+  cursor: pointer;
+  display: block;
+  font-size: 1.25em;
+  font-weight: 700;
+  padding: 30px 0 0 0;
+  position: relative;
+  margin-bottom: 0;
+  transition: all 0.25s ease-out;
+}
+
+.faq-drawer__title::after {
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+  content: " ";
+  display: block;
+  float: right;
+  height: 10px;
+  left: -10px;
+  position: relative;
+  right: 20px;
+  top: 2px;
+  transform: rotate(135deg);
+  transition: 0.35s ease-in-out;
+  width: 10px;
+  background-color: #DEDEE4;
+}
+
+/* OPTIONAL HOVER STATE */
+.faq-drawer__title:hover {
+  color: #4e4b52;
+}
+
+.faq-drawer__trigger:checked
+  + .faq-drawer__title
+  + .faq-drawer__content-wrapper {
+  max-height: 350px;
+}
+
+.faq-drawer__trigger:checked + .faq-drawer__title::after {
+  transform: rotate(-45deg);
+  transition: 0.25s ease-in-out;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+</style>
