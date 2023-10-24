@@ -19,7 +19,7 @@
     </div>
   </div>
 
-  <div class="wrapper m-auto pt-[50px] pb-[50px] bg-[/src/assets/images/mobile/text_bg.png]">
+  <div class="wrapper m-auto pt-[50px] pb-[50px] bg-[url('/src/assets/images/mobile/text_bg.png')]">
     <div class="title bg-[#FFFFFF33] backdrop-blur-[10px] pl-[16px] mr-[16px]">
       <h1
         class="max-w-[320px] text-white text-[24px] font-bold pb-[15px] pt-[16px]"
