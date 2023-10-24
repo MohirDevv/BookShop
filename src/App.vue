@@ -1,5 +1,4 @@
 <template>
-  <!-- <MainSection/> -->
   <EntranceSection />
   <YoutubeSection />
   <AboutShs />
