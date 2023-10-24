@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper bg-[[/src/assets/images/mobile/shS_bg.png]] bg-cover bg-no-repeat pt-[230px]">
+  <div class="wrapper bg-[url('/src/assets/images/mobile/shS_bg.png')] bg-cover bg-no-repeat pt-[230px]">
     <img
       class="shS relative pb-[190px]"
       src="/src/assets/images/mobile/shS.png"
