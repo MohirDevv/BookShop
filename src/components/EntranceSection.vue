@@ -3,54 +3,70 @@
     class="wrapper relative bg-[url('/src/assets/images/desktop/main_bg.png')] bg-center bg-cover bg-no-repeat py-[50px] px-[16px]"
   >
     <div
-      class="info m-auto max-w-[380px] bg-[#73B2AC59] border-[1px] border-[#FFFFFF80] backdrop-blur-[20px] rounded-[15px] px-[18px] py-[16px]"
+      class="info m-auto max-w-[380px] xl:max-w-[930px] bg-[#73B2AC59] border-[1px] border-[#FFFFFF80] backdrop-blur-[20px] rounded-[15px] px-[18px] xl:px-[41px] py-[16px] xl:py-[41px]"
     >
-      <div class="mainEntrance flex justify-start items-center gap-1">
-        <div class="w-[10px] h-[1.5px] bg-[#fff]"></div>
-        <h2 class="text-white text-[15px] font-semibold tracking-[1px]">
+      <div class="mainEntrance flex justify-start items-center gap-1 xl:gap-3">
+        <div class="w-[15px] xl:w-[30px] h-[1.5px] xl:h-[2px] bg-[#fff]"></div>
+        <h2
+          class="text-white text-[15px] xl:text-[20px] font-semibold tracking-[1px]"
+        >
           Shaxsiy rivojlanish bo'yicha trening
         </h2>
       </div>
 
       <div class="about">
-        <h1 class="h-[40px] text-white text-[34px] font-bold tracking-[1.7px]">
+        <h1
+          class="h-[40px] xl:h-[60px] text-white text-[34px] xl:text-[60px] xl:leading-[54px] font-bold tracking-[1.7px] xl:tracking-[3px] xl:pt-[2px]"
+        >
           3 oylik
         </h1>
-        <h1 class="h-[50px] text-white text-[42px] font-extrabold">
-          YANGILANISH
-        </h1>
-        <p class="text-white text-[24px] font-bold">Kursi</p>
+        <div class="mainTitle xl:flex xl:items-end">
+          <h1
+            class="h-[50px] xl:h-[100px] text-white text-[42px] xl:text-[100px] font-extrabold xl:leading-[90px] xl:pr-[10px]"
+          >
+            YANGILANISH
+          </h1>
+          <p
+            class="xl:h-[80px] text-white text-[24px] xl:text-[50px] font-bold xl:leading-[90px] xl:lowercase"
+          >
+            Kursi
+          </p>
+        </div>
       </div>
 
-      <div
-        class="bonus flex items-center bg-[#C6FFF91A] rounded-[10px] backdrop-blur-[12.5px] mt-[45px] mb-[12px]"
-      >
-        <span
-          class="flex items-center justify-center h-[30px] mb-[8px] text-[#00FFE6F2] text-[44px] font-bold pl-[15px]"
-          >+</span
+      <div class="screen_xl flex xl:justify-between xl:items-center flex-col xl:flex-row">
+        <div
+          class="bonus flex items-center bg-[#C6FFF91A] rounded-[10px] backdrop-blur-[12.5px] mt-[45px] mb-[12px]"
         >
-        <h1 class="text-[#00FFE6] text-[24px] font-extrabold py-[13px]">
-          BONUS
-        </h1>
-        <img
-          class="book relative w-[200px] h-[200px]"
-          src="../assets/images/desktop/book.png"
-          alt="#"
-        />
-      </div>
+          <span
+            class="flex items-center justify-center h-[30px] xl:h-[50px] mb-[8px] text-[#00FFE6F2] text-[44px] xl:text-[80px] font-bold pl-[15px]"
+            >+</span
+          >
+          <h1
+            class="text-[#00FFE6] text-[24px] xl:text-[50px] font-extrabold py-[13px] xl:pr-[230px]"
+          >
+            BONUS
+          </h1>
+          <img
+            class="book w-[200px] h-[200px]"
+            src="../assets/images/desktop/book.png"
+            alt="#"
+          />
+        </div>
 
-      <div
-        class="delv flex justify-center items-center bg-[#C6FFF91A] backdrop-blur-[17px] rounded-[10px] py-[8px] gap-2"
-      >
-        <img
-          class="w-[45px] h-[45px]"
-          src="../assets/icons/fast_delivery.png"
-          alt="#"
-        />
-        <h2 class="w-[220px] text-white text-[15px] font-semibold">
-          O'zbekiston bo'ylab yetkazib <br />
-          berish bepul
-        </h2>
+        <div
+          class="delv xl:w-[330px] xl:h-[100px] flex justify-center items-center bg-[#C6FFF91A] backdrop-blur-[17px] rounded-[10px] py-[8px] gap-2 xl:mt-[34px]"
+        >
+          <img
+            class="w-[45px] h-[45px]"
+            src="../assets/icons/fast_delivery.png"
+            alt="#"
+          />
+          <h2 class="w-[220px] text-white text-[15px] font-semibold">
+            O'zbekiston bo'ylab yetkazib <br />
+            berish bepul
+          </h2>
+        </div>
       </div>
     </div>
 
@@ -130,13 +146,37 @@
   </div>
 </template>
 
-<script setup>
+<!-- <script setup>
 import { ref } from "vue";
+import { gsap } from "gsap";
 
 const isOpen = ref(false);
+</script> -->
+
+<script>
+import { gsap } from "gsap";
+
+export default {
+  data() {
+    return {
+      isOpen: false,
+    };
+  },
+  methods: {},
+};
 </script>
 
 <style scoped>
+
+
+.book {
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 110%;
+  transform: translate(50%, -50%);
+}
+
 .book {
   content: "";
   position: absolute;
@@ -159,5 +199,17 @@ const isOpen = ref(false);
 .btn:active {
   border: 3px solid #7ae4d980;
   background: #009789;
+}
+
+@media screen and (min-width: 1280px) {
+  .book {
+    content: "";
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(80%, -40%);
+  }
 }
 </style>
