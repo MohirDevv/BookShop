@@ -19,8 +19,10 @@
     </div>
   </div>
 
-  <div class="wrapper m-auto pt-[50px] pb-[50px] bg-[url('/src/assets/images/mobile/text_bg.png')]">
-    <div class="title bg-[#FFFFFF33] backdrop-blur-[10px] pl-[16px] mr-[16px]">
+  <div class="wrapper pt-[50px] flex items-center justify-start sm:justify-center pb-[50px]  bg-[url('/src/assets/images/mobile/text_bg.png')]">
+    <div class="cover w-[390px] mr-[16px] flex items-start justify-start bg-[#FFFFFF33] backdrop-blur-[10px]
+    ">
+    <div class="title  pl-[16px]">
       <h1
         class="max-w-[320px] text-white text-[24px] font-bold pb-[15px] pt-[16px]"
       >
@@ -44,6 +46,7 @@
       </div>
     </div>
   </div>
+  </div>
 </template>
 
 <script>
@@ -55,7 +58,7 @@ export default {
 </script>
 
 <style scoped>
-.title {
+.cover {
   border-radius: 0px 12px 12px 0px;
 }
 

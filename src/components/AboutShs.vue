@@ -12,7 +12,7 @@
       <h1 class="text-white text-[24px] font-extrabold px-[20px] py-[15px]">
         Shahnoza Siddiqova
       </h1>
-      <img src="../assets/icons/checkmark_blue.png" alt="#" />
+      <img src="../assets/icons/checkmark_blue.svg" alt="#" />
     </div>
 
     <div class="cards py-[24px]">
@@ -21,7 +21,7 @@
       >
         <img
           class="p-[10px] flex items-center justify-center rounded-[6px] bg-[#BDE5E126]"
-          src="/src/assets/icons/mentoring.png"
+          src="/src/assets/icons/mentoring.svg"
           alt="#"
         />
         <p class="w-[280px] text-white text-[14px] font-normal">
@@ -33,7 +33,7 @@
       >
         <img
           class="p-[10px] flex items-center justify-center rounded-[6px] bg-[#BDE5E126]"
-          src="/src/assets/icons/target.png"
+          src="/src/assets/icons/target.svg"
           alt="#"
         />
         <p class="w-[280px] text-white text-[14px] font-normal">
@@ -45,7 +45,7 @@
       >
         <img
           class="p-[10px] flex items-center justify-center rounded-[6px] bg-[#BDE5E126]"
-          src="/src/assets/icons/student.png"
+          src="/src/assets/icons/student.svg"
           alt="#"
         />
         <p class="w-[280px] text-white text-[14px] font-normal">
@@ -57,7 +57,7 @@
       >
         <img
           class="p-[10px] flex items-center justify-center rounded-[6px] bg-[#BDE5E126]"
-          src="/src/assets/icons/business.png"
+          src="/src/assets/icons/business.svg"
           alt="#"
         />
         <p class="w-[280px] text-white text-[14px] font-normal">
@@ -69,7 +69,7 @@
       >
         <img
           class="p-[10px] flex items-center justify-center rounded-[6px] bg-[#BDE5E126]"
-          src="/src/assets/icons/portfolio.png"
+          src="/src/assets/icons/portfolio.svg"
           alt="#"
         />
         <p class="w-[280px] text-white text-[14px] font-normal">
@@ -81,7 +81,7 @@
       >
         <img
           class="p-[10px] flex items-center justify-center rounded-[6px] bg-[#BDE5E126]"
-          src="/src/assets/icons/cub.png"
+          src="/src/assets/icons/cub.svg"
           alt="#"
         />
         <p class="w-[280px] text-white text-[14px] font-normal">
@@ -93,7 +93,7 @@
       >
         <img
           class="p-[10px] flex items-center justify-center rounded-[6px] bg-[#BDE5E126]"
-          src="/src/assets/icons/user.png"
+          src="/src/assets/icons/shUser.svg"
           alt="#"
         />
         <p class="w-[280px] text-white text-[14px] font-normal">
@@ -105,7 +105,7 @@
       >
         <img
           class="p-[10px] flex items-center justify-center rounded-[6px] bg-[#BDE5E126]"
-          src="/src/assets/icons/checked.png"
+          src="/src/assets/icons/checked.svg"
           alt="#"
         />
         <p class="w-[280px] text-white text-[14px] font-normal">

@@ -80,7 +80,7 @@
       </button>
     </div>
     <teleport to="body">
-      <div class="fixed inset-0 top-0 left-0 bottom-0 bg-[#00000099]" @click="isOpen = false" v-if="isOpen">
+      <div class="fixed inset-0 top-0 left-0 bottom-0 bg-[#00000099]" v-if="isOpen">
       <div
         class="modal w-full h-full flex items-center justify-center flex-col"
         v-if="isOpen"
