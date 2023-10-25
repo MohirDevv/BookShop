@@ -90,7 +90,7 @@
           <img src="../assets/icons/phone.svg" alt="#" />
           <input
             class="w-[246px] flex items-center outline-none bg-[#FFFFFF1A] gap-[8px] pl-2"
-            type="number"
+            type="tel"
             placeholder="Telefon raqamingiz *"
           />
         </div>

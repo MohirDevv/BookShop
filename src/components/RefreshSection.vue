@@ -98,7 +98,54 @@
     <div
       class="btn m-auto max-w-[350px] flex items-center justify-center px-[20px] py-[16px] rounded-[5px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mb-[50px]"
     >
-      <button class="text-white text-[16px] font-bold">Sotib oling</button>
+      <button class="text-white text-[16px] font-bold"  @click="isModal = true">Sotib oling</button>
+      <teleport to="body">
+      <div
+        class="fixed inset-0 top-0 left-0 bottom-0 bg-[#00000099]"
+        v-if="isModal"
+      >
+        <div
+          class="modal w-full h-full flex items-center justify-center flex-col"
+          v-if="isModal"
+        >
+          <button
+            class="w-[390px] flex items-center justify-end"
+            @click="isModal = false"
+          >
+            <img src="../assets/icons/remove.png" alt="#" />
+          </button>
+          <div
+            class="bg-white rounded-lg flex items-center justify-center flex-col"
+          >
+            <div class="text text-center pt-[24px] pb-[24px]">
+              <h3 class="text-black text-[12px] font-normal">
+                Menejerdan ma’lumot olish uchun
+              </h3>
+              <h2 class="text-[#0ACCBA] text-[18px] font-extrabold text-center">
+                Raqamingizni Qoldiring
+              </h2>
+            </div>
+
+            <input
+              class="w-[350px] border-[1px] border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[12px]"
+              type="text"
+              placeholder="Ismingiz"
+            />
+            <input
+              class="w-[350px] border-[1px] border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[24px]"
+              type="tel"
+              placeholder="Telefon raqamingiz"
+            />
+
+            <div
+              class="btn w-[350px] flex items-center justify-center py-[16px] rounded-[8px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mb-[24px]"
+            >
+              <button class="text-white text-[16px] font-bold">Yuborish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </teleport>
     </div>
   </div>
 </template>
@@ -107,6 +154,7 @@
 export default {
   data() {
     return {
+      isModal: false,
     };
   },
 };
