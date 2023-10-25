@@ -10,8 +10,8 @@
         <div class="part_one flex items-center">
         <img class="w-[32px] h-[30px]" src="../assets/icons/card.png" alt="#">
         <div class="subtitle pl-[10px] pr-[50px]">
-          <h2 class="text-white text-[12px] font-medium">Nurmatova Zulfiya</h2>
-          <h1 class="text-white text-[16px] font-bold">9860 6004 0167 2297</h1>
+          <h2 class="text-white text-[12px] font-medium">Siddiqova Shahnozaxon</h2>
+          <h1 class="text-white text-[16px] font-bold">8600 0304 5497 4787</h1>
         </div>
           <div class="copy">
             <img src="../assets/icons/copy.png" alt="#" >
