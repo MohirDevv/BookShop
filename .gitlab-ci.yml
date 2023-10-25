@@ -1,0 +1,14 @@
+stages:
+  - deploy
+
+deploy_production:
+  stage: deploy
+  script:
+    - rsync -av * /var/www/shaxnoza-siddiqova-front/ --no-perms --no-owner --no-group --omit-dir-times
+    - cd /var/www/shaxnoza-siddiqova-front/ && npm install && npm run build
+    - pm2 restart shaxnoza-siddiqova-front
+  environment:
+    name: production
+    url: https://shaxnoza-siddiqova.uz/
+  only:
+    - master
