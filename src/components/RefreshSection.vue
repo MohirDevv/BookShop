@@ -260,7 +260,7 @@
             v-if="isModal"
           >
             <button
-              class="w-[390px] flex items-center justify-end"
+              class="w-[390px] 2xl:w-[700px] flex items-center justify-end"
               @click="isModal = false"
             >
               <img src="../assets/icons/remove.png" alt="#" />
@@ -269,29 +269,30 @@
               class="bg-white rounded-lg flex items-center justify-center flex-col"
             >
               <div class="text text-center pt-[24px] pb-[24px]">
-                <h3 class="text-black text-[12px] font-normal">
+                <h3 class="block 2xl:hidden text-black text-[12px] font-normal">
                   Menejerdan ma’lumot olish uchun
                 </h3>
                 <h2
-                  class="text-[#0ACCBA] text-[18px] font-extrabold text-center"
+                  class="block 2xl:hidden text-[#0ACCBA] text-[18px] font-extrabold text-center"
                 >
                   Raqamingizni Qoldiring
                 </h2>
+                <h1 class="hidden 2xl:block text-black text-[50px] font-semibold px-[180px]">Ma'lumot olish</h1>
               </div>
 
               <input
-                class="w-[350px] border-[1px] border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[12px]"
+                class="w-[350px] 2xl:w-[600px] border-[1px] border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[12px]"
                 type="text"
                 placeholder="Ismingiz"
               />
               <input
-                class="w-[350px] border-[1px] border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[24px]"
+                class="w-[350px] 2xl:w-[600px] border-[1px] border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[24px]"
                 type="tel"
                 placeholder="Telefon raqamingiz"
               />
 
               <div
-                class="btn w-[350px] flex items-center justify-center py-[16px] rounded-[8px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mb-[24px]"
+                class="btn w-[350px] 2xl:w-[600px] flex items-center justify-center py-[16px] rounded-[8px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mb-[24px] 2xl:mb-[50px]"
               >
                 <button class="text-white text-[16px] font-bold">
                   Yuborish
