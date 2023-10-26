@@ -53,7 +53,7 @@
     </div>
   </div>
 
-  <div class="container hidden 2xl:flex mt-[150px] bg-[#F5F9FA]">
+  <div class="container m-auto hidden 2xl:flex justify-between mt-[150px] bg-[#F5F9FA]">
     <div class="entrance pl-[130px] pr-[50px] py-[70px]">
       <h1 class="text-[#152221] text-[34px] font-bold w-[760px]">
         Mening har bir trening darsim hozir XX so’mni tashkil qiladi.
@@ -110,6 +110,11 @@ export default {
 </script>
 
 <style scoped>
+
+.container{
+  width: 100%;
+  max-width: 100%;
+}
 .cover {
   border-radius: 0px 12px 12px 0px;
 }
