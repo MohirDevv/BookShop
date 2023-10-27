@@ -1,11 +1,11 @@
 <template>
-  <div class="main 2xl:flex">
+  <div class="main block container m-auto 2xl:flex">
   <div
-    class="wrapper relative 2xl:container bg-[url('/src/assets/images/desktop/main_bg.png')] bg-center bg-cover bg-no-repeat py-[50px] px-[16px] 2xl:border-[#5F807D] 2xl:border-r-[20px]"
+    class="wrapper relative  2xl:w-[100%] bg-[url('/src/assets/images/desktop/main_bg.png')] bg-center bg-cover bg-no-repeat py-[50px] px-[16px] 2xl:border-[#5F807D] 2xl:border-r-[20px]"
   >
-    <div class="subwrapper">
+    <div class="subwrapper 2xl:pl-[50px]">
       <div
-        class="info m-auto max-w-[380px] 2xl:max-w-[890px] bg-[#73B2AC59] border-[1px] border-[#FFFFFF80] backdrop-blur-[20px] rounded-[15px] px-[18px] 2xl:px-[41px] py-[16px] 2xl:py-[41px]"
+        class="info m-auto max-w-[380px] 2xl:max-w-[930px] bg-[#73B2AC59] border-[1px] border-[#FFFFFF80] backdrop-blur-[20px] rounded-[15px] px-[18px] 2xl:px-[41px] py-[16px] 2xl:py-[41px]"
       >
         <div
           class="mainEntrance flex justify-start items-center gap-1 2xl:gap-3"
@@ -71,7 +71,7 @@
               alt="#"
             />
             <h2
-              class="w-[220px] text-white text-[15px] 2xl:text-[22px] font-semibold"
+              class="w-[230px] text-white text-[15px] 2xl:text-[22px] font-semibold"
             >
               O'zbekiston bo'ylab yetkazib <br class="block 2xl:hidden" />
               berish bepul
@@ -81,7 +81,7 @@
       </div>
 
       <div
-        class="discount m-auto max-w-[380px] 2xl:max-w-[890px] mt-[10px] bg-[#73B2AC59] border-[#FFFFFF80] border-[1px] rounded-[15px] backdrop-blur-[20px] px-[28px] 2xl:px-[30px] 2xl:py-[20px]"
+        class="discount m-auto max-w-[380px] 2xl:max-w-[930px] mt-[10px] bg-[#73B2AC59] border-[#FFFFFF80] border-[1px] rounded-[15px] backdrop-blur-[20px] px-[28px] 2xl:px-[30px] 2xl:py-[20px]"
       >
         <div
           class="pricelist flex items-center justify-between m-auto max-w-[380px] 2xl:max-w-[890px] 2xl:flex 2xl:items-center 2xl:justify-normal"
@@ -101,7 +101,7 @@
             <img src="/src/assets/images/desktop/atigi.png" alt="#" />
           </div>
 
-          <div class="newprice flex flex-col pb-1 2xl:pr-[45px]">
+          <div class="newprice flex flex-col pb-1 2xl:pr-[25px]">
             <h1
               class="h-[35px] 2xl:h-[50px] text-white text-[30px] 2xl:text-[50px] font-black"
             >
@@ -119,7 +119,7 @@
               class="text-white text-[20px] font-bold px-[60px] py-[20px]"
               @click="isOpen = true"
             >
-              <p class="w-[100px]">Sotib olish</p>
+              <p class="w-[110px]">Sotib olish</p>
             </button>
           </div>
         </div>
@@ -187,10 +187,10 @@
       </teleport>
     </div>
   </div>
-  <div class="wrapper hidden container  bg-[url('/src/assets/images/desktop/tube_bg.png')] bg-center bg-cover bg-no-repeat 2xl:flex items-center justify-center">
+  <div class="wrapper hidden w-[70%]  bg-[url('/src/assets/images/desktop/tube_bg.png')] bg-center bg-cover bg-no-repeat 2xl:flex items-center justify-center">
     <div class="tubevideo ">
         <iframe
-          class="m-auto md:w-[560px] md:h-[330px] w-[360px] h-[280px] rounded-[8px] p-[10px] bg-[#73B2AC59]"
+          class="m-auto md:w-[500px] md:h-[330px] w-[360px] h-[280px] rounded-[8px] p-[10px] bg-[#73B2AC59]"
           src="https://www.youtube.com/embed/kaJdoGFT56o?si=DYlKKGderXm7WsZy&amp;controls=0"
           title="YouTube video player"
           frameborder="0"
@@ -223,6 +223,9 @@ export default {
 </script>
 
 <style scoped>
+.container{
+  max-width: 100%;
+}
 
 .book {
   content: "";
@@ -249,6 +252,9 @@ export default {
 }
 
 @media screen and (min-width: 1536px) {
+  .container{
+    max-width: 100%;
+  }
   .book {
     content: "";
     width: 250px;
