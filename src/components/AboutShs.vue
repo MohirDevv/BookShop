@@ -122,7 +122,7 @@
   </div>
 
   <div class="container hidden 2xl:block m-auto bg-white pt-[150px]">
-    <div class="aboutSh  m-auto w-[1280px] rounded-lg flex items-center justify-center">
+    <div class="aboutSh  m-auto w-[1280px] rounded-[15px] flex items-center justify-center">
       <div class="4cards py-[49px] pl-[30px]">
         <div
           class="card m-auto max-w-[420px] h-[79px] flex items-center mt-[10px] py-[8px] px-[10px] rounded-[10px] gap-[10px]"
@@ -180,7 +180,7 @@
       />
 
       <div
-        class="mainCard m-auto mb-[50px] w-[380px] flex items-center justify-center bg-[#599993b5] backdrop-blur-[18px] rounded-[10px]"
+        class="mainCard m-auto mb-[50px] w-[380px] flex items-center justify-center  backdrop-blur-[18px] rounded-[10px]"
       >
         <h1 class="text-white text-[24px] font-extrabold px-[20px] py-[15px]">
           Shahnoza Siddiqova

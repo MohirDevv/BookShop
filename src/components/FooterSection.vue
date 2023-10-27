@@ -19,7 +19,7 @@
       </h1>
     </div>
     <div
-      class="payment max-w-[380px] 2xl:min-w-[900px] m-auto flex items-center flex-col p-[20px] bg-[#FFFFFF1A] rounded-[10px] backdrop-blur-[39px] 2xl:mt-[25px]"
+      class="payment max-w-[380px]  2xl:min-w-[900px] m-auto flex items-center flex-col p-[20px] bg-[#FFFFFF1A] rounded-[10px] backdrop-blur-[39px] 2xl:mt-[25px]"
     >
       <h1
         class="text-white text-[24px] 2xl:text-[32px] font-bold xl:font-extrabold text-center"
@@ -27,7 +27,7 @@
         Kursga to'lov qilish
       </h1>
       <div
-        class="card_num 2xl:w-[700px] flex items-center justify-between px-[15px] py-[12px] bg-[#FFFFFF1A] backdrop-blur-[8px] rounded-[10px] mt-[30px]"
+        class="card_num 2xl:w-[700px] flex items-center justify-between px-[15px] py-[12px] backdrop-blur-[8px] rounded-[10px] mt-[30px]"
       >
         <div class="part_one flex items-center">
           <img src="../assets/icons/card.svg" alt="#" />
@@ -43,7 +43,7 @@
             <img cll src="../assets/icons/copy.svg" alt="#" />
           </div>
         </div>
-        <div class="copy">
+        <div class="copy hidden 2xl:block">
           <img cll src="../assets/icons/copy.svg" alt="#" />
         </div>
       </div>
@@ -58,7 +58,7 @@
           </div>
         </div>
 
-        <div class="info w-[178px] flex items-center">
+        <div class="info w-[180px] flex items-center">
           <img
             class="w-[40px] h-[30px] pr-[10px]"
             src="../assets/icons/info.svg"
@@ -171,6 +171,7 @@ input {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  color: white;
 }
 
 .btn:hover {

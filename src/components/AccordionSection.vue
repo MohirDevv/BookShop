@@ -122,7 +122,7 @@
   display: block;
   font-size: 1.25em;
   font-weight: 700;
-  padding: 30px 0 0 0;
+  padding: 30px 5px 0 0;
   position: relative;
   margin-bottom: 0;
   transition: all 0.25s ease-out;
@@ -140,7 +140,7 @@
   float: right;
   position: relative;
   right: 0px;
-  top: -23px;
+  top: -10px;
   /* transform: rotate(135deg); */
   transition: 0.35s ease-in-out;
   width: 25px;

@@ -44,10 +44,10 @@
           class="screen_xl flex 2xl:justify-between 2xl:items-center flex-col 2xl:flex-row 2xl:gap-6"
         >
           <div
-            class="bonus flex items-center bg-[#C6FFF91A] rounded-[10px] backdrop-blur-[12.5px] mt-[45px] mb-[12px]"
+            class="bonus flex items-center  rounded-[10px] backdrop-blur-[12.5px] mt-[45px] mb-[12px]"
           >
             <span
-              class="flex items-center justify-center h-[30px] 2xl:h-[50px] mb-[8px] text-[#00FFE6F2] text-[44px] 2xl:text-[80px] font-bold pl-[15px]"
+              class="flex items-center justify-center h-[30px] 2xl:h-[50px] mb-[4px] text-[#00FFE6F2] text-[44px] 2xl:text-[80px] font-bold pl-[15px] 2xl:mb-0 pr-[10px]"
               >+</span
             >
             <h1
@@ -63,7 +63,7 @@
           </div>
 
           <div
-            class="delv 2xl:w-[330px] 2xl:h-[100px] flex justify-center items-center bg-[#C6FFF91A] backdrop-blur-[17px] rounded-[10px] py-[8px] gap-2 2xl:mt-[34px]"
+            class="delv 2xl:w-[330px] 2xl:h-[100px] flex justify-center items-center backdrop-blur-[17px] rounded-[10px] py-[8px] gap-2 2xl:mt-[34px]"
           >
             <img
               class="w-[45px] h-[45px]"
@@ -116,7 +116,7 @@
             class="button hidden bg-[#0ACCBA] border-[#CFFFFA80] border-[3px] rounded-[5px] 2xl:flex items-center justify-center mr-[11px]"
           >
             <button
-              class="text-white text-[20px] font-bold px-[60px] py-[20px]"
+              class="text-white text-[20px] font-bold px-[60px] py-[16px]"
               @click="isOpen = true"
             >
               <p class="w-[110px]">Sotib olish</p>
@@ -187,10 +187,10 @@
       </teleport>
     </div>
   </div>
-  <div class="wrapper hidden w-[70%]  bg-[url('/src/assets/images/desktop/tube_bg.png')] bg-center bg-cover bg-no-repeat 2xl:flex items-center justify-center">
+  <div class="Lwrapper hidden px-[10px] w-[100%]  bg-[url('/src/assets/images/desktop/tube_bg.png')] bg-center bg-cover bg-no-repeat 2xl:flex items-center justify-center">
     <div class="tubevideo ">
         <iframe
-          class="m-auto md:w-[500px] md:h-[330px] w-[360px] h-[280px] rounded-[8px] p-[10px] bg-[#73B2AC59]"
+          class="m-auto md:w-[480px] md:h-[330px] w-[340px] h-[280px] rounded-[8px] p-[10px] bg-[#73B2AC59]"
           src="https://www.youtube.com/embed/kaJdoGFT56o?si=DYlKKGderXm7WsZy&amp;controls=0"
           title="YouTube video player"
           frameborder="0"
@@ -261,8 +261,19 @@ export default {
     height: 250px;
     position: absolute;
     top: 10%;
-    left: 10%;
+    left: 8%;
     transform: translate(80%, -40%);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  iframe{
+    width: 650px;
+    height: 400px;
+  }
+
+  .Lwrapper{
+    width: 70%;
   }
 }
 </style>

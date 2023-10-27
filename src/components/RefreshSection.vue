@@ -228,7 +228,7 @@
       </div>
     </div>
 
-    <div class="loading block 2xl:hidden m-auto max-w-[380px]">
+    <div class="loading block 2xl:hidden m-auto max-w-[340px]">
       <div
         class="car flex items-center justify-start pt-[40px] pl-[15px] gap-2"
       >
@@ -238,7 +238,7 @@
         <img class="" src="../assets/icons/fast_delivery_dark.png" alt="#" />
       </div>
       <img
-        class="m-auto max-w-[380px] pb-[25px]"
+        class="m-auto max-w-[340px] pb-[25px]"
         src="../assets/images/mobile/line.png"
         alt="#"
       />
