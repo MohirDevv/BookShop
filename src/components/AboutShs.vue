@@ -14,11 +14,12 @@
       <h1 class="text-white text-[24px] font-extrabold px-[20px] py-[15px]">
         Shahnoza Siddiqova
       </h1>
-      <img src="../assets/icons/checkmark_blue.svg" alt="#" />
+      <img src="../assets/icons/checkmark_blue.svg" alt="#" data-aos="flip-right" data-aos-duration="1300" />
     </div>
 
     <div class="cards py-[24px]">
       <div
+      data-aos="fade-up"
         class="card m-auto max-w-[380px] flex items-center mt-[10px] py-[8px] px-[10px] rounded-[10px] gap-[10px]"
       >
         <img
@@ -31,6 +32,7 @@
         </p>
       </div>
       <div
+      data-aos="fade-up"
         class="card m-auto max-w-[380px] flex items-center mt-[10px] py-[8px] px-[10px] rounded-[10px] gap-[10px]"
       >
         <img
@@ -43,6 +45,7 @@
         </p>
       </div>
       <div
+      data-aos="fade-up"
         class="card m-auto max-w-[380px] flex items-center mt-[10px] py-[8px] px-[10px] rounded-[10px] gap-[10px]"
       >
         <img
@@ -55,6 +58,7 @@
         </p>
       </div>
       <div
+      data-aos="fade-up"
         class="card m-auto max-w-[380px] flex items-center mt-[10px] py-[8px] px-[10px] rounded-[10px] gap-[10px]"
       >
         <img
@@ -67,6 +71,7 @@
         </p>
       </div>
       <div
+      data-aos="fade-up"
         class="card m-auto max-w-[380px] flex items-center mt-[10px] py-[8px] px-[10px] rounded-[10px] gap-[10px]"
       >
         <img
@@ -80,6 +85,7 @@
         </p>
       </div>
       <div
+      data-aos="fade-up"
         class="card m-auto max-w-[380px] flex items-center mt-[10px] py-[8px] px-[10px] rounded-[10px] gap-[10px]"
       >
         <img
@@ -93,6 +99,7 @@
         </p>
       </div>
       <div
+      data-aos="fade-up"
         class="card m-auto max-w-[380px] flex items-center mt-[10px] py-[8px] px-[10px] rounded-[10px] gap-[10px]"
       >
         <img
@@ -106,6 +113,7 @@
         </p>
       </div>
       <div
+      data-aos="fade-up"
         class="card m-auto max-w-[380px] flex items-center mt-[10px] py-[8px] px-[10px] rounded-[10px] gap-[10px]"
       >
         <img
@@ -123,7 +131,7 @@
 
   <div class="container hidden 2xl:block m-auto bg-white pt-[150px]">
     <div class="aboutSh  m-auto w-[1280px] rounded-[15px] flex items-center justify-center">
-      <div class="4cards py-[49px] pl-[30px]">
+      <div class="4cards py-[49px] pl-[30px]" data-aos="fade-right" data-aos-duration="1500">
         <div
           class="card m-auto max-w-[420px] h-[79px] flex items-center mt-[10px] py-[8px] px-[10px] rounded-[10px] gap-[10px]"
         >
@@ -185,9 +193,9 @@
         <h1 class="text-white text-[24px] font-extrabold px-[20px] py-[15px]">
           Shahnoza Siddiqova
         </h1>
-        <img class="pr-[10px]" src="../assets/icons/checkmark_blue.svg" alt="#" />
+        <img data-aos="flip-right" data-aos-duration="1700" class="pr-[10px]" src="../assets/icons/checkmark_blue.svg" alt="#" />
       </div>
-      <div class="4cards py-[49px] pr-[30px]">
+      <div class="4cards py-[49px] pr-[30px]" data-aos="fade-left" data-aos-duration="1500">
         <div
           class="card m-auto max-w-[420px] flex items-center mt-[10px] py-[8px] px-[10px] rounded-[10px] gap-[10px]"
         >

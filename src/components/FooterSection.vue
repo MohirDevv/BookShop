@@ -1,6 +1,8 @@
 <template>
-  <div class="wrapper m-auto pb-[50px] pt-[50px] 2xl:pb-[150px]" ref="footer">
+  <div
+  class="wrapper m-auto pb-[50px] pt-[50px] 2xl:pb-[150px]" ref="footer">
     <div
+    data-aos="zoom-in-up"
       class="success m-auto flex 2xl:hidden items-center justify-center gap-2 pb-[15px]"
       v-if="isSent"
     >
@@ -10,6 +12,7 @@
       </h1>
     </div>
     <div
+    data-aos="zoom-in-up"
       class="success hidden w-[900px] bg-white rounded-[10px] m-auto 2xl:flex items-center justify-center gap-2 py-[10px] mt-[50px]"
       v-if="isSent"
     >
@@ -19,6 +22,7 @@
       </h1>
     </div>
     <div
+    data-aos="zoom-in-up"
       class="payment max-w-[380px] 2xl:min-w-[900px] m-auto flex items-center flex-col p-[20px] bg-[#FFFFFF1A] rounded-[10px] backdrop-blur-[39px] 2xl:mt-[25px]"
     >
       <h1
@@ -35,16 +39,16 @@
             <h2 class="text-white text-[12px] font-medium">
               Siddiqova Shahnozaxon
             </h2>
-            <h1 class="text-white text-[16px] font-bold">
+            <h1 class="text-white text-[16px] font-bold" ref="message">
               8600 0304 5497 4787
             </h1>
           </div>
-          <div class="copy block 2xl:hidden">
-            <img cll src="../assets/icons/copy.svg" alt="#" />
+          <div class="copy block 2xl:hidden" @click="copyTextNoInput">
+            <img  src="../assets/icons/copy.svg" alt="#" />
           </div>
         </div>
-        <div class="copy hidden 2xl:block">
-          <img cll src="../assets/icons/copy.svg" alt="#" />
+        <div class="copy hidden 2xl:block" @click="copyTextNoInput">
+          <img  src="../assets/icons/copy.svg" alt="#" />
         </div>
       </div>
       <div
@@ -79,7 +83,7 @@
         </button>
       </div>
 
-      <div class="last_info hidden 2xl:block">
+      <div class="last_info hidden 2xl:block" >
         <h1
           class="m-auto text-center text-white text-[32px] font-extrabold leading-8 pt-[40px] pb-[30px]"
         >
@@ -101,9 +105,12 @@
           >
             <img src="../assets/icons/phone.svg" alt="#" />
             <input
+              id="input"
               class="w-[246px] 2xl:w-[630px] flex items-center outline-none bg-[#FFFFFF1A] gap-[8px] pl-2"
-              type="number"
+              type="tel"
               placeholder="Telefon raqamingiz *"
+              value="+998"
+              maxlength="13"
             />
           </div>
         </form>
@@ -135,8 +142,11 @@
         >
           <img src="../assets/icons/phone.svg" alt="#" />
           <input
+            id="input"
             class="w-[246px] flex items-center outline-none bg-[#FFFFFF1A] gap-[8px] pl-2"
-            type="number"
+            value="+998"
+            maxlength="13"
+            type="tel"
             placeholder="Telefon raqamingiz *"
           />
         </div>
@@ -157,6 +167,17 @@ export default {
     return {
       isSent: false,
     };
+  },
+  methods: {
+    copyTextNoInput() {
+      const storage = document.createElement('textarea');
+      storage.value = ref.message.innerHTML;
+      ref.reference.appendChild(storage);
+      storage.select();
+      storage.setSelectionRange(0, 99999);
+      document.execCommand('copy');
+      ref.reference.removeChild(storage);
+    }
   },
 };
 </script>
@@ -179,7 +200,7 @@ input {
 }
 
 input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button{
+input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 

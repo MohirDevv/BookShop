@@ -1,6 +1,6 @@
 <template>
   <div class="container block 2xl:hidden m-auto bg-white my-[55px]">
-    <div class="wrapper">
+    <div class="wrapper" data-aos="fade-up">
       <div class="tubevideo">
         <iframe
           class="m-auto md:w-[560px] md:h-[315px] w-[360px] h-[280px] rounded-[8px] p-[10px] bg-[#73B2AC59]"

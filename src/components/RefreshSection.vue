@@ -3,6 +3,7 @@
     class="container pt-[50px] 2xl:py-[150px] 2xl:px-[130px] 2xl:mt-[150px] m-auto bg-white 2xl:bg-[#F5F9FA]"
   >
     <div
+      data-aos="fade-up"
       class="title flex 2xl:hidden items-center justify-center flex-col gap-1"
     >
       <h1 class="text-[#152221] text-[28px] font-bold text-center">
@@ -11,8 +12,7 @@
       <div class="subtree flex gap-2">
         <h1 class="text-[#152221] text-[28px] font-bold">yetdi</h1>
         <div
-          class="kitobi text-white text-[16px] font-extrabold px-[10px] py-[5px] h-[35px] bg-[#009789]
-          mt-[5px]"
+          class="kitobi text-white text-[16px] font-extrabold px-[10px] py-[5px] h-[35px] bg-[#009789] mt-[5px]"
         >
           <p class="h-[25px]">kitobi</p>
         </div>
@@ -28,25 +28,34 @@
       <div
         class="slice_images 2xl:hidden flex items-center justify-center gap-[2.5px]"
       >
-        <img src="../assets/images/mobile/book_one.png" alt="#" />
-        <img src="../assets/images/mobile/book_two.png" alt="#" />
+        <img src="../assets/images/mobile/book_one.png" alt="#" data-aos="fade-up"
+          data-aos-duration="1000"/>
+        <img src="../assets/images/mobile/book_two.png" alt="#"  data-aos="fade-down"
+          data-aos-duration="1000"/>
       </div>
 
       <div
         class="slice_images m-auto hidden 2xl:flex items-center justify-center gap-[2.5px]"
       >
         <img
+          data-aos="fade-up"
+          data-aos-duration="1000"
           class="w-[460px] h-[630px]"
           src="../assets/images/desktop/book_one.png"
           alt="#"
         />
         <img
+          data-aos="fade-down"
+          data-aos-duration="1000"
           class="w-[240px] h-[630px]"
           src="../assets/images/desktop/book_two.png"
           alt="#"
         />
       </div>
-      <div class="textSection hidden 2xl:flex items-center flex-col pl-[50px]">
+      <div
+        data-aos="zoom-out"
+        class="textSection hidden 2xl:flex items-center flex-col pl-[50px]"
+      >
         <div class="mainent">
           <h1 class="text-[#152221] text-[50px] font-bold">
             Yangilanish fursati
@@ -132,7 +141,9 @@
             </div>
           </div>
         </div>
-        <div class="ending flex items-center justify-center pt-[50px] ml-[30px]">
+        <div
+          class="ending flex items-center justify-center pt-[50px] ml-[30px]"
+        >
           <div
             class="btn flex items-center justify-center px-[30px] py-[16px] rounded-[5px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mr-[40px]"
           >
@@ -140,13 +151,15 @@
               class="text-white text-[16px] font-bold"
               @click="isModal = true"
             >
-            <p class="w-[130px]">Buyurtma berish</p>
+              <p class="w-[130px]">Buyurtma berish</p>
             </button>
           </div>
-          <div
-            class="car flex flex-col"
-          >
-            <div class="div flex items-center ">
+          <div class="car flex flex-col">
+            <div
+              class="div flex items-center"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+            >
               <p class="h-[20px] text-[#47474F] text-[14px] font-medium">
                 O'zbekiston bo'ylab bepul yetkazib berish
               </p>
@@ -170,7 +183,7 @@
     <div
       class="seven_tasks gap-2 max-w-[360px] flex items-start justify-center flex-col m-auto pt-[28px] 2xl:hidden"
     >
-      <div class="task flex gap-2">
+      <div class="task flex gap-2" data-aos="fade-up">
         <img src="/src/assets/icons/trash.png" alt="#" />
         <div class="subtitl">
           <h1 class="text-[#009789] text-[18px] font-medium">1-kun</h1>
@@ -179,21 +192,21 @@
           </p>
         </div>
       </div>
-      <div class="task flex gap-2">
+      <div class="task flex gap-2" data-aos="fade-up">
         <img src="/src/assets/icons/stressed.png" alt="#" />
         <div class="subtitl">
           <h1 class="text-[#009789] text-[18px] font-medium">2-kun</h1>
           <p class="text-[#47474F] text-[14px] font-medium">Qo'rquvlarimiz</p>
         </div>
       </div>
-      <div class="task flex gap-2">
+      <div class="task flex gap-2" data-aos="fade-up">
         <img src="/src/assets/icons/lonely.png" alt="#" />
         <div class="subtitl">
           <h1 class="text-[#009789] text-[18px] font-medium">3-kun</h1>
           <p class="text-[#47474F] text-[14px] font-medium">Qarorlar</p>
         </div>
       </div>
-      <div class="task flex gap-2">
+      <div class="task flex gap-2" data-aos="fade-up">
         <img src="/src/assets/icons/time.png" alt="#" />
         <div class="subtitl">
           <h1 class="text-[#009789] text-[18px] font-medium">4-kun</h1>
@@ -202,14 +215,14 @@
           </p>
         </div>
       </div>
-      <div class="task flex gap-2">
+      <div class="task flex gap-2" data-aos="fade-up">
         <img src="/src/assets/icons/backspace.png" alt="#" />
         <div class="subtitl">
           <h1 class="text-[#009789] text-[18px] font-medium">5-kun</h1>
           <p class="text-[#47474F] text-[14px] font-medium">Krutilka usuli</p>
         </div>
       </div>
-      <div class="task flex gap-2">
+      <div class="task flex gap-2" data-aos="fade-up">
         <img src="/src/assets/icons/grees.png" alt="#" />
         <div class="subtitl">
           <h1 class="text-[#009789] text-[18px] font-medium">6-kun</h1>
@@ -218,7 +231,7 @@
           </p>
         </div>
       </div>
-      <div class="task flex gap-2">
+      <div class="task flex gap-2" data-aos="fade-up">
         <img src="/src/assets/icons/increasing.png" alt="#" />
         <div class="subtitl">
           <h1 class="text-[#009789] text-[18px] font-medium">7-kun</h1>
@@ -231,6 +244,8 @@
 
     <div class="loading block 2xl:hidden m-auto max-w-[340px]">
       <div
+      data-aos="fade-right"
+      data-aos-duration="3000"
         class="car flex items-center justify-start pt-[40px] pl-[15px] gap-2"
       >
         <p class="text-[#47474F] text-[14px] font-medium">
@@ -278,7 +293,11 @@
                 >
                   Raqamingizni Qoldiring
                 </h2>
-                <h1 class="hidden 2xl:block text-black text-[50px] font-semibold px-[180px]">Ma'lumot olish</h1>
+                <h1
+                  class="hidden 2xl:block text-black text-[50px] font-semibold px-[180px]"
+                >
+                  Ma'lumot olish
+                </h1>
               </div>
 
               <input

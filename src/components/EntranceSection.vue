@@ -1,9 +1,13 @@
 <template>
-  <div class="main block container m-auto 2xl:flex">
+  <div
+    class="main block container m-auto 2xl:flex"
+    
+  >
     <div
+    data-aos="fade-up" data-aos-duration="1000"
       class="wrapper relative 2xl:w-[100%] bg-[url('/src/assets/images/desktop/main_bg.png')] bg-center bg-cover bg-no-repeat py-[50px] px-[16px] 2xl:border-[#5F807D] 2xl:border-r-[20px]"
     >
-      <div class="subwrapper 2xl:pl-[50px]">
+      <div class="subwrapper 2xl:pl-[50px]" >
         <div
           class="info m-auto max-w-[380px] 2xl:max-w-[930px] bg-[#73B2AC59] border-[1px] border-[#FFFFFF80] backdrop-blur-[20px] rounded-[15px] px-[18px] 2xl:px-[41px] py-[16px] 2xl:py-[41px]"
         >
@@ -11,6 +15,7 @@
             class="mainEntrance flex justify-start items-center gap-1 2xl:gap-3"
           >
             <div
+            
               class="w-[15px] 2xl:w-[30px] h-[1.5px] 2xl:h-[2px] bg-[#fff]"
             ></div>
             <h2
@@ -197,6 +202,7 @@
       </div>
     </div>
     <div
+    data-aos="fade-down" data-aos-duration="1000"
       class="Lwrapper hidden px-[10px] w-[100%] bg-[url('/src/assets/images/desktop/tube_bg.png')] bg-center bg-cover bg-no-repeat 2xl:flex items-center justify-center"
     >
       <div class="tubevideo">
@@ -214,7 +220,6 @@
 </template>
 
 <script>
-import { gsap } from "gsap";
 
 export default {
   data() {

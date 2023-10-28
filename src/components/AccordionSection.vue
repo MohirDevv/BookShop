@@ -1,15 +1,18 @@
 <template>
   <div class="container m-auto pt-[50px] 2xl:pt-[150px] bg-white">
     <h1
+      data-aos="zoom-in"
+      data-aos-duration="1500"
       class="m-auto max-w-[300px] 2xl:max-w-[690px] text-[28px] 2xl:text-[50px] text-center font-bold text-[#152221] pb-[24px]"
     >
       Tez-tez so'raladigan savollar
     </h1>
   </div>
 
-  <div class="container m-auto pb-[50px]">
-    
+  <div class="container hidden 2xl:block m-auto pb-[50px]">
     <div
+      data-aos="fade-right"
+      data-aos-duration="1300"
       class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]"
     >
       <input
@@ -34,6 +37,8 @@
     </div>
 
     <div
+      data-aos="fade-left"
+      data-aos-duration="1300"
       class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px] xl:w-[700px]"
     >
       <input
@@ -60,6 +65,8 @@
     </div>
 
     <div
+      data-aos="fade-right"
+      data-aos-duration="1300"
       class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]"
     >
       <input
@@ -84,6 +91,118 @@
       </div>
     </div>
     <div
+      data-aos="fade-left"
+      data-aos-duration="1300"
+      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]"
+    >
+      <input
+        class="faq-drawer__trigger"
+        id="faq-drawer-4"
+        type="checkbox"
+        name="name1"
+      /><label
+        class="faq-drawer__title border-[#DEDEE4] border-t-[2px]"
+        for="faq-drawer-4"
+        name="name1"
+        >Kitob qanday yetkazib beriladi?</label
+      >
+      <div class="faq-drawer__content-wrapper">
+        <div class="faq-drawer__content">
+          <p
+            class="m-auto max-w-[330px] xl:min-w-[750px] pl-[13px] xl:pl-[0px] xl:pt-[15px] xl:mr-[50px]"
+          >
+            Pochta orqali O’zbekistoning istalgan joyiga 1 kun ichida yetkazib
+            beriladi. Kitob kelishi bilan sizga pochtadan telefon qilishadi va
+            pochtaga kelib olib ketishingiz kerak bo’ladi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container block 2xl:hidden m-auto pb-[50px]">
+    <div
+    data-aos="fade-up"
+     data-aos-duration="1000"
+      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]"
+    >
+      <input
+        class="faq-drawer__trigger"
+        id="faq-drawer"
+        type="checkbox"
+        name="name1"
+        checked
+      /><label class="faq-drawer__title" for="faq-drawer" name="name1"
+        >Kitob olganimdan keyin to'lov qilsam bo'ladimi?</label
+      >
+      <div class="faq-drawer__content-wrapper">
+        <div class="faq-drawer__content">
+          <p
+            class="m-auto max-w-[330px] xl:min-w-[800px] pl-[13px] xl:pl-[0px] xl:pt-[15px]"
+          >
+            Albatta, qo'lingizga kitob yetib kelgandan keyin to'lov qilish
+            imkoniyati ham bor
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+    data-aos="fade-up"
+     data-aos-duration="1000"
+      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px] xl:w-[700px]"
+    >
+      <input
+        class="faq-drawer__trigger"
+        id="faq-drawer-2"
+        type="checkbox"
+        name="name1"
+      /><label
+        class="faq-drawer__title border-[#DEDEE4] border-t-[2px]"
+        for="faq-drawer-2"
+        name="name1"
+        >Bir nechta kitobdan xarid qilsam chegirma bormi?</label
+      >
+      <div class="faq-drawer__content-wrapper">
+        <div class="faq-drawer__content">
+          <p
+            class="m-auto max-w-[330px] xl:min-w-[800px] pl-[13px] xl:pl-[0px] xl:pt-[15px]"
+          >
+            Agar siz 2 ta kitob xarid qilsanigz 1 ta kitobni BEPUL qo’lga
+            kiritasiz.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+    data-aos="fade-up"
+     data-aos-duration="1000"
+      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]"
+    >
+      <input
+        class="faq-drawer__trigger"
+        id="faq-drawer-3"
+        type="checkbox"
+        name="name1"
+      /><label
+        class="faq-drawer__title border-[#DEDEE4] border-t-[2px]"
+        for="faq-drawer-3"
+        name="name1"
+        >Chegirma muddati qancha vaqt davom etadi?</label
+      >
+      <div class="faq-drawer__content-wrapper">
+        <div class="faq-drawer__content">
+          <p
+            class="m-auto max-w-[330px] xl:min-w-[800px] pl-[13px] xl:pl-[0px] xl:pt-[15px]"
+          >
+            Chegirmamiz joylar soni tugaguncha davom etadi.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+    data-aos="fade-up"
+     data-aos-duration="1000"
       class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]"
     >
       <input
