@@ -19,14 +19,14 @@
         name="name1"
         checked
       /><label class="faq-drawer__title" for="faq-drawer" name="name1"
-        >Kitob olganimdan keyin to'lov qilsam bo'ladimi?</label
+        >Kitob olganimdan keyin <br> to'lov qilsam bo'ladimi?</label
       >
       <div class="faq-drawer__content-wrapper">
         <div class="faq-drawer__content">
           <p
             class="m-auto max-w-[330px] xl:min-w-[800px] pl-[13px] xl:pl-[0px] xl:pt-[15px]"
           >
-            Albatta, qo'lingizga kitob yetib kelgandan keyin to'lov qilish
+            Albatta, qo'lingizga kitob yetib kelgandan keyin  to'lov qilish
             imkoniyati ham bor
           </p>
         </div>
@@ -71,7 +71,8 @@
         class="faq-drawer__title border-[#DEDEE4] border-t-[2px]"
         for="faq-drawer-3"
         name="name1"
-        >Chegirma muddati qancha <br> vaqt davom etadi?</label
+        >Chegirma muddati qancha <br>
+         vaqt davom etadi?</label
       >
       <div class="faq-drawer__content-wrapper">
         <div class="faq-drawer__content">
