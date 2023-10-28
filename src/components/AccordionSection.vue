@@ -123,7 +123,7 @@
     <div
     data-aos="fade-up"
      data-aos-duration="1000"
-      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]"
+      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[330px]"
     >
       <input
         class="faq-drawer__trigger"
@@ -149,7 +149,7 @@
     <div
     data-aos="fade-up"
      data-aos-duration="1000"
-      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px] xl:w-[700px]"
+      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[330px]"
     >
       <input
         class="faq-drawer__trigger"
@@ -177,7 +177,7 @@
     <div
     data-aos="fade-up"
      data-aos-duration="1000"
-      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]"
+      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[330px]"
     >
       <input
         class="faq-drawer__trigger"
@@ -201,9 +201,9 @@
       </div>
     </div>
     <div
-    data-aos="fade-up"
+      data-aos="fade-up"
      data-aos-duration="1000"
-      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]"
+      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[330px]"
     >
       <input
         class="faq-drawer__trigger"
