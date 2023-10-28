@@ -28,10 +28,18 @@
       <div
         class="slice_images 2xl:hidden flex items-center justify-center gap-[2.5px]"
       >
-        <img src="../assets/images/mobile/book_one.png" alt="#" data-aos="fade-up"
-          data-aos-duration="1000"/>
-        <img src="../assets/images/mobile/book_two.png" alt="#"  data-aos="fade-down"
-          data-aos-duration="1000"/>
+        <img
+          src="../assets/images/mobile/book_one.png"
+          alt="#"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        />
+        <img
+          src="../assets/images/mobile/book_two.png"
+          alt="#"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        />
       </div>
 
       <div
@@ -244,8 +252,8 @@
 
     <div class="loading block 2xl:hidden m-auto max-w-[340px]">
       <div
-      data-aos="fade-right"
-      data-aos-duration="3000"
+        data-aos="fade-right"
+        data-aos-duration="3000"
         class="car flex items-center justify-start pt-[40px] pl-[15px] gap-2"
       >
         <p class="text-[#47474F] text-[14px] font-medium">

@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import AOS from 'aos'
+import AOS from "aos";
 import EntranceSection from "./components/EntranceSection.vue";
 import YoutubeSection from "./components/YoutubeSection.vue";
 import AboutShs from "./components/AboutShs.vue";
@@ -20,9 +20,7 @@ import FooterSection from "./components/FooterSection.vue";
 
 export default {
   data() {
-    return {
-      
-    };
+    return {};
   },
   components: {
     EntranceSection,
@@ -36,7 +34,6 @@ export default {
 
   mounted() {
     AOS.init();
-  }
- 
+  },
 };
 </script>

@@ -1,5 +1,7 @@
 <template>
-  <div class="container m-auto pt-[50px] 2xl:pt-[150px] bg-white">
+  <div
+    class="container m-auto pt-[50px] 2xl:pt-[150px] bg-white overflow-x-hidden"
+  >
     <h1
       class="m-auto max-w-[300px] 2xl:max-w-[690px] text-[28px] 2xl:text-[50px] text-center font-bold text-[#152221] pb-[24px]"
     >
@@ -7,10 +9,11 @@
     </h1>
   </div>
 
-  <div class="container m-auto pb-[50px]">
-    
+  <div class="container m-auto pb-[50px] overflow-x-hidden">
     <div
-      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[330px]"
+      data-aos="fade-right"
+      data-aos-duration="1500"
+      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]"
     >
       <input
         class="faq-drawer__trigger"
@@ -19,14 +22,14 @@
         name="name1"
         checked
       /><label class="faq-drawer__title" for="faq-drawer" name="name1"
-        >Kitob olganimdan keyin <br> to'lov qilsam bo'ladimi?</label
+        >Kitob olganimdan keyin to'lov qilsam bo'ladimi?</label
       >
       <div class="faq-drawer__content-wrapper">
         <div class="faq-drawer__content">
           <p
             class="m-auto max-w-[330px] xl:min-w-[800px] pl-[13px] xl:pl-[0px] xl:pt-[15px]"
           >
-            Albatta, qo'lingizga kitob yetib kelgandan keyin  to'lov qilish
+            Albatta, qo'lingizga kitob yetib kelgandan keyin to'lov qilish
             imkoniyati ham bor
           </p>
         </div>
@@ -34,7 +37,9 @@
     </div>
 
     <div
-      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[330px] xl:w-[700px]"
+      data-aos="fade-left"
+      data-aos-duration="1500"
+      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px] xl:w-[700px]"
     >
       <input
         class="faq-drawer__trigger"
@@ -60,7 +65,9 @@
     </div>
 
     <div
-      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[330px]"
+      data-aos="fade-right"
+      data-aos-duration="1500"
+      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]"
     >
       <input
         class="faq-drawer__trigger"
@@ -71,8 +78,7 @@
         class="faq-drawer__title border-[#DEDEE4] border-t-[2px]"
         for="faq-drawer-3"
         name="name1"
-        >Chegirma muddati qancha <br>
-         vaqt davom etadi?</label
+        >Chegirma muddati qancha vaqt davom etadi?</label
       >
       <div class="faq-drawer__content-wrapper">
         <div class="faq-drawer__content">
@@ -84,8 +90,11 @@
         </div>
       </div>
     </div>
+
     <div
-      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[330px]"
+      data-aos="fade-left"
+      data-aos-duration="1500"
+      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]"
     >
       <input
         class="faq-drawer__trigger"

@@ -1,8 +1,11 @@
 <template>
   <div
-  class="wrapper m-auto pb-[50px] pt-[50px] 2xl:pb-[150px]" ref="footer">
+    id="footer"
+    class="wrapper m-auto pb-[50px] pt-[50px] 2xl:pb-[150px]"
+    ref="footer"
+  >
     <div
-    data-aos="zoom-in-up"
+      data-aos="zoom-in-up"
       class="success m-auto flex 2xl:hidden items-center justify-center gap-2 pb-[15px]"
       v-if="isSent"
     >
@@ -12,7 +15,7 @@
       </h1>
     </div>
     <div
-    data-aos="zoom-in-up"
+      data-aos="zoom-in-up"
       class="success hidden w-[900px] bg-white rounded-[10px] m-auto 2xl:flex items-center justify-center gap-2 py-[10px] mt-[50px]"
       v-if="isSent"
     >
@@ -22,7 +25,7 @@
       </h1>
     </div>
     <div
-    data-aos="zoom-in-up"
+      data-aos="zoom-in-up"
       class="payment max-w-[380px] 2xl:min-w-[900px] m-auto flex items-center flex-col p-[20px] bg-[#FFFFFF1A] rounded-[10px] backdrop-blur-[39px] 2xl:mt-[25px]"
     >
       <h1
@@ -43,12 +46,12 @@
               8600 0304 5497 4787
             </h1>
           </div>
-          <div class="copy block 2xl:hidden" @click="copyTextNoInput">
-            <img  src="../assets/icons/copy.svg" alt="#" />
+          <div class="copy block 2xl:hidden" @click="copyTextNoInput" id="copy">
+            <img src="../assets/icons/copy.svg" alt="#" />
           </div>
         </div>
-        <div class="copy hidden 2xl:block" @click="copyTextNoInput">
-          <img  src="../assets/icons/copy.svg" alt="#" />
+        <div class="copy hidden 2xl:block" @click="copyTextNoInput" id="copy">
+          <img src="../assets/icons/copy.svg" alt="#" />
         </div>
       </div>
       <div
@@ -83,7 +86,7 @@
         </button>
       </div>
 
-      <div class="last_info hidden 2xl:block" >
+      <div class="last_info hidden 2xl:block">
         <h1
           class="m-auto text-center text-white text-[32px] font-extrabold leading-8 pt-[40px] pb-[30px]"
         >
@@ -98,6 +101,7 @@
               class="w-[246px] 2xl:w-[630px] flex items-center outline-none bg-[#FFFFFF1A] gap-[15px]"
               type="text"
               placeholder="Ism familiyangiz *"
+              v-model="name"
             />
           </div>
           <div
@@ -109,14 +113,16 @@
               class="w-[246px] 2xl:w-[630px] flex items-center outline-none bg-[#FFFFFF1A] gap-[8px] pl-2"
               type="tel"
               placeholder="Telefon raqamingiz *"
-              value="+998"
-              maxlength="13"
+              v-model="phone"
+              @focus="onFocus()"
+              @input="formatPhoneNumber()"
             />
           </div>
         </form>
       </div>
 
       <button
+        @click="sendData"
         class="btn hidden w-[700px] text-white text-[14px] font-bold px-[35px] py-[15px] 2xl:flex items-center justify-center bg-[#0ACCBA] border-[#7AE4D980] border-[3px] rounded-[5px] mb-[30px]"
       >
         Yuborish
@@ -135,6 +141,7 @@
             class="w-[246px] flex items-center outline-none bg-[#FFFFFF1A] gap-[15px]"
             type="text"
             placeholder="Ism familiyangiz *"
+            v-model="name"
           />
         </div>
         <div
@@ -144,15 +151,17 @@
           <input
             id="input"
             class="w-[246px] flex items-center outline-none bg-[#FFFFFF1A] gap-[8px] pl-2"
-            value="+998"
-            maxlength="13"
             type="tel"
             placeholder="Telefon raqamingiz *"
+            v-model="phone"
+            @focus="onFocus()"
+            @input="formatPhoneNumber()"
           />
         </div>
       </form>
 
       <button
+        @click="sendData"
         class="btn w-[310px] text-white text-[14px] font-bold px-[35px] py-[21px] flex items-center justify-center bg-[#0ACCBA] border-[#7AE4D980] border-[3px] rounded-[5px]"
       >
         Yuborish
@@ -162,22 +171,82 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   data() {
     return {
       isSent: false,
+      phone: null,
+      name,
     };
   },
   methods: {
-    copyTextNoInput() {
-      const storage = document.createElement('textarea');
-      storage.value = ref.message.innerHTML;
-      ref.reference.appendChild(storage);
-      storage.select();
-      storage.setSelectionRange(0, 99999);
-      document.execCommand('copy');
-      ref.reference.removeChild(storage);
-    }
+    // copyTextNoInput() {
+    //   const storage = document.createElement("textarea");
+    //   storage.value = document.getElementById("copy");
+    //   ref.reference.appendChild(storage);
+    //   storage.select();
+    //   storage.setSelectionRange(0, 99999);
+    //   document.execCommand("copy");
+    //   ref.reference.removeChild(storage);
+    // },
+    formatPhoneNumber() {
+      let inputValue = this.phone
+        .replace(/\D/g, "")
+        .replace("9", "")
+        .replace("9", "")
+        .replace("8", "");
+
+      if (inputValue.length > 9) {
+        inputValue = inputValue.substring(0, 9);
+      }
+
+      if (inputValue.length <= 2) {
+        this.phone = "+998 " + inputValue;
+      } else if (inputValue.length <= 5) {
+        this.phone =
+          "+998 " + inputValue.substring(0, 2) + " " + inputValue.substring(2);
+      } else if (inputValue.length <= 7) {
+        this.phone =
+          "+998 " +
+          inputValue.substring(0, 2) +
+          " " +
+          inputValue.substring(2, 5) +
+          "-" +
+          inputValue.substring(5);
+      } else {
+        this.phone =
+          "+998 " +
+          inputValue.substring(0, 2) +
+          " " +
+          inputValue.substring(2, 5) +
+          "-" +
+          inputValue.substring(5, 7) +
+          "-" +
+          inputValue.substring(7, 9);
+      }
+    },
+    onFocus() {
+      if (!this.phone) {
+        this.phone = "+998 ";
+      }
+    },
+    sendData() {
+      const body = {
+        name: this.name,
+        phone_number: this.phone.replaceAll("-", "").replaceAll(" ", ""),
+        project: "shaxnoza-siddiqova",
+      };
+      axios
+        .post("https://crm.redapp.uz/api/customer/", body)
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
   },
 };
 </script>
