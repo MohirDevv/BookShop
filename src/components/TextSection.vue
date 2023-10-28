@@ -4,9 +4,9 @@
       class="entrance 2xl:hidden flex items-center justify-center flex-col gap-[12px]"
     >
       <div
-        class="title max-w-[350px] text-[#152221] text-[24px] text-center font-bold"
+        class="title max-w-[310px] text-[#152221] text-[24px] text-center font-bold"
       >
-        Mening har bir trening darsim hozir XX so’mni tashkil qiladi.
+        Mening har bir trening darsim hozir 300.000 so’mni tashkil qiladi.
         «Yangilanish fursati yetdi!» kitobi esa 99.000 so’m edi.
       </div>
       <div
@@ -56,7 +56,7 @@
   <div class="container m-auto hidden 2xl:flex justify-between mt-[150px] bg-[#F5F9FA]">
     <div class="entrance pl-[130px] pr-[50px] py-[70px]">
       <h1 class="text-[#152221] text-[34px] font-bold w-[760px]">
-        Mening har bir trening darsim hozir XX so’mni tashkil qiladi.
+        Mening har bir trening darsim hozir 300.000 so’mni tashkil qiladi.
         «Yangilanish fursati yetdi!» kitobi esa 99.000 so’m edi.
       </h1>
       <p class="text-[#47474F] text-[18px] font-medium leading-6 w-[660px]">

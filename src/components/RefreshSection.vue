@@ -11,7 +11,8 @@
       <div class="subtree flex gap-2">
         <h1 class="text-[#152221] text-[28px] font-bold">yetdi</h1>
         <div
-          class="kitobi text-white text-[16px] font-extrabold px-[10px] py-[5px] h-[35px] bg-[#009789]"
+          class="kitobi text-white text-[16px] font-extrabold px-[10px] py-[5px] h-[35px] bg-[#009789]
+          mt-[5px]"
         >
           <p class="h-[25px]">kitobi</p>
         </div>

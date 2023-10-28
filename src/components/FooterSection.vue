@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper m-auto pb-[50px] pt-[15px] 2xl:pb-[150px]">
+  <div class="wrapper m-auto pb-[50px] pt-[50px] 2xl:pb-[150px]" ref="footer">
     <div
       class="success m-auto flex 2xl:hidden items-center justify-center gap-2 pb-[15px]"
       v-if="isSent"
@@ -19,7 +19,7 @@
       </h1>
     </div>
     <div
-      class="payment max-w-[380px]  2xl:min-w-[900px] m-auto flex items-center flex-col p-[20px] bg-[#FFFFFF1A] rounded-[10px] backdrop-blur-[39px] 2xl:mt-[25px]"
+      class="payment max-w-[380px] 2xl:min-w-[900px] m-auto flex items-center flex-col p-[20px] bg-[#FFFFFF1A] rounded-[10px] backdrop-blur-[39px] 2xl:mt-[25px]"
     >
       <h1
         class="text-white text-[24px] 2xl:text-[32px] font-bold xl:font-extrabold text-center"
@@ -79,33 +79,36 @@
         </button>
       </div>
 
-      <h1
-        class="m-auto text-white text-[32px] font-extrabold leading-8 pt-[40px] pb-[30px]"
-      >
-        Ma'lumot olish
-      </h1>
-      <form>
-        <div
-          class="name flex items-center justify-center px-[15px] py-[8px] mb-[20px] bg-[#FFFFFF1A] rounded-[10px]"
+      <div class="last_info hidden 2xl:block">
+        <h1
+          class="m-auto text-center text-white text-[32px] font-extrabold leading-8 pt-[40px] pb-[30px]"
         >
-          <img class="pr-[10px]" src="../assets/icons/user.svg" alt="#" />
-          <input
-            class="w-[246px] 2xl:w-[630px] flex items-center outline-none bg-[#FFFFFF1A] gap-[15px]"
-            type="text"
-            placeholder="Ism familiyangiz *"
-          />
-        </div>
-        <div
-          class="num flex items-center justify-center px-[15px] py-[8px] mb-[20px] bg-[#FFFFFF1A] rounded-[10px]"
-        >
-          <img src="../assets/icons/phone.svg" alt="#" />
-          <input
-            class="w-[246px] 2xl:w-[630px] flex items-center outline-none bg-[#FFFFFF1A] gap-[8px] pl-2"
-            type="tel"
-            placeholder="Telefon raqamingiz *"
-          />
-        </div>
-      </form>
+          Ma'lumot olish
+        </h1>
+        <form>
+          <div
+            class="name flex items-center justify-center px-[15px] py-[8px] mb-[20px] bg-[#FFFFFF1A] rounded-[10px]"
+          >
+            <img class="pr-[10px]" src="../assets/icons/user.svg" alt="#" />
+            <input
+              class="w-[246px] 2xl:w-[630px] flex items-center outline-none bg-[#FFFFFF1A] gap-[15px]"
+              type="text"
+              placeholder="Ism familiyangiz *"
+            />
+          </div>
+          <div
+            class="num flex items-center justify-center px-[15px] py-[8px] mb-[20px] bg-[#FFFFFF1A] rounded-[10px]"
+          >
+            <img src="../assets/icons/phone.svg" alt="#" />
+            <input
+              class="w-[246px] 2xl:w-[630px] flex items-center outline-none bg-[#FFFFFF1A] gap-[8px] pl-2"
+              type="number"
+              placeholder="Telefon raqamingiz *"
+            />
+          </div>
+        </form>
+      </div>
+
       <button
         class="btn hidden w-[700px] text-white text-[14px] font-bold px-[35px] py-[15px] 2xl:flex items-center justify-center bg-[#0ACCBA] border-[#7AE4D980] border-[3px] rounded-[5px] mb-[30px]"
       >
@@ -133,7 +136,7 @@
           <img src="../assets/icons/phone.svg" alt="#" />
           <input
             class="w-[246px] flex items-center outline-none bg-[#FFFFFF1A] gap-[8px] pl-2"
-            type="tel"
+            type="number"
             placeholder="Telefon raqamingiz *"
           />
         </div>
@@ -172,6 +175,12 @@ input {
   -moz-box-shadow: none;
   box-shadow: none;
   color: white;
+  -moz-appearance: textfields;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
 }
 
 .btn:hover {

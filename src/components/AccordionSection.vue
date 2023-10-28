@@ -1,13 +1,14 @@
 <template>
-  <div class="container m-auto pt-[50px] bg-white">
+  <div class="container m-auto pt-[50px] 2xl:pt-[150px] bg-white">
     <h1
-      class="m-auto max-w-[300px] 2xl:max-w-[670px] text-[28px] 2xl:text-[50px] text-center font-bold text-[#152221] pb-[24px]"
+      class="m-auto max-w-[300px] 2xl:max-w-[690px] text-[28px] 2xl:text-[50px] text-center font-bold text-[#152221] pb-[24px]"
     >
       Tez-tez so'raladigan savollar
     </h1>
   </div>
 
   <div class="container m-auto pb-[50px]">
+    
     <div
       class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]"
     >
@@ -15,7 +16,9 @@
         class="faq-drawer__trigger"
         id="faq-drawer"
         type="checkbox"
-      /><label class="faq-drawer__title" for="faq-drawer"
+        name="name1"
+        checked
+      /><label class="faq-drawer__title" for="faq-drawer" name="name1"
         >Kitob olganimdan keyin to'lov qilsam bo'ladimi?</label
       >
       <div class="faq-drawer__content-wrapper">
@@ -37,9 +40,11 @@
         class="faq-drawer__trigger"
         id="faq-drawer-2"
         type="checkbox"
+        name="name1"
       /><label
         class="faq-drawer__title border-[#DEDEE4] border-t-[2px]"
         for="faq-drawer-2"
+        name="name1"
         >Bir nechta kitobdan xarid qilsam chegirma bormi?</label
       >
       <div class="faq-drawer__content-wrapper">
@@ -61,9 +66,11 @@
         class="faq-drawer__trigger"
         id="faq-drawer-3"
         type="checkbox"
+        name="name1"
       /><label
         class="faq-drawer__title border-[#DEDEE4] border-t-[2px]"
         for="faq-drawer-3"
+        name="name1"
         >Chegirma muddati qancha vaqt davom etadi?</label
       >
       <div class="faq-drawer__content-wrapper">
@@ -83,9 +90,11 @@
         class="faq-drawer__trigger"
         id="faq-drawer-4"
         type="checkbox"
+        name="name1"
       /><label
         class="faq-drawer__title border-[#DEDEE4] border-t-[2px]"
         for="faq-drawer-4"
+        name="name1"
         >Kitob qanday yetkazib beriladi?</label
       >
       <div class="faq-drawer__content-wrapper">
