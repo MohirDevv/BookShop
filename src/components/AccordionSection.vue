@@ -22,7 +22,8 @@
         name="name1"
         checked
       /><label class="faq-drawer__title" for="faq-drawer" name="name1"
-        >Kitob olganimdan keyin to'lov qilsam bo'ladimi?</label
+        >Kitob olganimdan keyin to'lov <br />
+        qilsam bo'ladimi?</label
       >
       <div class="faq-drawer__content-wrapper">
         <div class="faq-drawer__content">
@@ -78,7 +79,8 @@
         class="faq-drawer__title border-[#DEDEE4] border-t-[2px]"
         for="faq-drawer-3"
         name="name1"
-        >Chegirma muddati qancha vaqt davom etadi?</label
+        >Chegirma muddati qancha vaqt <br />
+        davom etadi?</label
       >
       <div class="faq-drawer__content-wrapper">
         <div class="faq-drawer__content">
