@@ -71,7 +71,7 @@
         class="faq-drawer__title border-[#DEDEE4] border-t-[2px]"
         for="faq-drawer-3"
         name="name1"
-        >Chegirma muddati qancha vaqt davom etadi?</label
+        >Chegirma muddati qancha <br> vaqt davom etadi?</label
       >
       <div class="faq-drawer__content-wrapper">
         <div class="faq-drawer__content">
