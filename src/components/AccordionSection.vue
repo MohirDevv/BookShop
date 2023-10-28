@@ -10,7 +10,7 @@
   <div class="container m-auto pb-[50px]">
     
     <div
-      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]"
+      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[330px]"
     >
       <input
         class="faq-drawer__trigger"
@@ -34,7 +34,7 @@
     </div>
 
     <div
-      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px] xl:w-[700px]"
+      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[330px] xl:w-[700px]"
     >
       <input
         class="faq-drawer__trigger"
@@ -60,7 +60,7 @@
     </div>
 
     <div
-      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]"
+      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[330px]"
     >
       <input
         class="faq-drawer__trigger"
@@ -84,7 +84,7 @@
       </div>
     </div>
     <div
-      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]"
+      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[330px]"
     >
       <input
         class="faq-drawer__trigger"
