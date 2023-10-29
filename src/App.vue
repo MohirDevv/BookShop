@@ -37,3 +37,12 @@ export default {
   },
 };
 </script>
+
+<style>
+textarea{
+  position: absolute;
+  z-index: -9999;
+  top: -10%;
+  left: 10%;
+}
+</style>

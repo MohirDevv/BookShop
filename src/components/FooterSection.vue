@@ -33,6 +33,10 @@
       >
         Kursga to'lov qilish
       </h1>
+      <div class="copied w-[315px] 2xl:min-w-[700px] rounded-[8px] bg-[#FFFFFF1A] flex items-center justify-center
+      mt-[10px]" data-aos="fade-down" v-if="isCopied">
+        <h1 class="text-[16px] font-semibold text-[#0ACCBA]">Nusxa Olindi!</h1>
+      </div>
       <div
         class="card_num 2xl:w-[700px] flex items-center justify-between px-[15px] py-[12px] backdrop-blur-[8px] rounded-[10px] mt-[30px]"
       >
@@ -192,6 +196,7 @@ export default {
       isValid: null,
       validName: null,
       message: "",
+      isCopied: false,
     };
   },
   methods: {
@@ -201,6 +206,7 @@ export default {
       document.body.appendChild(storage);
       storage.select();
       document.execCommand("copy");
+      this.isCopied = true
     },
     formatPhoneNumber() {
       const num = document.getElementById("input");
@@ -312,6 +318,14 @@ export default {
       }
     },
   },
+  // mounted() {
+  //   if(this.isCopied = true) {
+  //     setTimeout(() => {
+  //       this.isCopied = false
+  //       textarea.classList.add('none')
+  //     }, 1000);
+  //   }
+  // },
 };
 </script>
 
@@ -353,5 +367,9 @@ input::-webkit-inner-spin-button {
 
 .success {
   transition: 1.5s;
+}
+
+.copied{
+  transition: 1s;
 }
 </style>
