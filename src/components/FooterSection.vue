@@ -46,11 +46,11 @@
               8600 0304 5497 4787
             </h1>
           </div>
-          <div class="copy block 2xl:hidden" @click="copyTextNoInput()">
+          <div class="copy block cursor-pointer 2xl:hidden" @click="copyTextNoInput">
             <img src="../assets/icons/copy.svg" alt="#" />
           </div>
         </div>
-        <div class="copy hidden 2xl:block" @click="copyTextNoInput()">
+        <div class="copy hidden cursor-pointer 2xl:block" @click="copyTextNoInput">
           <img src="../assets/icons/copy.svg" alt="#" />
         </div>
       </div>
@@ -192,12 +192,11 @@ export default {
   methods: {
     copyTextNoInput() {
       const storage = document.createElement('textarea');
-      storage.value = this.$refs.message.innerHTML;
-      this.$refs.reference.appendChild(storage);
-      storage.select();
-      storage.setSelectionRange(0, 99999);
+      storage.value = '8600 0304 5497 4787';
+      document.body.appendChild(storage)
+      storage.select()
       document.execCommand('copy');
-      this.$refs.reference.removeChild(storage);
+
     },
     formatPhoneNumber() {
       const num = document.getElementById("input");
