@@ -280,6 +280,7 @@
           v-if="isModal"
         >
           <div
+            data-aos="fade-down"
             class="modal w-full h-full flex items-center justify-center flex-col"
             v-if="isModal"
           >
@@ -306,30 +307,44 @@
                 >
                   Ma'lumot olish
                 </h1>
+
+                <div
+                  class="success flex items-center justify-center bg-[#0ACCBA] p-[10px] gap-3 mt-[10px]"
+                  v-if="isInfoSent"
+                  data-aos="fade-down"
+                >
+                  <h1 class="text-white text-[16px] font-bold">
+                    Muvaffaqiyatli yuborildi!
+                  </h1>
+                  <img src="../assets/icons/success.svg" alt="#" />
+                </div>
               </div>
 
               <input
-              id="corname"
+                id="corname"
                 class="w-[350px] 2xl:w-[600px] border-[1px] border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[12px]"
                 type="text"
-                  placeholder="Ismingiz"
-                  v-model="name"
-                  @input="formatNameValue()"
+                placeholder="Ismingiz"
+                v-model="name"
+                @input="formatNameValue()"
               />
               <input
-              id="cornum"
+                id="cornum"
                 class="w-[350px] 2xl:w-[600px] border-[1px] border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[24px]"
                 type="tel"
-                  placeholder="Telefon raqamingiz"
-                  v-model="phone"
-                  @focus="onFocus()"
-                  @input="formatPhoneNumber()"
+                placeholder="Telefon raqamingiz"
+                v-model="phone"
+                @focus="onFocus()"
+                @input="formatPhoneNumber()"
               />
 
               <div
                 class="btn w-[350px] 2xl:w-[600px] flex items-center justify-center py-[16px] rounded-[8px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mb-[24px] 2xl:mb-[50px]"
               >
-                <button class="text-white text-[16px] font-bold" @click="sendData">
+                <button
+                  class="text-white text-[16px] font-bold"
+                  @click="sendData"
+                >
                   Yuborish
                 </button>
               </div>
@@ -347,6 +362,7 @@ import axios from "axios";
 export default {
   data() {
     return {
+      isInfoSent: false,
       isModal: false,
       phone: null,
       name: null,
@@ -445,8 +461,8 @@ export default {
 
         num.classList.remove("invalid");
         name.classList.remove("invalid");
-        this.isModal = false;
-        this.isSent = true;
+        // this.isModal = false;
+        this.isInfoSent = true;
         axios
           .post("https://crm.redapp.uz/api/customer/", body)
           .then((response) => {
@@ -454,6 +470,9 @@ export default {
           })
           .catch((error) => {
             console.log(error);
+            if (error) {
+              alert("Xato!");
+            }
           });
       }
     },

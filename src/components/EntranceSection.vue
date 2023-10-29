@@ -1,11 +1,13 @@
 <template>
   <div class="main block container m-auto 2xl:flex">
     <div
-      data-aos="fade-up"
-      data-aos-duration="1000"
       class="wrapper relative 2xl:w-[100%] bg-[url('/src/assets/images/desktop/main_bg.png')] bg-center bg-cover bg-no-repeat py-[50px] px-[16px] 2xl:border-[#5F807D] 2xl:border-r-[20px]"
     >
-      <div class="subwrapper 2xl:pl-[50px]">
+      <div
+        class="subwrapper 2xl:pl-[50px]"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div
           class="info m-auto max-w-[380px] 2xl:max-w-[930px] bg-[#73B2AC59] border-[1px] border-[#FFFFFF80] backdrop-blur-[20px] rounded-[15px] px-[18px] 2xl:px-[41px] py-[16px] 2xl:py-[41px]"
         >
@@ -146,6 +148,7 @@
             v-if="isOpen"
           >
             <div
+              data-aos="fade-down"
               class="modal w-full h-full flex items-center justify-center flex-col"
               v-if="isOpen"
             >
@@ -174,11 +177,22 @@
                   >
                     Ma'lumot olish
                   </h1>
+
+                  <div
+                    class="success flex items-center justify-center bg-[#0ACCBA] p-[10px] gap-3 mt-[10px]"
+                    v-if="isDataSent"
+                    data-aos="fade-down"
+                  >
+                    <h1 class="text-white text-[16px] font-bold">
+                      Muvaffaqiyatli yuborildi!
+                    </h1>
+                    <img src="../assets/icons/success.svg" alt="#" />
+                  </div>
                 </div>
 
                 <input
                   id="validator_name"
-                  class="w-[350px] 2xl:w-[600px] border-[1px] focus:border-[#C6C6C6]  border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[12px]"
+                  class="w-[350px] 2xl:w-[600px] border-[1px] focus:border-[#C6C6C6] border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[12px]"
                   type="text"
                   placeholder="Ismingiz"
                   v-model="name"
@@ -211,11 +225,9 @@
       </div>
     </div>
     <div
-      data-aos="fade-down"
-      data-aos-duration="1000"
       class="Lwrapper hidden px-[10px] w-[100%] bg-[url('/src/assets/images/desktop/tube_bg.png')] bg-center bg-cover bg-no-repeat 2xl:flex items-center justify-center"
     >
-      <div class="tubevideo">
+      <div class="tubevideo" data-aos="fade-down" data-aos-duration="1000">
         <iframe
           class="m-auto md:w-[470px] md:h-[330px] w-[340px] h-[280px] rounded-[8px] p-[10px] bg-[#73B2AC59]"
           src="https://www.youtube.com/embed/kaJdoGFT56o?si=DYlKKGderXm7WsZy&amp;controls=0"
@@ -235,6 +247,7 @@ import axios from "axios";
 export default {
   data() {
     return {
+      isDataSent: false,
       isOpen: false,
       isValidNum: null,
       isVAlidName: null,
@@ -289,12 +302,12 @@ export default {
           "-" +
           inputValue.substring(7, 9);
         num.classList.add("invalid");
-        this.isValid = false;
+        this.isValidNum = false;
       }
 
       if (inputValue.length == 9) {
         num.classList.remove("invalid");
-        this.isValid = true;
+        this.isValidNum = true;
       }
     },
     formatNameValue() {
@@ -302,10 +315,10 @@ export default {
       let inputValue = this.name;
       if (inputValue.length == 0) {
         name.classList.add("invalid");
-        this.validName = false;
+        this.isVAlidName = false;
       } else if (inputValue.length >= 1) {
         name.classList.remove("invalid");
-        this.validName = true;
+        this.isVAlidName = true;
       }
     },
     onFocus() {
@@ -319,21 +332,23 @@ export default {
         phone_number: this.phone.replaceAll("-", "").replaceAll(" ", ""),
         project: "shaxnoza-siddiqova",
       };
-      if (this.validName !== true || this.isValid !== true) {
+      if (this.isVAlidName !== true || this.isValidNum !== true) {
         const name = document.getElementById("validator_name");
         const num = document.getElementById("validator_num");
 
         num.classList.add("invalid");
         name.classList.add("invalid");
-      } else if (this.isValid == true && this.validName == true) {
-        console.log(this.isValid);
+      } else if (this.isValidNum == true && this.isVAlidName == true) {
+        console.log(this.isValidNum);
         const name = document.getElementById("validator_name");
         const num = document.getElementById("validator_num");
 
         num.classList.remove("invalid");
         name.classList.remove("invalid");
-        this.isOpen = false;
-        this.isSent = true;
+        this.isDataSent = true;
+        setTimeout(() => {
+          this.isOpen = false;
+        }, 3000);
         axios
           .post("https://crm.redapp.uz/api/customer/", body)
           .then((response) => {
@@ -341,6 +356,9 @@ export default {
           })
           .catch((error) => {
             console.log(error);
+            if (error) {
+              alert("Xato!");
+            }
           });
       }
     },

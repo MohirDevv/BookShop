@@ -46,11 +46,17 @@
               8600 0304 5497 4787
             </h1>
           </div>
-          <div class="copy block cursor-pointer 2xl:hidden" @click="copyTextNoInput">
+          <div
+            class="copy block cursor-pointer 2xl:hidden"
+            @click="copyTextNoInput"
+          >
             <img src="../assets/icons/copy.svg" alt="#" />
           </div>
         </div>
-        <div class="copy hidden cursor-pointer 2xl:block" @click="copyTextNoInput">
+        <div
+          class="copy hidden cursor-pointer 2xl:block"
+          @click="copyTextNoInput"
+        >
           <img src="../assets/icons/copy.svg" alt="#" />
         </div>
       </div>
@@ -136,25 +142,24 @@
       <h1 class="text-white text-[24px] font-bold">Ma'lumot olish</h1>
       <form>
         <div
-        id="name1"
+          id="name1"
           class="name flex items-center justify-center px-[15px] py-[8px] mb-[20px] bg-[#FFFFFF1A] rounded-[10px]"
         >
           <img class="pr-[10px]" src="../assets/icons/user.svg" alt="#" />
           <input
             class="w-[246px] flex items-center outline-none bg-[#FFFFFF1A] gap-[15px]"
             type="text"
-              placeholder="Ism familiyangiz *"
-              v-model="name"
-              @input="formatNameValue()"
+            placeholder="Ism familiyangiz *"
+            v-model="name"
+            @input="formatNameValue()"
           />
         </div>
         <div
-        id="input1"
+          id="input1"
           class="num flex items-center justify-center px-[15px] py-[8px] mb-[20px] bg-[#FFFFFF1A] rounded-[10px]"
         >
           <img src="../assets/icons/phone.svg" alt="#" />
           <input
-            
             class="w-[246px] flex items-center outline-none bg-[#FFFFFF1A] gap-[8px] pl-2"
             type="tel"
             placeholder="Telefon raqamingiz *"
@@ -186,17 +191,16 @@ export default {
       name: null,
       isValid: null,
       validName: null,
-      message: ''
+      message: "",
     };
   },
   methods: {
     copyTextNoInput() {
-      const storage = document.createElement('textarea');
-      storage.value = '8600 0304 5497 4787';
-      document.body.appendChild(storage)
-      storage.select()
-      document.execCommand('copy');
-
+      const storage = document.createElement("textarea");
+      storage.value = "8600 0304 5497 4787";
+      document.body.appendChild(storage);
+      storage.select();
+      document.execCommand("copy");
     },
     formatPhoneNumber() {
       const num = document.getElementById("input");
@@ -293,7 +297,7 @@ export default {
         name.classList.remove("invalid");
         num1.classList.remove("invalid");
         name1.classList.remove("invalid");
-        this.isSent = true
+        this.isSent = true;
         axios
           .post("https://crm.redapp.uz/api/customer/", body)
           .then((response) => {
@@ -301,6 +305,9 @@ export default {
           })
           .catch((error) => {
             console.log(error);
+            if (error) {
+              alert("Xato!");
+            }
           });
       }
     },
@@ -344,7 +351,7 @@ input::-webkit-inner-spin-button {
   background: #009789;
 }
 
-.success{
+.success {
   transition: 1.5s;
 }
 </style>
