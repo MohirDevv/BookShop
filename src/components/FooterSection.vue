@@ -46,11 +46,11 @@
               8600 0304 5497 4787
             </h1>
           </div>
-          <div class="copy block 2xl:hidden" @click="copyTextNoInput" id="copy">
+          <div class="copy block 2xl:hidden" @click="copyTextNoInput()">
             <img src="../assets/icons/copy.svg" alt="#" />
           </div>
         </div>
-        <div class="copy hidden 2xl:block" @click="copyTextNoInput" id="copy">
+        <div class="copy hidden 2xl:block" @click="copyTextNoInput()">
           <img src="../assets/icons/copy.svg" alt="#" />
         </div>
       </div>
@@ -94,6 +94,7 @@
         </h1>
         <form>
           <div
+            id="name"
             class="name flex items-center justify-center px-[15px] py-[8px] mb-[20px] bg-[#FFFFFF1A] rounded-[10px]"
           >
             <img class="pr-[10px]" src="../assets/icons/user.svg" alt="#" />
@@ -102,14 +103,15 @@
               type="text"
               placeholder="Ism familiyangiz *"
               v-model="name"
+              @input="formatNameValue()"
             />
           </div>
           <div
+            id="input"
             class="num flex items-center justify-center px-[15px] py-[8px] mb-[20px] bg-[#FFFFFF1A] rounded-[10px]"
           >
             <img src="../assets/icons/phone.svg" alt="#" />
             <input
-              id="input"
               class="w-[246px] 2xl:w-[630px] flex items-center outline-none bg-[#FFFFFF1A] gap-[8px] pl-2"
               type="tel"
               placeholder="Telefon raqamingiz *"
@@ -134,22 +136,25 @@
       <h1 class="text-white text-[24px] font-bold">Ma'lumot olish</h1>
       <form>
         <div
+        id="name1"
           class="name flex items-center justify-center px-[15px] py-[8px] mb-[20px] bg-[#FFFFFF1A] rounded-[10px]"
         >
           <img class="pr-[10px]" src="../assets/icons/user.svg" alt="#" />
           <input
             class="w-[246px] flex items-center outline-none bg-[#FFFFFF1A] gap-[15px]"
             type="text"
-            placeholder="Ism familiyangiz *"
-            v-model="name"
+              placeholder="Ism familiyangiz *"
+              v-model="name"
+              @input="formatNameValue()"
           />
         </div>
         <div
+        id="input1"
           class="num flex items-center justify-center px-[15px] py-[8px] mb-[20px] bg-[#FFFFFF1A] rounded-[10px]"
         >
           <img src="../assets/icons/phone.svg" alt="#" />
           <input
-            id="input"
+            
             class="w-[246px] flex items-center outline-none bg-[#FFFFFF1A] gap-[8px] pl-2"
             type="tel"
             placeholder="Telefon raqamingiz *"
@@ -178,20 +183,25 @@ export default {
     return {
       isSent: false,
       phone: null,
-      name,
+      name: null,
+      isValid: null,
+      validName: null,
+      message: ''
     };
   },
   methods: {
-    // copyTextNoInput() {
-    //   const storage = document.createElement("textarea");
-    //   storage.value = document.getElementById("copy");
-    //   ref.reference.appendChild(storage);
-    //   storage.select();
-    //   storage.setSelectionRange(0, 99999);
-    //   document.execCommand("copy");
-    //   ref.reference.removeChild(storage);
-    // },
+    copyTextNoInput() {
+      const storage = document.createElement('textarea');
+      storage.value = this.$refs.message.innerHTML;
+      this.$refs.reference.appendChild(storage);
+      storage.select();
+      storage.setSelectionRange(0, 99999);
+      document.execCommand('copy');
+      this.$refs.reference.removeChild(storage);
+    },
     formatPhoneNumber() {
+      const num = document.getElementById("input");
+      const num1 = document.getElementById("input1");
       let inputValue = this.phone
         .replace(/\D/g, "")
         .replace("9", "")
@@ -204,6 +214,8 @@ export default {
 
       if (inputValue.length <= 2) {
         this.phone = "+998 " + inputValue;
+        num.classList.add("invalid");
+        num1.classList.add("invalid");
       } else if (inputValue.length <= 5) {
         this.phone =
           "+998 " + inputValue.substring(0, 2) + " " + inputValue.substring(2);
@@ -215,6 +227,8 @@ export default {
           inputValue.substring(2, 5) +
           "-" +
           inputValue.substring(5);
+        num.classList.add("invalid");
+        num1.classList.add("invalid");
       } else {
         this.phone =
           "+998 " +
@@ -225,6 +239,29 @@ export default {
           inputValue.substring(5, 7) +
           "-" +
           inputValue.substring(7, 9);
+        num.classList.add("invalid");
+        num1.classList.add("invalid");
+        this.isValid = false;
+      }
+
+      if (inputValue.length == 9) {
+        num.classList.remove("invalid");
+        num1.classList.remove("invalid");
+        this.isValid = true;
+      }
+    },
+    formatNameValue() {
+      const name = document.getElementById("name");
+      const name1 = document.getElementById("name1");
+      let inputValue = this.name;
+      if (inputValue.length == 0) {
+        name.classList.add("invalid");
+        name1.classList.add("invalid");
+        this.validName = false;
+      } else if (inputValue.length >= 1) {
+        name.classList.remove("invalid");
+        name1.classList.remove("invalid");
+        this.validName = true;
       }
     },
     onFocus() {
@@ -238,14 +275,35 @@ export default {
         phone_number: this.phone.replaceAll("-", "").replaceAll(" ", ""),
         project: "shaxnoza-siddiqova",
       };
-      axios
-        .post("https://crm.redapp.uz/api/customer/", body)
-        .then((response) => {
-          console.log(response);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
+      if (this.validName !== true || this.isValid !== true) {
+        const name = document.getElementById("name");
+        const num = document.getElementById("input");
+        const name1 = document.getElementById("name1");
+        const num1 = document.getElementById("input1");
+        num.classList.add("invalid");
+        name.classList.add("invalid");
+        num1.classList.add("invalid");
+        name1.classList.add("invalid");
+      } else if (this.isValid == true && this.validName == true) {
+        console.log(this.isValid);
+        const name = document.getElementById("name");
+        const num = document.getElementById("input");
+        const name1 = document.getElementById("name1");
+        const num1 = document.getElementById("input1");
+        num.classList.remove("invalid");
+        name.classList.remove("invalid");
+        num1.classList.remove("invalid");
+        name1.classList.remove("invalid");
+        this.isSent = true
+        axios
+          .post("https://crm.redapp.uz/api/customer/", body)
+          .then((response) => {
+            console.log(response);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      }
     },
   },
 };
@@ -268,6 +326,11 @@ input {
   -moz-appearance: textfields;
 }
 
+.invalid {
+  border: 1px solid rgba(255, 107, 107, 0.4);
+  background: rgba(255, 138, 138, 0.1);
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -280,5 +343,9 @@ input::-webkit-inner-spin-button {
 .btn:active {
   border: 3px solid #7ae4d980;
   background: #009789;
+}
+
+.success{
+  transition: 1.5s;
 }
 </style>

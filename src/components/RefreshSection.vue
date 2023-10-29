@@ -309,20 +309,27 @@
               </div>
 
               <input
+              id="corname"
                 class="w-[350px] 2xl:w-[600px] border-[1px] border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[12px]"
                 type="text"
-                placeholder="Ismingiz"
+                  placeholder="Ismingiz"
+                  v-model="name"
+                  @input="formatNameValue()"
               />
               <input
+              id="cornum"
                 class="w-[350px] 2xl:w-[600px] border-[1px] border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[24px]"
                 type="tel"
-                placeholder="Telefon raqamingiz"
+                  placeholder="Telefon raqamingiz"
+                  v-model="phone"
+                  @focus="onFocus()"
+                  @input="formatPhoneNumber()"
               />
 
               <div
                 class="btn w-[350px] 2xl:w-[600px] flex items-center justify-center py-[16px] rounded-[8px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mb-[24px] 2xl:mb-[50px]"
               >
-                <button class="text-white text-[16px] font-bold">
+                <button class="text-white text-[16px] font-bold" @click="sendData">
                   Yuborish
                 </button>
               </div>
@@ -335,11 +342,121 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   data() {
     return {
       isModal: false,
+      phone: null,
+      name: null,
+      is__Valid: null,
+      valid__Name: null,
     };
+  },
+
+  methods: {
+    scrollToFooter() {
+      const footerElement = document.getElementById("footer");
+      if (footerElement) {
+        footerElement.scrollIntoView({
+          behavior: "smooth", // Optional for smooth scrolling
+        });
+      }
+    },
+    formatPhoneNumber() {
+      const num = document.getElementById("cornum");
+      let inputValue = this.phone
+        .replace(/\D/g, "")
+        .replace("9", "")
+        .replace("9", "")
+        .replace("8", "");
+
+      if (inputValue.length > 9) {
+        inputValue = inputValue.substring(0, 9);
+      }
+
+      if (inputValue.length <= 2) {
+        this.phone = "+998 " + inputValue;
+        num.classList.add("invalid");
+      } else if (inputValue.length <= 5) {
+        this.phone =
+          "+998 " + inputValue.substring(0, 2) + " " + inputValue.substring(2);
+      } else if (inputValue.length <= 7) {
+        this.phone =
+          "+998 " +
+          inputValue.substring(0, 2) +
+          " " +
+          inputValue.substring(2, 5) +
+          "-" +
+          inputValue.substring(5);
+        num.classList.add("invalid");
+      } else {
+        this.phone =
+          "+998 " +
+          inputValue.substring(0, 2) +
+          " " +
+          inputValue.substring(2, 5) +
+          "-" +
+          inputValue.substring(5, 7) +
+          "-" +
+          inputValue.substring(7, 9);
+        num.classList.add("invalid");
+        this.is__Valid = false;
+      }
+
+      if (inputValue.length == 9) {
+        num.classList.remove("invalid");
+        this.is__Valid = true;
+      }
+    },
+    formatNameValue() {
+      const name = document.getElementById("corname");
+      let inputValue = this.name;
+      if (inputValue.length == 0) {
+        name.classList.add("invalid");
+        this.valid__Name = false;
+      } else if (inputValue.length >= 1) {
+        name.classList.remove("invalid");
+        this.valid__Name = true;
+      }
+    },
+    onFocus() {
+      if (!this.phone) {
+        this.phone = "+998 ";
+      }
+    },
+    sendData() {
+      const body = {
+        name: this.name,
+        phone_number: this.phone.replaceAll("-", "").replaceAll(" ", ""),
+        project: "shaxnoza-siddiqova",
+      };
+      if (this.valid__Name !== true || this.is__Valid !== true) {
+        const name = document.getElementById("corname");
+        const num = document.getElementById("cornum");
+
+        num.classList.add("invalid");
+        name.classList.add("invalid");
+      } else if (this.is__Valid == true && this.valid__Name == true) {
+        console.log(this.is__Valid);
+        const name = document.getElementById("corname");
+        const num = document.getElementById("cornum");
+
+        num.classList.remove("invalid");
+        name.classList.remove("invalid");
+        this.isModal = false;
+        this.isSent = true;
+        axios
+          .post("https://crm.redapp.uz/api/customer/", body)
+          .then((response) => {
+            console.log(response);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      }
+    },
   },
 };
 </script>
@@ -352,5 +469,10 @@ export default {
 .btn:active {
   border: 3px solid #7ae4d980;
   background: #009789;
+}
+
+.invalid {
+  border: 1px solid rgba(255, 107, 107, 0.4);
+  background: rgba(255, 138, 138, 0.1);
 }
 </style>

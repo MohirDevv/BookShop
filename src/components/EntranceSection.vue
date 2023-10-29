@@ -139,6 +139,7 @@
             Sotib oling
           </button>
         </div>
+        <!--  -->
         <teleport to="body">
           <div
             class="fixed inset-0 top-0 left-0 bottom-0 bg-[#00000099]"
@@ -176,20 +177,30 @@
                 </div>
 
                 <input
-                  class="w-[350px] 2xl:w-[600px] border-[1px] border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[12px]"
+                  id="validator_name"
+                  class="w-[350px] 2xl:w-[600px] border-[1px] focus:border-[#C6C6C6]  border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[12px]"
                   type="text"
                   placeholder="Ismingiz"
+                  v-model="name"
+                  @input="formatNameValue()"
                 />
                 <input
-                  class="w-[350px] 2xl:w-[600px] border-[1px] border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[24px]"
+                  id="validator_num"
+                  class="w-[350px] 2xl:w-[600px] border-[1px] focus:border-[#C6C6C6] border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[24px]"
                   type="tel"
                   placeholder="Telefon raqamingiz"
+                  v-model="phone"
+                  @focus="onFocus()"
+                  @input="formatPhoneNumber()"
                 />
 
                 <div
                   class="btn w-[350px] 2xl:w-[600px] flex items-center justify-center py-[16px] rounded-[8px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mb-[24px] 2xl:mb-[50px]"
                 >
-                  <button class="text-white text-[16px] font-bold">
+                  <button
+                    class="text-white text-[16px] font-bold"
+                    @click="sendData"
+                  >
                     Yuborish
                   </button>
                 </div>
@@ -219,15 +230,16 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   data() {
     return {
       isOpen: false,
-      body: {
-        name: null,
-        phone_number: null,
-        project: "shaxnoza-siddiqova",
-      },
+      isValidNum: null,
+      isVAlidName: null,
+      phone: null,
+      name: null,
     };
   },
   methods: {
@@ -237,6 +249,99 @@ export default {
         footerElement.scrollIntoView({
           behavior: "smooth", // Optional for smooth scrolling
         });
+      }
+    },
+    formatPhoneNumber() {
+      const num = document.getElementById("validator_num");
+      let inputValue = this.phone
+        .replace(/\D/g, "")
+        .replace("9", "")
+        .replace("9", "")
+        .replace("8", "");
+
+      if (inputValue.length > 9) {
+        inputValue = inputValue.substring(0, 9);
+      }
+
+      if (inputValue.length <= 2) {
+        this.phone = "+998 " + inputValue;
+        num.classList.add("invalid");
+      } else if (inputValue.length <= 5) {
+        this.phone =
+          "+998 " + inputValue.substring(0, 2) + " " + inputValue.substring(2);
+      } else if (inputValue.length <= 7) {
+        this.phone =
+          "+998 " +
+          inputValue.substring(0, 2) +
+          " " +
+          inputValue.substring(2, 5) +
+          "-" +
+          inputValue.substring(5);
+        num.classList.add("invalid");
+      } else {
+        this.phone =
+          "+998 " +
+          inputValue.substring(0, 2) +
+          " " +
+          inputValue.substring(2, 5) +
+          "-" +
+          inputValue.substring(5, 7) +
+          "-" +
+          inputValue.substring(7, 9);
+        num.classList.add("invalid");
+        this.isValid = false;
+      }
+
+      if (inputValue.length == 9) {
+        num.classList.remove("invalid");
+        this.isValid = true;
+      }
+    },
+    formatNameValue() {
+      const name = document.getElementById("validator_name");
+      let inputValue = this.name;
+      if (inputValue.length == 0) {
+        name.classList.add("invalid");
+        this.validName = false;
+      } else if (inputValue.length >= 1) {
+        name.classList.remove("invalid");
+        this.validName = true;
+      }
+    },
+    onFocus() {
+      if (!this.phone) {
+        this.phone = "+998 ";
+      }
+    },
+    sendData() {
+      const body = {
+        name: this.name,
+        phone_number: this.phone.replaceAll("-", "").replaceAll(" ", ""),
+        project: "shaxnoza-siddiqova",
+      };
+      if (this.validName !== true || this.isValid !== true) {
+        const name = document.getElementById("validator_name");
+        const num = document.getElementById("validator_num");
+
+        num.classList.add("invalid");
+        name.classList.add("invalid");
+      } else if (this.isValid == true && this.validName == true) {
+        console.log(this.isValid);
+        const name = document.getElementById("validator_name");
+        const num = document.getElementById("validator_num");
+
+        num.classList.remove("invalid");
+        name.classList.remove("invalid");
+        this.isOpen = false;
+        this.isSent = true;
+        axios
+          .post("https://crm.redapp.uz/api/customer/", body)
+          .then((response) => {
+            console.log(response);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
       }
     },
   },
@@ -259,6 +364,11 @@ export default {
   top: 10%;
   left: 10%;
   transform: translate(50%, -50%);
+}
+
+.invalid {
+  border: 1px solid rgba(255, 107, 107, 0.4);
+  background: rgba(255, 138, 138, 0.1);
 }
 
 .modal {
