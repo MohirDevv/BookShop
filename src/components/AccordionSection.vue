@@ -28,7 +28,7 @@
       <div class="faq-drawer__content-wrapper">
         <div class="faq-drawer__content">
           <p
-            class="m-auto max-w-[330px] xl:min-w-[800px] pl-[13px] xl:pl-[0px] xl:pt-[15px]"
+            class="m-auto max-w-[330px] 2xl:min-w-[800px] pl-[13px] 2xl:pl-[0px] 2xl:pt-[15px]"
           >
             Albatta, qo'lingizga kitob yetib kelgandan keyin to'lov qilish
             imkoniyati ham bor
@@ -40,7 +40,7 @@
     <div
       data-aos="fade-left"
       data-aos-duration="1500"
-      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px] xl:w-[700px]"
+      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px] 2xl:w-[700px]"
     >
       <input
         class="faq-drawer__trigger"
@@ -56,7 +56,7 @@
       <div class="faq-drawer__content-wrapper">
         <div class="faq-drawer__content">
           <p
-            class="m-auto max-w-[330px] xl:min-w-[800px] pl-[13px] xl:pl-[0px] xl:pt-[15px]"
+            class="m-auto max-w-[330px] 2xl:min-w-[800px] pl-[13px] 2xl:pl-[0px] 2xl:pt-[15px]"
           >
             Agar siz 2 ta kitob xarid qilsanigz 1 ta kitobni BEPUL qo’lga
             kiritasiz.
@@ -85,7 +85,7 @@
       <div class="faq-drawer__content-wrapper">
         <div class="faq-drawer__content">
           <p
-            class="m-auto max-w-[330px] xl:min-w-[800px] pl-[13px] xl:pl-[0px] xl:pt-[15px]"
+            class="m-auto max-w-[330px] 2xl:min-w-[800px] pl-[13px] 2xl:pl-[0px] 2xl:pt-[15px]"
           >
             Chegirmamiz joylar soni tugaguncha davom etadi.
           </p>
@@ -112,7 +112,7 @@
       <div class="faq-drawer__content-wrapper">
         <div class="faq-drawer__content">
           <p
-            class="m-auto max-w-[330px] xl:min-w-[750px] pl-[13px] xl:pl-[0px] xl:pt-[15px] xl:mr-[50px]"
+            class="m-auto max-w-[330px] 2xl:min-w-[750px] pl-[13px] 2xl:pl-[0px] 2xl:pt-[15px] 2xl:mr-[50px]"
           >
             Pochta orqali O’zbekistoning istalgan joyiga 1 kun ichida yetkazib
             beriladi. Kitob kelishi bilan sizga pochtadan telefon qilishadi va

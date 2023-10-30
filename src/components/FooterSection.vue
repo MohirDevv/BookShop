@@ -29,7 +29,7 @@
       class="payment max-w-[380px] 2xl:min-w-[900px] m-auto flex items-center flex-col p-[20px] bg-[#FFFFFF1A] rounded-[10px] backdrop-blur-[39px] 2xl:mt-[25px]"
     >
       <h1
-        class="text-white text-[24px] 2xl:text-[32px] font-bold xl:font-extrabold text-center"
+        class="text-white text-[24px] 2xl:text-[32px] font-bold 2xl:font-extrabold text-center"
       >
         Kursga to'lov qilish
       </h1>
@@ -91,7 +91,7 @@
       >
         <button class="text-white text-[14px] font-bold" @click="isSent = true">
           <a target="_blank" href="https://t.me/shaxnoza_siddiqova_manager"
-            >Chekni Yuborish</a
+            >CHEKNI YUBORISH</a
           >
         </button>
       </div>
@@ -137,7 +137,7 @@
         @click="sendData"
         class="btn hidden w-[700px] text-white text-[14px] font-bold px-[35px] py-[15px] 2xl:flex items-center justify-center bg-[#0ACCBA] border-[#7AE4D980] border-[3px] rounded-[5px] mb-[30px]"
       >
-        Yuborish
+      YUBORISH
       </button>
     </div>
     <div
@@ -178,7 +178,7 @@
         @click="sendData"
         class="btn w-[310px] text-white text-[14px] font-bold px-[35px] py-[21px] flex items-center justify-center bg-[#0ACCBA] border-[#7AE4D980] border-[3px] rounded-[5px]"
       >
-        Yuborish
+        YUBORISH
       </button>
     </div>
   </div>

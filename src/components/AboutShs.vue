@@ -22,7 +22,7 @@
       />
     </div>
 
-    <div class="cards py-[24px] overflow-x-hidden">
+    <div class="cards py-[24px] overflow-x-hidden pb-[50px]">
       <div
         data-aos="fade-right"
         class="card m-auto max-w-[380px] flex items-center mt-[10px] py-[8px] px-[10px] rounded-[10px] gap-[10px]"

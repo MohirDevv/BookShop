@@ -251,15 +251,16 @@
     </div>
 
     <div class="loading block 2xl:hidden m-auto max-w-[340px]">
+
       <div
-        data-aos="fade-right"
-        data-aos-duration="3000"
+        
         class="car flex items-center justify-start pt-[40px] pl-[15px] gap-2"
       >
         <p class="text-[#47474F] text-[14px] font-medium">
           O'zbekiston bo'ylab bepul yetkazib berish
         </p>
-        <img class="" src="../assets/icons/fast_delivery_dark.png" alt="#" />
+        <!-- <img class="" src="../assets/icons/animcar.svg" alt="#" data-aos="fade-right"
+        data-aos-duration="3000" /> -->
       </div>
       <img
         class="m-auto max-w-[340px] pb-[25px]"
@@ -272,7 +273,7 @@
       class="btn 2xl:hidden m-auto max-w-[350px] flex items-center justify-center px-[20px] py-[16px] rounded-[5px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mb-[50px]"
     >
       <button class="text-white text-[16px] font-bold" @click="isModal = true">
-        Sotib oling
+        SOTIB OLISH
       </button>
       <teleport to="body">
         <div

@@ -39,7 +39,7 @@
               <p
                 class="2xl:h-[80px] text-white text-[24px] 2xl:text-[50px] font-bold 2xl:leading-[90px] 2xl:lowercase"
               >
-                Kursi
+                kursi
               </p>
             </div>
           </div>
@@ -48,17 +48,18 @@
             class="screen_xl flex 2xl:justify-between 2xl:items-center flex-col 2xl:flex-row 2xl:gap-6"
           >
             <div
-              class="bonus flex items-center rounded-[10px] backdrop-blur-[12.5px] mt-[45px] mb-[12px]"
+              class="bonus  rounded-[10px] backdrop-blur-[12.5px] mt-[45px] mb-[12px] pb-[16px]
+               "
             >
-              <span
-                class="flex items-center justify-center h-[30px] 2xl:h-[50px] mb-[4px] text-[#00FFE6F2] text-[44px] 2xl:text-[80px] font-bold pl-[15px] 2xl:mb-0 pr-[10px]"
-                >+</span
-              >
-              <h1
-                class="text-[#00FFE6] text-[24px] 2xl:text-[50px] font-extrabold py-[12px] 2xl:pr-[230px]"
-              >
-                BONUS
-              </h1>
+              <div class="flex items-center justify-start pl-[10px]">
+                <span class="text-[40px] text-[#00FFE6] mb-[-8px] mt-[-2px]">+</span>
+                <h1
+                  class="text-[#00FFE6] text-[24px] 2xl:text-[50px] font-extrabold ml-[6px] mt-[7px] 2xl:pr-[230px]"
+                >BONUS</h1>
+              </div>
+              <span class="text-[15px] text-[#00FFE6] font-extrabold pl-[10px]">
+                  "YANGILANISH FURSATI YETDI" KITOBI
+              </span>
               <img
                 class="book w-[200px] h-[200px]"
                 src="../assets/images/desktop/book.png"
@@ -94,7 +95,7 @@
               <h1
                 class="h-[35px] 2xl:h-[50px] text-[#FFFFFFB2] text-[30px] 2xl:text-[50px] font-black line-through"
               >
-                4.980.000
+                3.700.000
               </h1>
               <p
                 class="text-[#FFFFFFB2] text-[15px] 2xl:text-[28px] font-medium"
@@ -125,7 +126,7 @@
                 @click="scrollToFooter"
                 class="text-white text-[20px] font-bold px-[60px] py-[16px]"
               >
-                <p class="w-[110px]">Sotib olish</p>
+                <p class="w-[110px]">SOTIB OLISH</p>
               </button>
             </div>
           </div>
@@ -138,18 +139,19 @@
             class="text-white text-[16px] font-bold"
             @click="scrollToFooter"
           >
-            Sotib oling
+            SOTIB OLISH
           </button>
         </div>
         <!--  -->
         <teleport to="body">
           <div
-            class="fixed inset-0 top-0 left-0 bottom-0 bg-[#00000099]"
+            class="fixed inset-0 top-0 left-0 bottom-0 bg-[#00000099] z-0"
             v-if="isOpen"
+            @click="isOpen = false"
           >
             <div
               data-aos="fade-down"
-              class="modal w-full h-full flex items-center justify-center flex-col"
+              class="modal w-full h-full flex items-center justify-center flex-col z-20"
               v-if="isOpen"
             >
               <button
@@ -170,7 +172,7 @@
                   <h2
                     class="block 2xl:hidden text-[#0ACCBA] text-[18px] font-extrabold text-center"
                   >
-                    Raqamingizni Qoldiring
+                    Raqamingizni qoldiring
                   </h2>
                   <h1
                     class="hidden 2xl:block text-black text-[50px] font-semibold px-[180px]"
@@ -215,7 +217,7 @@
                     class="text-white text-[16px] font-bold"
                     @click="sendData"
                   >
-                    Yuborish
+                    YUBORISH
                   </button>
                 </div>
               </div>
@@ -379,7 +381,7 @@ export default {
 .book {
   content: "";
   position: absolute;
-  top: 10%;
+  top: -10%;
   left: 10%;
   transform: translate(50%, -50%);
 }
