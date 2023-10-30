@@ -256,11 +256,12 @@
         
         class="car flex items-center justify-start pt-[40px] pl-[15px] gap-2"
       >
-        <p class="text-[#47474F] text-[14px] font-medium">
+      
+        <p class="text-[#47474F] text-[14px] font-medium animate-[drive]">
           O'zbekiston bo'ylab bepul yetkazib berish
         </p>
-        <!-- <img class="" src="../assets/icons/animcar.svg" alt="#" data-aos="fade-right"
-        data-aos-duration="3000" /> -->
+        <img class="carainm absolute" src="../assets/icons/animcar.svg" alt="#" />
+        
       </div>
       <img
         class="m-auto max-w-[340px] pb-[25px]"
@@ -495,4 +496,19 @@ export default {
   border: 1px solid rgba(255, 107, 107, 0.4);
   background: rgba(255, 138, 138, 0.1);
 }
+
+.carainm{
+  animation: drive 5s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes drive {
+    from {
+        left: calc(50% - 180px);
+    }
+    to {
+        left: 80%;
+    } 
+  }
 </style>
+

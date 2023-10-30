@@ -1,45 +1,14 @@
 <template>
-  <div
-    id="footer"
-    class="wrapper m-auto pb-[50px] pt-[50px] 2xl:pb-[150px]"
-    ref="footer"
-  >
+  <div id="footer" class="wrapper m-auto pb-[50px] pt-[50px] 2xl:pb-[150px]">
     <div
       data-aos="zoom-in-up"
-      class="success m-auto flex 2xl:hidden items-center justify-center gap-2 pb-[15px]"
-      v-if="isSent"
-    >
-      <img src="../assets/icons/success.svg" alt="#" />
-      <h1 class="text-white text-[16px] font-bold">
-        Muvaffaqiyatli yuborildi!
-      </h1>
-    </div>
-    <div
-      data-aos="zoom-in-up"
-      class="success hidden w-[900px] bg-white rounded-[10px] m-auto 2xl:flex items-center justify-center gap-2 py-[10px] mt-[50px]"
-      v-if="isSent"
-    >
-      <img src="../assets/icons/success_blue.svg" alt="#" />
-      <h1 class="text-[#0ACCBA] text-[16px] font-bold">
-        Muvaffaqiyatli yuborildi!
-      </h1>
-    </div>
-    <div
-      data-aos="zoom-in-up"
-      class="payment relative max-w-[380px] 2xl:min-w-[900px] m-auto flex items-center flex-col p-[20px] bg-[#FFFFFF1A] rounded-[10px] backdrop-blur-[39px] 2xl:mt-[25px]"
+      class="payment max-w-[380px] 2xl:min-w-[900px] m-auto flex items-center flex-col p-[20px] bg-[#FFFFFF1A] rounded-[10px] backdrop-blur-[39px] 2xl:mt-[25px]"
     >
       <h1
         class="text-white text-[24px] 2xl:text-[32px] font-bold 2xl:font-extrabold text-center"
       >
         Kursga to'lov qilish
       </h1>
-      <div
-        class="copied absolute w-[315px] rounded-[8px] bg-[#FFFFFF1A] flex items-center justify-center mt-[10px]"
-        data-aos="fade-down"
-        v-if="isCopied"
-      >
-        <h1 class="text-[16px] font-semibold text-[#0ACCBA]">Nusxa Olindi!</h1>
-      </div>
       <div
         class="card_num 2xl:w-[700px] flex items-center justify-between px-[15px] py-[12px] backdrop-blur-[8px] rounded-[10px] mt-[30px]"
       >
@@ -186,6 +155,22 @@
       </button>
     </div>
   </div>
+ 
+  <div
+    class="fixed w-[300px] rounded-[8px] bg-white z-10 px-5 py-2 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out"
+    :class="isCopied ? 'top-2.5' : '-top-full'"
+  >
+    <h1 class="text-[16px] font-semibold text-[#0ACCBA] text-center">Nusxa Olindi!</h1>
+  </div>
+  <div
+      class="fixed w-[300px] rounded-[8px] bg-[white] flex z-10 px-5 py-2 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out gap-3"
+      :class="isSent ? 'top-2.5' : '-top-full'"
+    >
+      <img src="../assets/icons/success_blue.svg" alt="#" />
+      <h1 class="text-[#0ACCBA] text-[16px] font-bold">
+        Muvaffaqiyatli yuborildi!
+      </h1>
+    </div>
 </template>
 
 <script>
@@ -214,7 +199,7 @@ export default {
       if ((this.isCopied = true)) {
         setTimeout(() => {
           this.isCopied = false;
-        }, 1000);
+        }, 3000);
       }
     },
     formatPhoneNumber() {
@@ -364,23 +349,5 @@ input::-webkit-inner-spin-button {
 .btn:active {
   border: 3px solid #7ae4d980;
   background: #009789;
-}
-
-.success {
-  transition: 1.5s;
-}
-
-.copied {
-  transition: 1s;
-  top: -13%;
-  left: 50;
-}
-
-@media screen and (min-width: 1536px) {
-  .copied {
-    transition: 1s;
-    top: -10%;
-    left: 50;
-  }
 }
 </style>
