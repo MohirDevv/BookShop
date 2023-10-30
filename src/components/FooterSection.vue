@@ -33,8 +33,11 @@
       >
         Kursga to'lov qilish
       </h1>
-      <div class="copied absolute w-[315px] rounded-[8px] bg-[#FFFFFF1A] flex items-center justify-center
-      mt-[10px]" data-aos="fade-down" v-if="isCopied">
+      <div
+        class="copied absolute w-[315px] rounded-[8px] bg-[#FFFFFF1A] flex items-center justify-center mt-[10px]"
+        data-aos="fade-down"
+        v-if="isCopied"
+      >
         <h1 class="text-[16px] font-semibold text-[#0ACCBA]">Nusxa Olindi!</h1>
       </div>
       <div
@@ -86,15 +89,16 @@
           </h1>
         </div>
       </div>
-      <div
-        class="btn 2xl:w-[700px] mt-[30px] px-[35px] py-[21px] 2xl:py-[15px] flex items-center justify-center bg-[#0ACCBA] border-[#7AE4D980] border-[3px] rounded-[5px]"
+      <button
+        class="text-white text-[14px] font-bold 2xl:w-[700px] mt-[30px] px-[35px] py-[21px] 2xl:py-[15px] flex items-center justify-center bg-[#0ACCBA] border-[#7AE4D980] border-[3px] rounded-[5px]"
       >
-        <button class="text-white text-[14px] font-bold">
-          <a target="_blank" href="https://t.me/shaxnoza_siddiqova_manager"
-            >CHEKNI YUBORISH</a
-          >
-        </button>
-      </div>
+        <a
+          class="w-full"
+          target="_blank"
+          href="https://t.me/shaxnoza_siddiqova_manager"
+          >CHEKNI YUBORISH</a
+        >
+      </button>
 
       <div class="last_info hidden 2xl:block">
         <h1
@@ -137,7 +141,7 @@
         @click="sendData"
         class="btn hidden w-[700px] text-white text-[14px] font-bold px-[35px] py-[15px] 2xl:flex items-center justify-center bg-[#0ACCBA] border-[#7AE4D980] border-[3px] rounded-[5px] mb-[30px]"
       >
-      YUBORISH
+        YUBORISH
       </button>
     </div>
     <div
@@ -206,12 +210,12 @@ export default {
       document.body.appendChild(storage);
       storage.select();
       document.execCommand("copy");
-      this.isCopied = true
-      if(this.isCopied = true) {
-      setTimeout(() => {
-        this.isCopied = false
-      }, 1000);
-    }
+      this.isCopied = true;
+      if ((this.isCopied = true)) {
+        setTimeout(() => {
+          this.isCopied = false;
+        }, 1000);
+      }
     },
     formatPhoneNumber() {
       const num = document.getElementById("input");
@@ -366,9 +370,17 @@ input::-webkit-inner-spin-button {
   transition: 1.5s;
 }
 
-.copied{
+.copied {
   transition: 1s;
-  top: -10%;
+  top: -13%;
   left: 50;
+}
+
+@media screen and (min-width: 1536px) {
+  .copied {
+    transition: 1s;
+    top: -10%;
+    left: 50;
+  }
 }
 </style>
