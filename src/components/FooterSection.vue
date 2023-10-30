@@ -26,14 +26,14 @@
     </div>
     <div
       data-aos="zoom-in-up"
-      class="payment max-w-[380px] 2xl:min-w-[900px] m-auto flex items-center flex-col p-[20px] bg-[#FFFFFF1A] rounded-[10px] backdrop-blur-[39px] 2xl:mt-[25px]"
+      class="payment relative max-w-[380px] 2xl:min-w-[900px] m-auto flex items-center flex-col p-[20px] bg-[#FFFFFF1A] rounded-[10px] backdrop-blur-[39px] 2xl:mt-[25px]"
     >
       <h1
         class="text-white text-[24px] 2xl:text-[32px] font-bold 2xl:font-extrabold text-center"
       >
         Kursga to'lov qilish
       </h1>
-      <div class="copied w-[315px] 2xl:min-w-[700px] rounded-[8px] bg-[#FFFFFF1A] flex items-center justify-center
+      <div class="copied absolute w-[315px] rounded-[8px] bg-[#FFFFFF1A] flex items-center justify-center
       mt-[10px]" data-aos="fade-down" v-if="isCopied">
         <h1 class="text-[16px] font-semibold text-[#0ACCBA]">Nusxa Olindi!</h1>
       </div>
@@ -89,7 +89,7 @@
       <div
         class="btn 2xl:w-[700px] mt-[30px] px-[35px] py-[21px] 2xl:py-[15px] flex items-center justify-center bg-[#0ACCBA] border-[#7AE4D980] border-[3px] rounded-[5px]"
       >
-        <button class="text-white text-[14px] font-bold" @click="isSent = true">
+        <button class="text-white text-[14px] font-bold">
           <a target="_blank" href="https://t.me/shaxnoza_siddiqova_manager"
             >CHEKNI YUBORISH</a
           >
@@ -207,6 +207,11 @@ export default {
       storage.select();
       document.execCommand("copy");
       this.isCopied = true
+      if(this.isCopied = true) {
+      setTimeout(() => {
+        this.isCopied = false
+      }, 1000);
+    }
     },
     formatPhoneNumber() {
       const num = document.getElementById("input");
@@ -318,14 +323,6 @@ export default {
       }
     },
   },
-  // mounted() {
-  //   if(this.isCopied = true) {
-  //     setTimeout(() => {
-  //       this.isCopied = false
-  //       textarea.classList.add('none')
-  //     }, 1000);
-  //   }
-  // },
 };
 </script>
 
@@ -371,5 +368,7 @@ input::-webkit-inner-spin-button {
 
 .copied{
   transition: 1s;
+  top: -10%;
+  left: 50;
 }
 </style>

@@ -121,12 +121,13 @@
 
             <div
               class="button hidden bg-[#0ACCBA] border-[#CFFFFA80] border-[3px] rounded-[5px] 2xl:flex items-center justify-center mr-[11px]"
+              @click="scrollToFooter"
             >
               <button
                 @click="scrollToFooter"
                 class="text-white text-[20px] font-bold px-[60px] py-[16px]"
               >
-                <p class="w-[110px]">SOTIB OLISH</p>
+                <p class="w-[130px]">SOTIB OLISH</p>
               </button>
             </div>
           </div>
@@ -134,6 +135,7 @@
 
         <div
           class="btn m-auto 2xl:hidden max-w-[380px] flex items-center justify-center mt-[24px] py-[16px] rounded-[5px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA]"
+          @click="scrollToFooter"
         >
           <button
             class="text-white text-[16px] font-bold"
@@ -147,7 +149,6 @@
           <div
             class="fixed inset-0 top-0 left-0 bottom-0 bg-[#00000099] z-0"
             v-if="isOpen"
-            @click="isOpen = false"
           >
             <div
               data-aos="fade-down"
