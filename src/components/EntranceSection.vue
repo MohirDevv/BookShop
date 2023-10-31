@@ -48,17 +48,20 @@
             class="screen_xl flex 2xl:justify-between 2xl:items-center flex-col 2xl:flex-row 2xl:gap-6"
           >
             <div
-              class="bonus  rounded-[10px] backdrop-blur-[12.5px] mt-[45px] mb-[12px] pb-[16px]
-               "
+              class="bonus rounded-[10px] backdrop-blur-[12.5px] mt-[45px] mb-[12px] pb-[16px]"
             >
               <div class="flex items-center justify-start pl-[10px]">
-                <span class="text-[40px] text-[#00FFE6] mb-[-8px] mt-[-2px]">+</span>
+                <span class="text-[40px] text-[#00FFE6] mb-[-8px] mt-[-2px]"
+                  >+</span
+                >
                 <h1
                   class="text-[#00FFE6] text-[24px] 2xl:text-[50px] font-extrabold ml-[6px] mt-[7px] 2xl:pr-[230px]"
-                >BONUS</h1>
+                >
+                  BONUS
+                </h1>
               </div>
               <span class="text-[15px] text-[#00FFE6] font-extrabold pl-[10px]">
-                  "YANGILANISH FURSATI YETDI" KITOBI
+                "YANGILANISH FURSATI YETDI" KITOBI
               </span>
               <img
                 class="book w-[200px] h-[200px]"
@@ -146,13 +149,13 @@
         </div>
         <!--  -->
         <teleport to="body">
-          <div
-            class="fixed inset-0 top-0 left-0 bottom-0 bg-[#00000099] z-0"
-            v-if="isOpen"
-          >
+          <div class="" v-if="isOpen">
             <div
-              data-aos="fade-down"
-              class="modal w-full h-full flex items-center justify-center flex-col z-20"
+              @click="isOpen = false"
+              class="fixed inset-0 top-0 left-0 bottom-0 bg-[#00000099] z-[1]"
+            ></div>
+            <div
+              class="fixed modal top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center flex-col z-[2]"
               v-if="isOpen"
             >
               <button
@@ -394,9 +397,6 @@ export default {
 
 .modal {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
   transition: 2s;
 }
 

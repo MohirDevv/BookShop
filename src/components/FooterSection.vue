@@ -59,10 +59,10 @@
         </div>
       </div>
       <button
-        class="text-white text-[14px] font-bold 2xl:w-[700px] mt-[30px] px-[35px] py-[21px] 2xl:py-[15px] flex items-center justify-center bg-[#0ACCBA] border-[#7AE4D980] border-[3px] rounded-[5px]"
+        class=""
       >
         <a
-          class="w-full"
+          class="text-white text-[14px] font-bold 2xl:w-[700px] mt-[30px] px-[35px] py-[21px] 2xl:py-[15px] flex items-center justify-center bg-[#0ACCBA] border-[#7AE4D980] border-[3px] rounded-[5px]"
           target="_blank"
           href="https://t.me/shaxnoza_siddiqova_manager"
           >CHEKNI YUBORISH</a

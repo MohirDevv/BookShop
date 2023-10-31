@@ -19,11 +19,11 @@
         class="faq-drawer__trigger"
         id="faq-drawer"
         type="checkbox"
-        name="name1"
+        name="name"
         checked
-      /><label class="faq-drawer__title" for="faq-drawer" name="name1"
-        >Kitob olganimdan keyin <br class="block 2xl:hidden" /> to'lov 
-        qilsam bo'ladimi?</label
+      /><label class="faq-drawer__title" for="faq-drawer"
+        >Kitob olganimdan keyin <br class="block 2xl:hidden" />
+        to'lov qilsam bo'ladimi?</label
       >
       <div class="faq-drawer__content-wrapper">
         <div class="faq-drawer__content">
@@ -46,11 +46,10 @@
         class="faq-drawer__trigger"
         id="faq-drawer-2"
         type="checkbox"
-        name="name1"
+        name="name"
       /><label
         class="faq-drawer__title border-[#DEDEE4] border-t-[2px]"
         for="faq-drawer-2"
-        name="name1"
         >Bir nechta kitobdan xarid qilsam chegirma bormi?</label
       >
       <div class="faq-drawer__content-wrapper">
@@ -74,13 +73,12 @@
         class="faq-drawer__trigger"
         id="faq-drawer-3"
         type="checkbox"
-        name="name1"
+        name="name"
       /><label
         class="faq-drawer__title border-[#DEDEE4] border-t-[2px]"
         for="faq-drawer-3"
-        name="name1"
         >Chegirma muddati qancha <br class="block 2xl:hidden" />
-         vaqt davom etadi?</label
+        vaqt davom etadi?</label
       >
       <div class="faq-drawer__content-wrapper">
         <div class="faq-drawer__content">
@@ -102,11 +100,10 @@
         class="faq-drawer__trigger"
         id="faq-drawer-4"
         type="checkbox"
-        name="name1"
       /><label
         class="faq-drawer__title border-[#DEDEE4] border-t-[2px]"
         for="faq-drawer-4"
-        name="name1"
+        name="name"
         >Kitob qanday yetkazib beriladi?</label
       >
       <div class="faq-drawer__content-wrapper">
