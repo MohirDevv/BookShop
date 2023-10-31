@@ -18,7 +18,7 @@
       <input
         class="faq-drawer__trigger"
         id="faq-drawer"
-        type="checkbox"
+        type="radio"
         name="name"
         checked
       /><label class="faq-drawer__title" for="faq-drawer"
@@ -45,7 +45,7 @@
       <input
         class="faq-drawer__trigger"
         id="faq-drawer-2"
-        type="checkbox"
+        type="radio"
         name="name"
       /><label
         class="faq-drawer__title border-[#DEDEE4] border-t-[2px]"
@@ -72,7 +72,7 @@
       <input
         class="faq-drawer__trigger"
         id="faq-drawer-3"
-        type="checkbox"
+        type="radio"
         name="name"
       /><label
         class="faq-drawer__title border-[#DEDEE4] border-t-[2px]"
@@ -99,11 +99,11 @@
       <input
         class="faq-drawer__trigger"
         id="faq-drawer-4"
-        type="checkbox"
+        type="radio"
+        name="name"
       /><label
         class="faq-drawer__title border-[#DEDEE4] border-t-[2px]"
         for="faq-drawer-4"
-        name="name"
         >Kitob qanday yetkazib beriladi?</label
       >
       <div class="faq-drawer__content-wrapper">
@@ -131,7 +131,7 @@
   line-height: 1.4em;
   max-height: 0px;
   overflow: hidden;
-  transition: 0.25s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .faq-drawer__title {
@@ -143,7 +143,7 @@
   padding: 30px 5px 0 0;
   position: relative;
   margin-bottom: 0;
-  transition: all 0.25s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .faq-drawer__title::after {
@@ -160,7 +160,7 @@
   right: 0px;
   top: -10px;
   /* transform: rotate(135deg); */
-  transition: 0.35s ease-in-out;
+  transition: 0.5s ease-in-out;
   width: 25px;
   height: 25px;
 }
@@ -178,14 +178,14 @@
 
 .faq-drawer__trigger:checked + .faq-drawer__title::after {
   transform: rotate(-180deg);
-  transition: 0.25s ease-in-out;
+  transition: 0.5s ease-in-out;
   background-image: url("../assets/icons/clear-circle.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-input[type="checkbox"] {
+input[type="radio"] {
   display: none;
 }
 
@@ -199,7 +199,7 @@ input[type="checkbox"] {
     padding: 30px 0 0 0;
     position: relative;
     margin-bottom: 0;
-    transition: all 0.25s ease-out;
+    transition: all 0.5s ease-out;
   }
 
   .faq-drawer__title::after {
