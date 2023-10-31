@@ -39,6 +39,9 @@ export default {
 </script>
 
 <style>
+body{
+  overflow-x: hidden;
+}
 textarea {
   position: absolute;
   z-index: -9999;

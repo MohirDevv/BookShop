@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container pt-[50px] 2xl:py-[150px] 2xl:px-[130px] 2xl:mt-[150px] m-auto bg-white 2xl:bg-[#F5F9FA]"
+    class="container w-[340px] 2xl:w-full pt-[50px] 2xl:py-[150px] 2xl:px-[130px] 2xl:mt-[150px] m-auto bg-white 2xl:bg-[#F5F9FA]"
   >
     <div
       data-aos="fade-up"
@@ -162,18 +162,21 @@
               <p class="w-[130px]">Buyurtma berish</p>
             </button>
           </div>
-          <div class="car flex flex-col">
+          <div class="car w-[320px] flex flex-col overflow-x-hidden">
             <div
-              class="div flex items-center"
-              data-aos="fade-right"
-              data-aos-duration="3000"
+              class="div relative flex items-center"
             >
               <p class="h-[20px] text-[#47474F] text-[14px] font-medium">
                 O'zbekiston bo'ylab bepul yetkazib berish
               </p>
               <img
-                class="pl-[5px]"
-                src="../assets/icons/fast_delivery_dark.png"
+                class="carainm2 absolute top-[10%]"
+                src="../assets/icons/animcar.svg"
+                alt="#"
+              />
+              <img
+                class="pl-[10px] w-[40px] h-[40px]"
+                src="../assets/icons/fast_delivery_dark.svg"
                 alt="#"
               />
             </div>
@@ -250,18 +253,23 @@
       </div>
     </div>
 
-    <div class="loading block 2xl:hidden m-auto max-w-[340px]">
-
+    <div class="loading block 2xl:hidden m-auto max-w-[340px]" ref="target">
       <div
-        
-        class="car flex items-center justify-start pt-[40px] pl-[15px] gap-2"
+        class="car relative w-[340px] flex items-center justify-start pt-[40px] pl-[15px] gap-2"
       >
-      
         <p class="text-[#47474F] text-[14px] font-medium animate-[drive]">
           O'zbekiston bo'ylab bepul yetkazib berish
         </p>
-        <img class="carainm absolute" src="../assets/icons/animcar.svg" alt="#" />
-        
+        <img
+          class="w-[30px] h-[30px]"
+          src="../assets/icons/fast_delivery_dark.svg"
+          alt="#"
+        />
+        <img
+          class="carainm absolute top-[50%]"
+          src="../assets/icons/animcar.svg"
+          alt="#"
+        />
       </div>
       <img
         class="m-auto max-w-[340px] pb-[25px]"
@@ -360,6 +368,8 @@
 
 <script>
 import axios from "axios";
+import { ref } from "vue";
+import { useElementVisibility } from "@vueuse/core";
 
 export default {
   data() {
@@ -479,6 +489,7 @@ export default {
       }
     },
   },
+  watch: {},
 };
 </script>
 
@@ -497,18 +508,35 @@ export default {
   background: rgba(255, 138, 138, 0.1);
 }
 
-.carainm{
+.carainm {
   animation: drive 5s linear;
+  animation-fill-mode: forwards;
+}
+.carainm2 {
+  animation: drive2 5s linear;
   animation-fill-mode: forwards;
 }
 
 @keyframes drive {
-    from {
-        left: calc(50% - 180px);
-    }
-    to {
-        left: 80%;
-    } 
+  0% {
+    left: 5%;
   }
+  50% {
+  }
+  100% {
+    left: 84.5%;
+    display: none;
+  }
+}
+@keyframes drive2 {
+  0% {
+    left: 0%;
+  }
+  50% {
+  }
+  100% {
+    left: 86.5%;
+    display: none;
+  }
+}
 </style>
-

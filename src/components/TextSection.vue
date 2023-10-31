@@ -1,5 +1,5 @@
 <template>
-  <div class="container m-auto">
+  <div class="container m-auto ">
     <div
       class="entrance 2xl:hidden flex items-center justify-center flex-col gap-[12px]"
     >
