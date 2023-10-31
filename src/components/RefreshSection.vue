@@ -171,7 +171,7 @@
                 id="carIcon"
                 :class="{ carainm2: isVisible }"
                 class="absolute top-[10%]"
-                src="../assets/icons/animcar.svg"
+                src="../assets/icons/animcar1.svg"
                 alt="#"
               />
               <img
@@ -247,7 +247,7 @@
         <div class="subtitl">
           <h1 class="text-[#009789] text-[18px] font-medium">7-kun</h1>
           <p class="text-[#47474F] text-[14px] font-medium">
-            Rivojlanisshda bardavom bo'lish
+            Rivojlanishda bardavom bo'lish
           </p>
         </div>
       </div>
