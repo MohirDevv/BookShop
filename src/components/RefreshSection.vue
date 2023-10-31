@@ -163,14 +163,14 @@
             </button>
           </div>
           <div class="car w-[320px] flex flex-col overflow-x-hidden">
-            <div
-              class="div relative flex items-center"
-            >
+            <div class="div relative flex items-center">
               <p class="h-[20px] text-[#47474F] text-[14px] font-medium">
                 O'zbekiston bo'ylab bepul yetkazib berish
               </p>
               <img
-                class="carainm2 absolute top-[10%]"
+                id="carIcon"
+                :class="{ carainm2: isVisible }"
+                class="absolute top-[10%]"
                 src="../assets/icons/animcar.svg"
                 alt="#"
               />
@@ -253,7 +253,10 @@
       </div>
     </div>
 
-    <div class="loading block 2xl:hidden m-auto max-w-[340px]" ref="target">
+    <div
+      class="loading block 2xl:hidden m-auto max-w-[340px] overflow-x-hidden"
+      ref="target"
+    >
       <div
         class="car relative w-[340px] flex items-center justify-start pt-[40px] pl-[15px] gap-2"
       >
@@ -266,7 +269,9 @@
           alt="#"
         />
         <img
-          class="carainm absolute top-[50%]"
+          id="carIcon1"
+          :class="{ carainm: isVisible }"
+          class="absolute top-[50%]"
           src="../assets/icons/animcar.svg"
           alt="#"
         />
@@ -368,8 +373,6 @@
 
 <script>
 import axios from "axios";
-import { ref } from "vue";
-import { useElementVisibility } from "@vueuse/core";
 
 export default {
   data() {
@@ -380,10 +383,47 @@ export default {
       name: null,
       is__Valid: null,
       valid__Name: null,
+      isVisible: false,
     };
   },
-
+  mounted() {
+    this.isVisible = this.isElementInViewport();
+    document.addEventListener("scroll", () => {
+      this.isVisible = this.isElementInViewport();
+    });
+  },
   methods: {
+    isElementInViewport() {
+      const el = document.getElementById("carIcon");
+      const el1 = document.getElementById("carIcon1");
+      if (!el || !el1) return;
+
+      var rect = el.getBoundingClientRect();
+      var rect1 = el1.getBoundingClientRect();
+
+      return (
+        rect.top >= 0 &&
+        rect1.top >= 0 &&
+        rect.left >= 0 &&
+        rect1.left >= 0 &&
+        rect.bottom <=
+          (window.innerHeight ||
+            document.documentElement
+              .clientHeight) /* or $(window).height() */ &&
+              rect1.bottom <=
+          (window.innerHeight ||
+            document.documentElement
+              .$(window).height()) &&
+        rect.right <=
+          (window.innerWidth ||
+            document.documentElement.clientWidth) &&
+            rect1.right <=
+          (window.innerWidth ||
+            document.documentElement.$(window).width()  )
+
+
+      );
+    },
     scrollToFooter() {
       const footerElement = document.getElementById("footer");
       if (footerElement) {
