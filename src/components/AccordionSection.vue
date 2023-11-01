@@ -122,6 +122,10 @@
 </template>
 
 <style scoped>
+.container {
+  width: 100%;
+  max-width: 100%;
+}
 .faq-drawer {
   margin-bottom: 30px;
 }

@@ -11,8 +11,8 @@
       </h1>
       <div
         class="card_num xl:w-[700px] flex items-center justify-between px-[15px] py-[12px] backdrop-blur-[8px] rounded-[10px] mt-[30px]"
-      >
-        <div class="part_one flex items-center">
+        @click="copyTextNoInput">
+        <div class="part_one flex items-center" >
           <img src="../assets/icons/card.svg" alt="#" />
           <div class="subtitle pl-[10px] pr-[50px]">
             <h2 class="text-white text-[12px] font-medium">
@@ -59,10 +59,10 @@
         </div>
       </div>
       <button
-        class=""
+        class=" mt-[30px]"
       >
         <a
-          class="text-white text-[14px] font-bold xl:w-[700px] mt-[30px] px-[35px] py-[21px] xl:py-[15px] flex items-center justify-center bg-[#0ACCBA] border-[#7AE4D980] border-[3px] rounded-[5px]"
+          class="btn text-white text-[14px] font-bold xl:w-[700px] px-[35px] py-[21px] xl:py-[15px] flex items-center justify-center bg-[#0ACCBA] border-[#7AE4D980] border-[3px] rounded-[5px]"
           target="_blank"
           href="https://t.me/shaxnoza_siddiqova_manager"
           >CHEKNI YUBORISH</a

@@ -1,7 +1,7 @@
 <template>
   <div class="main block container m-auto xl:flex">
     <div
-      class="wrapper relative xl:w-[65%] bg-[url('/src/assets/images/desktop/main_bg.png')] bg-center bg-cover bg-no-repeat py-[50px] px-[16px] xl:border-[#5F807D] xl:border-r-[20px]"
+      class="wrapper relative xl:w-[100%] bg-[url('/src/assets/images/desktop/main_bg.png')] bg-center bg-cover bg-no-repeat py-[50px] px-[16px] xl:border-[#5F807D] xl:border-r-[20px]"
     >
       <div
         class="subwrapper 2xl:pl-[50px]"
@@ -9,7 +9,7 @@
         data-aos-duration="1000"
       >
         <div
-          class="info m-auto max-w-[380px] xl:max-w-[900px] bg-[#73B2AC59] border-[1px] border-[#FFFFFF80] backdrop-blur-[20px] rounded-[15px] px-[18px] xl:px-[41px] py-[16px] xl:py-[41px]"
+          class="info m-auto max-w-[380px] xl:max-w-[780px] 2xl:max-w-[870px] bg-[#73B2AC59] border-[1px] border-[#FFFFFF80] backdrop-blur-[20px] rounded-[15px] px-[18px] xl:px-[41px] py-[16px] xl:py-[41px]"
         >
           <div
             class="mainEntrance flex justify-start items-center gap-1 xl:gap-3"
@@ -89,10 +89,10 @@
         </div>
 
         <div
-          class="discount m-auto max-w-[380px] xl:max-w-[930px] mt-[10px] bg-[#73B2AC59] border-[#FFFFFF80] border-[1px] rounded-[15px] backdrop-blur-[20px] px-[28px] xl:px-[30px] xl:py-[20px]"
+          class="discount m-auto max-w-[380px] xl:max-w-[870px] mt-[10px] bg-[#73B2AC59] border-[#FFFFFF80] border-[1px] rounded-[15px] backdrop-blur-[20px] px-[28px] xl:px-[30px] xl:py-[20px]"
         >
           <div
-            class="pricelist flex items-center justify-between m-auto max-w-[380px] xl:max-w-[890px] xl:flex xl:items-center xl:justify-normal"
+            class="pricelist flex items-center justify-between m-auto max-w-[380px] xl:max-w-[890px] xl:flex xl:items-center xl:justify-normal 2xl:justify-between"
           >
             <div class="oldprice flex flex-col pb-1">
               <h1
@@ -137,7 +137,7 @@
         </div>
 
         <div
-          class="btn m-auto xl:hidden max-w-[380px] flex items-center justify-center mt-[24px] py-[16px] rounded-[5px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA]"
+          class="button m-auto xl:hidden max-w-[380px] flex items-center justify-center mt-[24px] py-[16px] rounded-[5px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA]"
           @click="scrollToFooter"
         >
           <button
@@ -231,7 +231,7 @@
       </div>
     </div>
     <div
-      class="Lwrapper hidden px-[10px] w-full bg-[url('/src/assets/images/desktop/tube_bg.png')] bg-center bg-cover bg-no-repeat xl:flex items-center justify-center"
+      class="Lwrapper hidden px-[10px] w-[60%] bg-[url('/src/assets/images/desktop/tube_bg.png')] bg-center bg-cover bg-no-repeat xl:flex items-center justify-center"
     >
       <div class="tubevideo" data-aos="fade-down" data-aos-duration="1000">
         <iframe
@@ -380,6 +380,7 @@ export default {
 <style scoped>
 .container {
   width: 100%;
+  max-width: 100%;
 }
 
 .book {
@@ -411,11 +412,11 @@ export default {
     opacity: 1;
   }
 }
-.btn:hover {
+.button:hover {
   border: 3px solid #00ffe6;
   background: #0accba;
 }
-.btn:active {
+.button:active {
   border: 3px solid #7ae4d980;
   background: #009789;
 }
@@ -440,19 +441,17 @@ export default {
     width: 420px;
     height: 350px;
   }
-
-  .Lwrapper {
-    width: 100%;
-  }
 }
 @media screen and (min-width: 1536px) {
   iframe {
     width: 520px;
     height: 390px;
   }
-
-  .Lwrapper {
-    width: 100%;
+}
+@media screen and (min-width: 1980px) {
+  iframe {
+    width: 650px;
+    height: 390px;
   }
 }
 </style>

@@ -152,7 +152,7 @@
             alt="#"
           />
           <p class="w-[380px] text-white text-[14px] font-normal">
-            O'zbekistonda yagona Mentorlik klubi asoschisiasd asd
+            O'zbekistonda yagona Mentorlik klubi asoschisi
           </p>
         </div>
         <div
@@ -283,6 +283,10 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  width: 100%;
+  max-width: 100%;
+}
 .shS {
   content: "";
   position: absolute;

@@ -43,7 +43,7 @@
       </div>
 
       <div
-        class="slice_images m-auto hidden xl:flex items-center justify-center gap-[2.5px]"
+        class="slice_images hidden xl:flex items-center justify-center gap-[2.5px] pr-[30px]"
       >
         <img
           data-aos="fade-up"
@@ -62,7 +62,7 @@
       </div>
       <div
         data-aos="zoom-out"
-        class="textSection hidden xl:flex items-center flex-col 2xl:pl-[50px] xl:mr-[20px]"
+        class="textSection hidden xl:flex xl:items-center xl:justify-center flex-col 2xl:pl-[50px] xl:mr-[20px]"
       >
         <div class="mainent">
           <h1 class="text-[#152221] text-[50px] font-bold">
@@ -150,14 +150,14 @@
           </div>
         </div>
         <div
-          class="ending flex items-center justify-start pt-[50px] 2xl:ml-[30px]"
+          class="ending flex items-center justify-center pt-[50px] 2xl:ml-[30px]"
         >
           <div
-            class="btn flex items-center justify-start px-[30px] py-[16px] rounded-[5px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mr-[30px]"
-          >
+            class="btn flex items-center justify-center px-[30px] py-[16px] rounded-[5px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mr-[30px]"
+            @click="isModal = true">
             <button
               class="text-white text-[16px] font-bold"
-              @click="isModal = true"
+              
             >
               <p class="w-[130px]">Buyurtma berish</p>
             </button>
@@ -283,10 +283,10 @@
       />
     </div>
 
-    <div
+    <div 
       class="btn xl:hidden m-auto max-w-[350px] flex items-center justify-center px-[20px] py-[16px] rounded-[5px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mb-[50px]"
-    >
-      <button class="text-white text-[16px] font-bold" @click="isModal = true">
+      @click="isModal = true">
+      <button class="text-white text-[16px] font-bold">
         SOTIB OLISH
       </button>
       <teleport to="body">
@@ -558,6 +558,10 @@ export default {
 .carainm2 {
   animation: drive2 5s linear;
   animation-fill-mode: forwards;
+}
+.container{
+  width: 100%;
+  max-width: 100%;
 }
 
 @keyframes drive {
