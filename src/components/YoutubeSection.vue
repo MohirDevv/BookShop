@@ -1,5 +1,5 @@
 <template>
-  <div class="container block 2xl:hidden m-auto bg-white my-[55px]">
+  <div class="container block xl:hidden m-auto bg-white my-[55px]">
     <div class="wrapper" data-aos="fade-up">
       <div class="tubevideo">
         <iframe

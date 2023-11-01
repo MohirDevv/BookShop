@@ -1,10 +1,10 @@
 <template>
   <div
-    class="container w-[340px] 2xl:w-full pt-[50px] 2xl:py-[150px] 2xl:px-[130px] 2xl:mt-[150px] m-auto bg-white 2xl:bg-[#F5F9FA]"
+    class="container w-[340px] xl:w-full pt-[50px] xl:py-[150px] xl:px-[130px] xl:mt-[150px] m-auto bg-white xl:bg-[#F5F9FA]"
   >
     <div
       data-aos="fade-up"
-      class="title flex 2xl:hidden items-center justify-center flex-col gap-1"
+      class="title flex xl:hidden items-center justify-center flex-col gap-1"
     >
       <h1 class="text-[#152221] text-[28px] font-bold text-center">
         Yangilanish fursati
@@ -20,13 +20,13 @@
     </div>
 
     <div
-      class="subtitle block 2xl:hidden pt-[12px] pb-[24px] m-auto w-[300px] text-[#47474F] text-[14px] font-normal text-center"
+      class="subtitle block xl:hidden pt-[12px] pb-[24px] m-auto w-[300px] text-[#47474F] text-[14px] font-normal text-center"
     >
       Kitobdagi 7 ta mashg'ulot orqali butkul boshqa insonga aylaning
     </div>
-    <div class="2xlmain m-auto flex items-center justify-center">
+    <div class="xlmain m-auto flex items-center justify-center">
       <div
-        class="slice_images 2xl:hidden flex items-center justify-center gap-[2.5px]"
+        class="slice_images xl:hidden flex items-center justify-center gap-[2.5px]"
       >
         <img
           src="../assets/images/mobile/book_one.png"
@@ -43,7 +43,7 @@
       </div>
 
       <div
-        class="slice_images m-auto hidden 2xl:flex items-center justify-center gap-[2.5px]"
+        class="slice_images m-auto hidden xl:flex items-center justify-center gap-[2.5px]"
       >
         <img
           data-aos="fade-up"
@@ -62,7 +62,7 @@
       </div>
       <div
         data-aos="zoom-out"
-        class="textSection hidden 2xl:flex items-center flex-col pl-[50px]"
+        class="textSection hidden xl:flex items-center flex-col pl-[50px]"
       >
         <div class="mainent">
           <h1 class="text-[#152221] text-[50px] font-bold">
@@ -192,7 +192,7 @@
     </div>
 
     <div
-      class="seven_tasks gap-2 max-w-[360px] flex items-start justify-center flex-col m-auto pt-[28px] 2xl:hidden"
+      class="seven_tasks gap-2 max-w-[360px] flex items-start justify-center flex-col m-auto pt-[28px] xl:hidden"
     >
       <div class="task flex gap-2" data-aos="fade-up">
         <img src="/src/assets/icons/trash.png" alt="#" />
@@ -254,7 +254,7 @@
     </div>
 
     <div
-      class="loading block 2xl:hidden m-auto max-w-[340px] overflow-x-hidden"
+      class="loading block xl:hidden m-auto max-w-[340px] overflow-x-hidden"
       ref="target"
     >
       <div
@@ -284,7 +284,7 @@
     </div>
 
     <div
-      class="btn 2xl:hidden m-auto max-w-[350px] flex items-center justify-center px-[20px] py-[16px] rounded-[5px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mb-[50px]"
+      class="btn xl:hidden m-auto max-w-[350px] flex items-center justify-center px-[20px] py-[16px] rounded-[5px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mb-[50px]"
     >
       <button class="text-white text-[16px] font-bold" @click="isModal = true">
         SOTIB OLISH
@@ -300,7 +300,7 @@
               v-if="isModal"
             >
               <button
-                class="w-[390px] 2xl:w-[700px] flex items-center justify-end"
+                class="w-[390px] xl:w-[700px] flex items-center justify-end"
                 @click="isModal = false"
               >
                 <img src="../assets/icons/remove.png" alt="#" />
@@ -310,17 +310,17 @@
               >
                 <div class="text text-center pt-[24px] pb-[24px]">
                   <h3
-                    class="block 2xl:hidden text-black text-[12px] font-normal"
+                    class="block xl:hidden text-black text-[12px] font-normal"
                   >
                     Menejerdan ma’lumot olish uchun
                   </h3>
                   <h2
-                    class="block 2xl:hidden text-[#0ACCBA] text-[18px] font-extrabold text-center"
+                    class="block xl:hidden text-[#0ACCBA] text-[18px] font-extrabold text-center"
                   >
                     Raqamingizni qoldiring
                   </h2>
                   <h1
-                    class="hidden 2xl:block text-black text-[50px] font-semibold px-[180px]"
+                    class="hidden xl:block text-black text-[50px] font-semibold px-[180px]"
                   >
                     Ma'lumot olish
                   </h1>
@@ -339,7 +339,7 @@
 
                 <input
                   id="validator_name"
-                  class="w-[350px] 2xl:w-[600px] border-[1px] focus:border-[#C6C6C6] border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[12px]"
+                  class="w-[350px] xl:w-[600px] border-[1px] focus:border-[#C6C6C6] border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[12px]"
                   type="text"
                   placeholder="Ismingiz"
                   v-model="name"
@@ -347,7 +347,7 @@
                 />
                 <input
                   id="validator_num"
-                  class="w-[350px] 2xl:w-[600px] border-[1px] focus:border-[#C6C6C6] border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[24px]"
+                  class="w-[350px] xl:w-[600px] border-[1px] focus:border-[#C6C6C6] border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[24px]"
                   type="tel"
                   placeholder="Telefon raqamingiz"
                   v-model="phone"
@@ -356,7 +356,7 @@
                 />
 
                 <div
-                  class="btn w-[350px] 2xl:w-[600px] flex items-center justify-center py-[16px] rounded-[8px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mb-[24px] 2xl:mb-[50px]"
+                  class="btn w-[350px] xl:w-[600px] flex items-center justify-center py-[16px] rounded-[8px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mb-[24px] xl:mb-[50px]"
                 >
                   <button
                     class="text-white text-[16px] font-bold"

@@ -1,9 +1,9 @@
 <template>
   <div
-    class="container m-auto pt-[50px] 2xl:pt-[150px] bg-white overflow-x-hidden"
+    class="container m-auto pt-[50px] xl:pt-[150px] bg-white overflow-x-hidden"
   >
     <h1
-      class="m-auto max-w-[300px] 2xl:max-w-[690px] text-[28px] 2xl:text-[50px] text-center font-bold text-[#152221] pb-[24px]"
+      class="m-auto max-w-[300px] xl:max-w-[690px] text-[28px] xl:text-[50px] text-center font-bold text-[#152221] pb-[24px]"
     >
       Tez-tez so'raladigan savollar
     </h1>
@@ -22,13 +22,13 @@
         name="name"
         checked
       /><label class="faq-drawer__title" for="faq-drawer"
-        >Kitob olganimdan keyin <br class="block 2xl:hidden" />
+        >Kitob olganimdan keyin <br class="block xl:hidden" />
         to'lov qilsam bo'ladimi?</label
       >
       <div class="faq-drawer__content-wrapper">
         <div class="faq-drawer__content">
           <p
-            class="m-auto max-w-[330px] 2xl:min-w-[800px] pl-[13px] 2xl:pl-[0px] 2xl:pt-[15px]"
+            class="m-auto max-w-[330px] xl:min-w-[800px] pl-[13px] xl:pl-[0px] xl:pt-[15px]"
           >
             Albatta, qo'lingizga kitob yetib kelgandan keyin to'lov qilish
             imkoniyati ham bor
@@ -40,7 +40,7 @@
     <div
       data-aos="fade-left"
       data-aos-duration="1500"
-      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px] 2xl:w-[700px]"
+      class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px] xl:w-[700px]"
     >
       <input
         class="faq-drawer__trigger"
@@ -55,7 +55,7 @@
       <div class="faq-drawer__content-wrapper">
         <div class="faq-drawer__content">
           <p
-            class="m-auto max-w-[330px] 2xl:min-w-[800px] pl-[13px] 2xl:pl-[0px] 2xl:pt-[15px]"
+            class="m-auto max-w-[330px] xl:min-w-[800px] pl-[13px] xl:pl-[0px] xl:pt-[15px]"
           >
             Agar siz 2 ta kitob xarid qilsanigz 1 ta kitobni BEPUL qo’lga
             kiritasiz.
@@ -77,13 +77,13 @@
       /><label
         class="faq-drawer__title border-[#DEDEE4] border-t-[2px]"
         for="faq-drawer-3"
-        >Chegirma muddati qancha <br class="block 2xl:hidden" />
+        >Chegirma muddati qancha <br class="block xl:hidden" />
         vaqt davom etadi?</label
       >
       <div class="faq-drawer__content-wrapper">
         <div class="faq-drawer__content">
           <p
-            class="m-auto max-w-[330px] 2xl:min-w-[800px] pl-[13px] 2xl:pl-[0px] 2xl:pt-[15px]"
+            class="m-auto max-w-[330px] xl:min-w-[800px] pl-[13px] xl:pl-[0px] xl:pt-[15px]"
           >
             Chegirmamiz joylar soni tugaguncha davom etadi.
           </p>
@@ -109,7 +109,7 @@
       <div class="faq-drawer__content-wrapper">
         <div class="faq-drawer__content">
           <p
-            class="m-auto max-w-[330px] 2xl:min-w-[750px] pl-[13px] 2xl:pl-[0px] 2xl:pt-[15px] 2xl:mr-[50px]"
+            class="m-auto max-w-[330px] xl:min-w-[750px] pl-[13px] xl:pl-[0px] xl:pt-[15px] xl:mr-[50px]"
           >
             Pochta orqali O’zbekistoning istalgan joyiga 1 kun ichida yetkazib
             beriladi. Kitob kelishi bilan sizga pochtadan telefon qilishadi va
@@ -189,7 +189,7 @@ input[type="radio"] {
   display: none;
 }
 
-@media screen and (min-width: 1536px) {
+@media screen and (min-width: 1290px) {
   .faq-drawer__title {
     width: 800px;
     cursor: pointer;

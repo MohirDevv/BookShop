@@ -1,24 +1,24 @@
 <template>
-  <div class="main block container m-auto 2xl:flex">
+  <div class="main block container m-auto xl:flex">
     <div
-      class="wrapper relative 2xl:w-[100%] bg-[url('/src/assets/images/desktop/main_bg.png')] bg-center bg-cover bg-no-repeat py-[50px] px-[16px] 2xl:border-[#5F807D] 2xl:border-r-[20px]"
+      class="wrapper relative xl:w-[90%] bg-[url('/src/assets/images/desktop/main_bg.png')] bg-center bg-cover bg-no-repeat py-[50px] px-[16px] xl:border-[#5F807D] xl:border-r-[20px]"
     >
       <div
-        class="subwrapper 2xl:pl-[50px]"
+        class="subwrapper xl:pl-[50px]"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
         <div
-          class="info m-auto max-w-[380px] 2xl:max-w-[930px] bg-[#73B2AC59] border-[1px] border-[#FFFFFF80] backdrop-blur-[20px] rounded-[15px] px-[18px] 2xl:px-[41px] py-[16px] 2xl:py-[41px]"
+          class="info m-auto max-w-[380px] xl:max-w-[930px] bg-[#73B2AC59] border-[1px] border-[#FFFFFF80] backdrop-blur-[20px] rounded-[15px] px-[18px] xl:px-[41px] py-[16px] xl:py-[41px]"
         >
           <div
-            class="mainEntrance flex justify-start items-center gap-1 2xl:gap-3"
+            class="mainEntrance flex justify-start items-center gap-1 xl:gap-3"
           >
             <div
-              class="w-[15px] 2xl:w-[30px] h-[1.5px] 2xl:h-[2px] bg-[#fff]"
+              class="w-[15px] xl:w-[30px] h-[1.5px] xl:h-[2px] bg-[#fff]"
             ></div>
             <h2
-              class="text-white text-[15px] 2xl:text-[20px] font-semibold tracking-[1px]"
+              class="text-white text-[15px] xl:text-[20px] font-semibold tracking-[1px]"
             >
               Shaxsiy rivojlanish bo'yicha trening
             </h2>
@@ -26,18 +26,18 @@
 
           <div class="about">
             <h1
-              class="h-[40px] 2xl:h-[60px] text-white text-[34px] 2xl:text-[60px] 2xl:leading-[54px] font-bold tracking-[1.7px] 2xl:tracking-[3px] 2xl:pt-[2px]"
+              class="h-[40px] xl:h-[60px] text-white text-[34px] xl:text-[60px] xl:leading-[54px] font-bold tracking-[1.7px] xl:tracking-[3px] xl:pt-[2px]"
             >
               3 oylik
             </h1>
-            <div class="mainTitle 2xl:flex 2xl:items-end">
+            <div class="mainTitle xl:flex xl:items-end">
               <h1
-                class="h-[50px] 2xl:h-[100px] text-white text-[42px] 2xl:text-[100px] font-extrabold 2xl:leading-[90px] 2xl:pr-[10px]"
+                class="h-[50px] xl:h-[100px] text-white text-[42px] xl:text-[100px] font-extrabold xl:leading-[90px] xl:pr-[10px]"
               >
                 YANGILANISH
               </h1>
               <p
-                class="2xl:h-[80px] text-white text-[24px] 2xl:text-[50px] font-bold 2xl:leading-[90px] 2xl:lowercase"
+                class="xl:h-[80px] text-white text-[24px] xl:text-[50px] font-bold xl:leading-[90px] xl:lowercase"
               >
                 kursi
               </p>
@@ -45,7 +45,7 @@
           </div>
 
           <div
-            class="screen_xl flex 2xl:justify-between 2xl:items-center flex-col 2xl:flex-row 2xl:gap-6"
+            class="screen_xl flex xl:justify-between xl:items-center flex-col xl:flex-row xl:gap-6"
           >
             <div
               class="bonus rounded-[10px] backdrop-blur-[12.5px] mt-[45px] mb-[12px] pb-[16px]"
@@ -55,7 +55,7 @@
                   >+</span
                 >
                 <h1
-                  class="text-[#00FFE6] text-[24px] 2xl:text-[50px] font-extrabold ml-[6px] mt-[7px] 2xl:pr-[230px]"
+                  class="text-[#00FFE6] text-[24px] xl:text-[50px] font-extrabold ml-[6px] mt-[7px] xl:pr-[230px]"
                 >
                   BONUS
                 </h1>
@@ -71,7 +71,7 @@
             </div>
 
             <div
-              class="delv 2xl:w-[330px] 2xl:h-[100px] flex justify-center items-center backdrop-blur-[17px] rounded-[10px] py-[8px] gap-2 2xl:mt-[34px]"
+              class="delv xl:w-[330px] xl:h-[100px] flex justify-center items-center backdrop-blur-[17px] rounded-[10px] py-[8px] gap-2 xl:mt-[34px]"
             >
               <img
                 class="w-[45px] h-[45px]"
@@ -79,9 +79,9 @@
                 alt="#"
               />
               <h2
-                class="w-[230px] text-white text-[15px] 2xl:text-[22px] font-semibold"
+                class="w-[230px] text-white text-[15px] xl:text-[22px] font-semibold"
               >
-                O'zbekiston bo'ylab yetkazib <br class="block 2xl:hidden" />
+                O'zbekiston bo'ylab yetkazib <br class="block xl:hidden" />
                 berish bepul
               </h2>
             </div>
@@ -89,41 +89,41 @@
         </div>
 
         <div
-          class="discount m-auto max-w-[380px] 2xl:max-w-[930px] mt-[10px] bg-[#73B2AC59] border-[#FFFFFF80] border-[1px] rounded-[15px] backdrop-blur-[20px] px-[28px] 2xl:px-[30px] 2xl:py-[20px]"
+          class="discount m-auto max-w-[380px] xl:max-w-[930px] mt-[10px] bg-[#73B2AC59] border-[#FFFFFF80] border-[1px] rounded-[15px] backdrop-blur-[20px] px-[28px] xl:px-[30px] xl:py-[20px]"
         >
           <div
-            class="pricelist flex items-center justify-between m-auto max-w-[380px] 2xl:max-w-[890px] 2xl:flex 2xl:items-center 2xl:justify-normal"
+            class="pricelist flex items-center justify-between m-auto max-w-[380px] xl:max-w-[890px] xl:flex xl:items-center xl:justify-normal"
           >
             <div class="oldprice flex flex-col pb-1">
               <h1
-                class="h-[35px] 2xl:h-[50px] text-[#FFFFFFB2] text-[30px] 2xl:text-[50px] font-black line-through"
+                class="h-[35px] xl:h-[50px] text-[#FFFFFFB2] text-[30px] xl:text-[50px] font-black line-through"
               >
                 3.700.000
               </h1>
               <p
-                class="text-[#FFFFFFB2] text-[15px] 2xl:text-[28px] font-medium"
+                class="text-[#FFFFFFB2] text-[15px] xl:text-[28px] font-medium"
               >
                 kurs narxi
               </p>
             </div>
 
-            <div class="atigi hidden 2xl:block">
+            <div class="atigi hidden xl:block">
               <img src="/src/assets/images/desktop/atigi.png" alt="#" />
             </div>
 
-            <div class="newprice flex flex-col pb-1 2xl:pr-[25px]">
+            <div class="newprice flex flex-col pb-1 xl:pr-[25px]">
               <h1
-                class="h-[35px] 2xl:h-[50px] text-white text-[30px] 2xl:text-[50px] font-black"
+                class="h-[35px] xl:h-[50px] text-white text-[30px] xl:text-[50px] font-black"
               >
                 79.000
               </h1>
-              <p class="text-white text-[15px] 2xl:text-[28px] font-medium">
+              <p class="text-white text-[15px] xl:text-[28px] font-medium">
                 dan oyiga
               </p>
             </div>
 
             <div
-              class="button hidden bg-[#0ACCBA] border-[#CFFFFA80] border-[3px] rounded-[5px] 2xl:flex items-center justify-center mr-[11px]"
+              class="button hidden bg-[#0ACCBA] border-[#CFFFFA80] border-[3px] rounded-[5px] xl:flex items-center justify-center mr-[11px]"
               @click="scrollToFooter"
             >
               <button
@@ -137,7 +137,7 @@
         </div>
 
         <div
-          class="btn m-auto 2xl:hidden max-w-[380px] flex items-center justify-center mt-[24px] py-[16px] rounded-[5px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA]"
+          class="btn m-auto xl:hidden max-w-[380px] flex items-center justify-center mt-[24px] py-[16px] rounded-[5px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA]"
           @click="scrollToFooter"
         >
           <button
@@ -159,7 +159,7 @@
               v-if="isOpen"
             >
               <button
-                class="w-[390px] 2xl:w-[700px] flex items-center justify-end"
+                class="w-[390px] xl:w-[700px] flex items-center justify-end"
                 @click="isOpen = false"
               >
                 <img src="../assets/icons/remove.png" alt="#" />
@@ -169,17 +169,17 @@
               >
                 <div class="text text-center pt-[24px] pb-[24px]">
                   <h3
-                    class="block 2xl:hidden text-black text-[12px] font-normal"
+                    class="block xl:hidden text-black text-[12px] font-normal"
                   >
                     Menejerdan ma’lumot olish uchun
                   </h3>
                   <h2
-                    class="block 2xl:hidden text-[#0ACCBA] text-[18px] font-extrabold text-center"
+                    class="block xl:hidden text-[#0ACCBA] text-[18px] font-extrabold text-center"
                   >
                     Raqamingizni qoldiring
                   </h2>
                   <h1
-                    class="hidden 2xl:block text-black text-[50px] font-semibold px-[180px]"
+                    class="hidden xl:block text-black text-[50px] font-semibold px-[180px]"
                   >
                     Ma'lumot olish
                   </h1>
@@ -198,7 +198,7 @@
 
                 <input
                   id="validator_name"
-                  class="w-[350px] 2xl:w-[600px] border-[1px] focus:border-[#C6C6C6] border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[12px]"
+                  class="w-[350px] xl:w-[600px] border-[1px] focus:border-[#C6C6C6] border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[12px]"
                   type="text"
                   placeholder="Ismingiz"
                   v-model="name"
@@ -206,7 +206,7 @@
                 />
                 <input
                   id="validator_num"
-                  class="w-[350px] 2xl:w-[600px] border-[1px] focus:border-[#C6C6C6] border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[24px]"
+                  class="w-[350px] xl:w-[600px] border-[1px] focus:border-[#C6C6C6] border-[#C6C6C6] rounded-lg mx-[15px] px-[15px] py-[16px] mb-[24px]"
                   type="tel"
                   placeholder="Telefon raqamingiz"
                   v-model="phone"
@@ -215,7 +215,7 @@
                 />
 
                 <div
-                  class="btn w-[350px] 2xl:w-[600px] flex items-center justify-center py-[16px] rounded-[8px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mb-[24px] 2xl:mb-[50px]"
+                  class="btn w-[350px] xl:w-[600px] flex items-center justify-center py-[16px] rounded-[8px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mb-[24px] xl:mb-[50px]"
                 >
                   <button
                     class="text-white text-[16px] font-bold"
@@ -231,7 +231,7 @@
       </div>
     </div>
     <div
-      class="Lwrapper hidden px-[10px] w-[100%] bg-[url('/src/assets/images/desktop/tube_bg.png')] bg-center bg-cover bg-no-repeat 2xl:flex items-center justify-center"
+      class="Lwrapper hidden px-[10px] w-[100%] bg-[url('/src/assets/images/desktop/tube_bg.png')] bg-center bg-cover bg-no-repeat xl:flex items-center justify-center"
     >
       <div class="tubevideo" data-aos="fade-down" data-aos-duration="1000">
         <iframe
@@ -420,7 +420,7 @@ export default {
   background: #009789;
 }
 
-@media screen and (min-width: 1536px) {
+@media screen and (min-width: 1280px) {
   .container {
     max-width: 100%;
   }
@@ -435,9 +435,9 @@ export default {
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1280px) {
   iframe {
-    width: 650px;
+    width: 470px;
     height: 400px;
   }
 

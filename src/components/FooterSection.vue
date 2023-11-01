@@ -1,16 +1,16 @@
 <template>
-  <div id="footer" class="wrapper m-auto pb-[50px] pt-[50px] 2xl:pb-[150px]">
+  <div id="footer" class="wrapper m-auto pb-[50px] pt-[50px] xl:pb-[150px]">
     <div
       data-aos="zoom-in-up"
-      class="payment max-w-[380px] 2xl:min-w-[900px] m-auto flex items-center flex-col p-[20px] bg-[#FFFFFF1A] rounded-[10px] backdrop-blur-[39px] 2xl:mt-[25px]"
+      class="payment max-w-[380px] xl:min-w-[900px] m-auto flex items-center flex-col p-[20px] bg-[#FFFFFF1A] rounded-[10px] backdrop-blur-[39px] xl:mt-[25px]"
     >
       <h1
-        class="text-white text-[24px] 2xl:text-[32px] font-bold 2xl:font-extrabold text-center"
+        class="text-white text-[24px] xl:text-[32px] font-bold xl:font-extrabold text-center"
       >
         Kursga to'lov qilish
       </h1>
       <div
-        class="card_num 2xl:w-[700px] flex items-center justify-between px-[15px] py-[12px] backdrop-blur-[8px] rounded-[10px] mt-[30px]"
+        class="card_num xl:w-[700px] flex items-center justify-between px-[15px] py-[12px] backdrop-blur-[8px] rounded-[10px] mt-[30px]"
       >
         <div class="part_one flex items-center">
           <img src="../assets/icons/card.svg" alt="#" />
@@ -23,21 +23,21 @@
             </h1>
           </div>
           <div
-            class="copy block cursor-pointer 2xl:hidden"
+            class="copy block cursor-pointer xl:hidden"
             @click="copyTextNoInput"
           >
             <img src="../assets/icons/copy.svg" alt="#" />
           </div>
         </div>
         <div
-          class="copy hidden cursor-pointer 2xl:block"
+          class="copy hidden cursor-pointer xl:block"
           @click="copyTextNoInput"
         >
           <img src="../assets/icons/copy.svg" alt="#" />
         </div>
       </div>
       <div
-        class="price_list flex items-center justify-evenly pt-[30px] gap-4 2xl:gap-10"
+        class="price_list flex items-center justify-evenly pt-[30px] gap-4 xl:gap-10"
       >
         <div class="money flex items-center">
           <img class="pr-[10px]" src="../assets/icons/money.svg" alt="#" />
@@ -62,14 +62,14 @@
         class=""
       >
         <a
-          class="text-white text-[14px] font-bold 2xl:w-[700px] mt-[30px] px-[35px] py-[21px] 2xl:py-[15px] flex items-center justify-center bg-[#0ACCBA] border-[#7AE4D980] border-[3px] rounded-[5px]"
+          class="text-white text-[14px] font-bold xl:w-[700px] mt-[30px] px-[35px] py-[21px] xl:py-[15px] flex items-center justify-center bg-[#0ACCBA] border-[#7AE4D980] border-[3px] rounded-[5px]"
           target="_blank"
           href="https://t.me/shaxnoza_siddiqova_manager"
           >CHEKNI YUBORISH</a
         >
       </button>
 
-      <div class="last_info hidden 2xl:block">
+      <div class="last_info hidden xl:block">
         <h1
           class="m-auto text-center text-white text-[32px] font-extrabold leading-8 pt-[40px] pb-[30px]"
         >
@@ -82,7 +82,7 @@
           >
             <img class="pr-[10px]" src="../assets/icons/user.svg" alt="#" />
             <input
-              class="w-[246px] 2xl:w-[630px] flex items-center outline-none bg-[#FFFFFF1A] gap-[15px]"
+              class="w-[246px] xl:w-[630px] flex items-center outline-none bg-[#FFFFFF1A] gap-[15px]"
               type="text"
               placeholder="Ism familiyangiz *"
               v-model="name"
@@ -95,7 +95,7 @@
           >
             <img src="../assets/icons/phone.svg" alt="#" />
             <input
-              class="w-[246px] 2xl:w-[630px] flex items-center outline-none bg-[#FFFFFF1A] gap-[8px] pl-2"
+              class="w-[246px] xl:w-[630px] flex items-center outline-none bg-[#FFFFFF1A] gap-[8px] pl-2"
               type="tel"
               placeholder="Telefon raqamingiz *"
               v-model="phone"
@@ -108,13 +108,13 @@
 
       <button
         @click="sendData"
-        class="btn hidden w-[700px] text-white text-[14px] font-bold px-[35px] py-[15px] 2xl:flex items-center justify-center bg-[#0ACCBA] border-[#7AE4D980] border-[3px] rounded-[5px] mb-[30px]"
+        class="btn hidden w-[700px] text-white text-[14px] font-bold px-[35px] py-[15px] xl:flex items-center justify-center bg-[#0ACCBA] border-[#7AE4D980] border-[3px] rounded-[5px] mb-[30px]"
       >
         YUBORISH
       </button>
     </div>
     <div
-      class="send_info m-auto max-w-[380px] flex 2xl:hidden items-center justify-center flex-col gap-3 p-[20px] mt-[50px] bg-[#FFFFFF1A] rounded-[10px]"
+      class="send_info m-auto max-w-[380px] flex xl:hidden items-center justify-center flex-col gap-3 p-[20px] mt-[50px] bg-[#FFFFFF1A] rounded-[10px]"
     >
       <h1 class="text-white text-[24px] font-bold">Ma'lumot olish</h1>
       <form>

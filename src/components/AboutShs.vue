@@ -1,6 +1,6 @@
 <template>
   <div
-    class="wrapper block 2xl:hidden bg-[url('/src/assets/images/mobile/shS_bg.png')] bg-cover bg-no-repeat pt-[230px]"
+    class="wrapper block  xl:hidden bg-[url('/src/assets/images/mobile/shS_bg.png')] bg-cover bg-no-repeat pt-[230px]"
   >
     <img
       class="shS relative pb-[190px]"
@@ -134,7 +134,7 @@
     </div>
   </div>
 
-  <div class="container hidden 2xl:block m-auto bg-white pt-[150px]">
+  <div class="container hidden  xl:block m-auto bg-white pt-[150px]">
     <div
       class="aboutSh m-auto w-[1280px] rounded-[15px] flex items-center justify-center"
     >
@@ -303,7 +303,7 @@ export default {
   background: linear-gradient(180deg, #3d9e94 0%, #174943 100%, #1e5751 100%);
 }
 
-@media screen and (min-width: 1536px) {
+@media screen and (min-width: 1280px) {
   .shS {
     content: "";
     position: absolute;
