@@ -62,7 +62,7 @@
     class="container m-auto hidden xl:flex justify-between mt-[150px] bg-[#F5F9FA] overflow-x-hidden"
   >
     <div
-      class="entrance pl-[130px] pr-[50px] py-[70px]"
+      class="entrance pl-[30px] 2xl:pl-[130px] 2xl:pr-[50px] py-[70px] "
       data-aos="fade-right"
       data-aos-duration="1000"
     >
@@ -83,10 +83,10 @@
     <div
       data-aos="fade-left"
       data-aos-duration="1000"
-      class="wrapper hidden pt-[50px] xl:flex items-center justify-start pb-[50px] bg-[url('/src/assets/images/mobile/text_bg.png')] bg-cover w-[650px]"
+      class="wrapper hidden pt-[50px] xl:flex items-center justify-start pb-[50px] bg-[url('/src/assets/images/mobile/text_bg.png')] bg-cover 2xl:w-[650px]"
     >
       <div
-        class="cover w-[550px] flex items-start justify-start bg-[#FFFFFF33] backdrop-blur-[10px]"
+        class="cover 2xl:w-[550px] flex items-start justify-start bg-[#FFFFFF33] backdrop-blur-[10px]"
       >
         <div class="title pl-[16px]">
           <h1 class="text-white text-[34px] font-bold pb-[15px] pt-[16px]">

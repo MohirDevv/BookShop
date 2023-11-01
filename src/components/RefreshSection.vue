@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container w-[340px] xl:w-full pt-[50px] xl:py-[150px] xl:px-[130px] xl:mt-[150px] m-auto bg-white xl:bg-[#F5F9FA]"
+    class="container w-[340px] xl:w-full pt-[50px] xl:py-[150px] 2xl:px-[130px] xl:mt-[150px] m-auto bg-white xl:bg-[#F5F9FA] overflow-x-hidden"
   >
     <div
       data-aos="fade-up"
@@ -48,21 +48,21 @@
         <img
           data-aos="fade-up"
           data-aos-duration="1000"
-          class="w-[460px] h-[630px]"
+          class="w-[400px] h-[630px]"
           src="../assets/images/desktop/book_one.png"
           alt="#"
         />
         <img
           data-aos="fade-down"
           data-aos-duration="1000"
-          class="w-[240px] h-[630px]"
+          class="w-[220px] h-[630px]"
           src="../assets/images/desktop/book_two.png"
           alt="#"
         />
       </div>
       <div
         data-aos="zoom-out"
-        class="textSection hidden xl:flex items-center flex-col pl-[50px]"
+        class="textSection hidden xl:flex items-center flex-col 2xl:pl-[50px] xl:mr-[20px]"
       >
         <div class="mainent">
           <h1 class="text-[#152221] text-[50px] font-bold">
@@ -150,10 +150,10 @@
           </div>
         </div>
         <div
-          class="ending flex items-center justify-center pt-[50px] ml-[30px]"
+          class="ending flex items-center justify-start pt-[50px] 2xl:ml-[30px]"
         >
           <div
-            class="btn flex items-center justify-center px-[30px] py-[16px] rounded-[5px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mr-[40px]"
+            class="btn flex items-center justify-start px-[30px] py-[16px] rounded-[5px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mr-[30px]"
           >
             <button
               class="text-white text-[16px] font-bold"
@@ -162,8 +162,8 @@
               <p class="w-[130px]">Buyurtma berish</p>
             </button>
           </div>
-          <div class="car w-[320px] flex flex-col overflow-x-hidden">
-            <div class="div relative flex items-center">
+          <div class="car w-[320px] flex flex-col">
+            <div class="div w-[310px] relative flex items-center">
               <p class="h-[20px] text-[#47474F] text-[14px] font-medium">
                 O'zbekiston bo'ylab bepul yetkazib berish
               </p>
@@ -182,7 +182,7 @@
             </div>
 
             <img
-              class="m-auto max-w-[380px]"
+              class="m-auto w-[300px] flex-wrap"
               src="../assets/images/mobile/line.png"
               alt="#"
             />
@@ -551,6 +551,7 @@ export default {
 }
 
 .carainm {
+  position: absolute;
   animation: drive 5s linear;
   animation-fill-mode: forwards;
 }

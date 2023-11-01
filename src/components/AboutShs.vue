@@ -310,5 +310,8 @@ export default {
     left: 50%;
     transform: translate(-50%, 7.1%);
   }
+  .container{
+    width: 100%;
+  }
 }
 </style>

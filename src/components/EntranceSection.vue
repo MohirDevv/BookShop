@@ -1,15 +1,15 @@
 <template>
   <div class="main block container m-auto xl:flex">
     <div
-      class="wrapper relative xl:w-[90%] bg-[url('/src/assets/images/desktop/main_bg.png')] bg-center bg-cover bg-no-repeat py-[50px] px-[16px] xl:border-[#5F807D] xl:border-r-[20px]"
+      class="wrapper relative xl:w-[65%] bg-[url('/src/assets/images/desktop/main_bg.png')] bg-center bg-cover bg-no-repeat py-[50px] px-[16px] xl:border-[#5F807D] xl:border-r-[20px]"
     >
       <div
-        class="subwrapper xl:pl-[50px]"
+        class="subwrapper 2xl:pl-[50px]"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
         <div
-          class="info m-auto max-w-[380px] xl:max-w-[930px] bg-[#73B2AC59] border-[1px] border-[#FFFFFF80] backdrop-blur-[20px] rounded-[15px] px-[18px] xl:px-[41px] py-[16px] xl:py-[41px]"
+          class="info m-auto max-w-[380px] xl:max-w-[900px] bg-[#73B2AC59] border-[1px] border-[#FFFFFF80] backdrop-blur-[20px] rounded-[15px] px-[18px] xl:px-[41px] py-[16px] xl:py-[41px]"
         >
           <div
             class="mainEntrance flex justify-start items-center gap-1 xl:gap-3"
@@ -32,12 +32,12 @@
             </h1>
             <div class="mainTitle xl:flex xl:items-end">
               <h1
-                class="h-[50px] xl:h-[100px] text-white text-[42px] xl:text-[100px] font-extrabold xl:leading-[90px] xl:pr-[10px]"
+                class="h-[50px] xl:h-[100px] text-white text-[42px] xl:text-[80px] font-extrabold xl:leading-[90px] xl:pr-[10px]"
               >
                 YANGILANISH
               </h1>
               <p
-                class="xl:h-[80px] text-white text-[24px] xl:text-[50px] font-bold xl:leading-[90px] xl:lowercase"
+                class="xl:h-[85px] text-white text-[24px] xl:text-[40px] font-bold xl:leading-[90px] xl:lowercase"
               >
                 kursi
               </p>
@@ -55,7 +55,7 @@
                   >+</span
                 >
                 <h1
-                  class="text-[#00FFE6] text-[24px] xl:text-[50px] font-extrabold ml-[6px] mt-[7px] xl:pr-[230px]"
+                  class="text-[#00FFE6] text-[24px] xl:text-[40px] font-extrabold ml-[6px] mt-[7px] xl:pr-[230px]"
                 >
                   BONUS
                 </h1>
@@ -79,7 +79,7 @@
                 alt="#"
               />
               <h2
-                class="w-[230px] text-white text-[15px] xl:text-[22px] font-semibold"
+                class="w-[230px] text-white text-[15px] xl:text-[18px] font-semibold"
               >
                 O'zbekiston bo'ylab yetkazib <br class="block xl:hidden" />
                 berish bepul
@@ -96,7 +96,7 @@
           >
             <div class="oldprice flex flex-col pb-1">
               <h1
-                class="h-[35px] xl:h-[50px] text-[#FFFFFFB2] text-[30px] xl:text-[50px] font-black line-through"
+                class="h-[35px] xl:h-[50px] text-[#FFFFFFB2] text-[30px] xl:text-[40px] font-black line-through"
               >
                 3.700.000
               </h1>
@@ -113,7 +113,7 @@
 
             <div class="newprice flex flex-col pb-1 xl:pr-[25px]">
               <h1
-                class="h-[35px] xl:h-[50px] text-white text-[30px] xl:text-[50px] font-black"
+                class="h-[35px] xl:h-[50px] text-white text-[30px] xl:text-[40px] font-black"
               >
                 79.000
               </h1>
@@ -128,7 +128,7 @@
             >
               <button
                 @click="scrollToFooter"
-                class="text-white text-[20px] font-bold px-[60px] py-[16px]"
+                class="text-white text-[20px] font-bold px-[20px] py-[16px]"
               >
                 <p class="w-[130px]">SOTIB OLISH</p>
               </button>
@@ -231,7 +231,7 @@
       </div>
     </div>
     <div
-      class="Lwrapper hidden px-[10px] w-[100%] bg-[url('/src/assets/images/desktop/tube_bg.png')] bg-center bg-cover bg-no-repeat xl:flex items-center justify-center"
+      class="Lwrapper hidden px-[10px] w-full bg-[url('/src/assets/images/desktop/tube_bg.png')] bg-center bg-cover bg-no-repeat xl:flex items-center justify-center"
     >
       <div class="tubevideo" data-aos="fade-down" data-aos-duration="1000">
         <iframe
@@ -379,7 +379,7 @@ export default {
 
 <style scoped>
 .container {
-  max-width: 100%;
+  width: 100%;
 }
 
 .book {
@@ -422,7 +422,7 @@ export default {
 
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: 100%;
+    width: 100%;
   }
   .book {
     content: "";
@@ -437,12 +437,12 @@ export default {
 
 @media screen and (min-width: 1280px) {
   iframe {
-    width: 470px;
-    height: 400px;
+    width: 420px;
+    height: 350px;
   }
 
   .Lwrapper {
-    width: 70%;
+    width: 100%;
   }
 }
 </style>

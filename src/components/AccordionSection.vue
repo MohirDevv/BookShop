@@ -189,7 +189,7 @@ input[type="radio"] {
   display: none;
 }
 
-@media screen and (min-width: 1290px) {
+@media screen and (min-width: 1280px) {
   .faq-drawer__title {
     width: 800px;
     cursor: pointer;
