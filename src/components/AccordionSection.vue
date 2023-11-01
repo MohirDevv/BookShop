@@ -16,11 +16,13 @@
       class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]"
     >
       <input
+        value="acc0"
+        v-model="active"
+        @click="uncheck('acc0')"
         class="faq-drawer__trigger"
         id="faq-drawer"
         type="radio"
         name="name"
-        checked
       /><label class="faq-drawer__title" for="faq-drawer"
         >Kitob olganimdan keyin <br class="block xl:hidden" />
         to'lov qilsam bo'ladimi?</label
@@ -43,6 +45,9 @@
       class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px] xl:w-[700px]"
     >
       <input
+        value="acc1"
+        v-model="active"
+        @click="uncheck('acc1')"
         class="faq-drawer__trigger"
         id="faq-drawer-2"
         type="radio"
@@ -70,6 +75,9 @@
       class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]"
     >
       <input
+        value="acc2"
+        v-model="active"
+        @click="uncheck('acc2')"
         class="faq-drawer__trigger"
         id="faq-drawer-3"
         type="radio"
@@ -97,6 +105,9 @@
       class="faq-drawer flex items-center justify-center flex-col m-auto max-w-[380px]"
     >
       <input
+        value="acc3"
+        v-model="active"
+        @click="uncheck('acc3')"
         class="faq-drawer__trigger"
         id="faq-drawer-4"
         type="radio"
@@ -120,6 +131,23 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      active: "acc0",
+    };
+  },
+  methods: {
+    uncheck(val) {
+      if (this.active == val) {
+        this.active = null;
+      }
+    },
+  },
+};
+</script>
 
 <style scoped>
 .container {

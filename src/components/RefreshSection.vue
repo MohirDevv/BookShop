@@ -143,7 +143,7 @@
               <div class="subtitl">
                 <h1 class="text-[#009789] text-[18px] font-medium">7-kun</h1>
                 <p class="text-[#47474F] text-[14px] font-medium">
-                  Rivojlanisshda bardavom bo'lish
+                  Rivojlanishda bardavom bo'lish
                 </p>
               </div>
             </div>
@@ -525,6 +525,9 @@ export default {
 </script>
 
 <style scoped>
+.modal{
+  transition: .5s;
+}
 .btn:hover {
   border: 3px solid #00ffe6;
   background: #0accba;

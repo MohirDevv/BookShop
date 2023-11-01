@@ -1,5 +1,5 @@
 <template>
-  <div id="footer" class="wrapper m-auto pb-[50px] pt-[50px] xl:pb-[150px]">
+  <div id="footer" class="wrapper m-auto pb-[50px] pt-[50px]">
     <div
       data-aos="zoom-in-up"
       class="payment max-w-[380px] xl:min-w-[900px] m-auto flex items-center flex-col p-[20px] bg-[#FFFFFF1A] rounded-[10px] backdrop-blur-[39px] xl:mt-[25px]"
@@ -11,8 +11,9 @@
       </h1>
       <div
         class="card_num xl:w-[700px] flex items-center justify-between px-[15px] py-[12px] backdrop-blur-[8px] rounded-[10px] mt-[30px]"
-        @click="copyTextNoInput">
-        <div class="part_one flex items-center" >
+        @click="copyTextNoInput"
+      >
+        <div class="part_one flex items-center">
           <img src="../assets/icons/card.svg" alt="#" />
           <div class="subtitle pl-[10px] pr-[50px]">
             <h2 class="text-white text-[12px] font-medium">
@@ -58,9 +59,7 @@
           </h1>
         </div>
       </div>
-      <button
-        class=" mt-[30px]"
-      >
+      <button class="mt-[30px]">
         <a
           class="btn text-white text-[14px] font-bold xl:w-[700px] px-[35px] py-[21px] xl:py-[15px] flex items-center justify-center bg-[#0ACCBA] border-[#7AE4D980] border-[3px] rounded-[5px]"
           target="_blank"
@@ -78,7 +77,7 @@
         <form>
           <div
             id="name"
-            class="name flex items-center justify-center px-[15px] py-[8px] mb-[20px] bg-[#FFFFFF1A] rounded-[10px]"
+            class="name flex items-center justify-center px-[15px] py-[8px] mb-[20px] bg-[#FFFFFF1A] rounded-[10px] border border-[rgba(0,0,0,0)]"
           >
             <img class="pr-[10px]" src="../assets/icons/user.svg" alt="#" />
             <input
@@ -91,7 +90,7 @@
           </div>
           <div
             id="input"
-            class="num flex items-center justify-center px-[15px] py-[8px] mb-[20px] bg-[#FFFFFF1A] rounded-[10px]"
+            class="num flex items-center justify-center px-[15px] py-[8px] mb-[20px] bg-[#FFFFFF1A] rounded-[10px] border border-[rgba(0,0,0,0)]"
           >
             <img src="../assets/icons/phone.svg" alt="#" />
             <input
@@ -120,7 +119,7 @@
       <form>
         <div
           id="name1"
-          class="name flex items-center justify-center px-[15px] py-[8px] mb-[20px] bg-[#FFFFFF1A] rounded-[10px]"
+          class="name flex items-center justify-center px-[15px] py-[8px] mb-[20px] bg-[#FFFFFF1A] rounded-[10px] border border-[rgba(0,0,0,0)]"
         >
           <img class="pr-[10px]" src="../assets/icons/user.svg" alt="#" />
           <input
@@ -133,7 +132,7 @@
         </div>
         <div
           id="input1"
-          class="num flex items-center justify-center px-[15px] py-[8px] mb-[20px] bg-[#FFFFFF1A] rounded-[10px]"
+          class="num flex items-center justify-center px-[15px] py-[8px] mb-[20px] bg-[#FFFFFF1A] rounded-[10px] border border-[rgba(0,0,0,0)]"
         >
           <img src="../assets/icons/phone.svg" alt="#" />
           <input
@@ -155,22 +154,24 @@
       </button>
     </div>
   </div>
- 
+
   <div
     class="fixed w-[300px] rounded-[8px] bg-white z-10 px-5 py-2 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out"
     :class="isCopied ? 'top-2.5' : '-top-full'"
   >
-    <h1 class="text-[16px] font-semibold text-[#0ACCBA] text-center">Nusxa Olindi!</h1>
+    <h1 class="text-[16px] font-semibold text-[#0ACCBA] text-center">
+      Nusxa Olindi!
+    </h1>
   </div>
   <div
-      class="fixed w-[300px] rounded-[8px] bg-[white] flex z-10 px-5 py-2 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out gap-3"
-      :class="isSent ? 'top-2.5' : '-top-full'"
-    >
-      <img src="../assets/icons/success_blue.svg" alt="#" />
-      <h1 class="text-[#0ACCBA] text-[16px] font-bold">
-        Muvaffaqiyatli yuborildi!
-      </h1>
-    </div>
+    class="fixed w-[300px] rounded-[8px] bg-[white] flex z-10 px-5 py-2 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out gap-3"
+    :class="isSent ? 'top-2.5' : '-top-full'"
+  >
+    <img src="../assets/icons/success_blue.svg" alt="#" />
+    <h1 class="text-[#0ACCBA] text-[16px] font-bold">
+      Muvaffaqiyatli yuborildi!
+    </h1>
+  </div>
 </template>
 
 <script>
