@@ -183,17 +183,6 @@
                   >
                     Ma'lumot olish
                   </h1>
-
-                  <div
-                    class="success flex items-center justify-center bg-[#0ACCBA] p-[10px] gap-3 mt-[10px]"
-                    v-if="isDataSent"
-                    data-aos="fade-down"
-                  >
-                    <h1 class="text-white text-[16px] font-bold">
-                      Muvaffaqiyatli yuborildi!
-                    </h1>
-                    <img src="../assets/icons/success.svg" alt="#" />
-                  </div>
                 </div>
 
                 <input
@@ -239,6 +228,15 @@
           allowfullscreen
         ></iframe>
       </div>
+    </div>
+    <div
+      class="fixed w-[300px] rounded-[8px] bg-[white] flex z-10 px-5 py-2 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out gap-3"
+      :class="isDataSent ? 'top-2.5' : '-top-full'"
+    >
+      <img src="../assets/icons/success_blue.svg" alt="#" />
+      <h1 class="text-[#0ACCBA] text-[16px] font-bold">
+        Muvaffaqiyatli yuborildi!
+      </h1>
     </div>
   </div>
 </template>
@@ -355,6 +353,10 @@ export default {
         setTimeout(() => {
           this.isOpen = false;
         }, 3000);
+        setTimeout(() => {
+          this.isDataSent = false;
+        }, 2000);
+        console.log("success");
         axios
           .post("https://crm.redapp.uz/api/customer/", body)
           .then((response) => {

@@ -319,17 +319,6 @@
                 >
                   Ma'lumot olish
                 </h1>
-
-                <div
-                  class="success flex items-center justify-center bg-[#0ACCBA] p-[10px] gap-3 mt-[10px]"
-                  v-if="isDataSent"
-                  data-aos="fade-down"
-                >
-                  <h1 class="text-white text-[16px] font-bold">
-                    Muvaffaqiyatli yuborildi!
-                  </h1>
-                  <img src="../assets/icons/success.svg" alt="#" />
-                </div>
               </div>
 
               <input
@@ -360,6 +349,16 @@
           </div>
         </div>
       </teleport>
+    </div>
+
+    <div
+      class="fixed w-[300px] rounded-[8px] bg-[white] flex z-10 px-5 py-2 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out gap-3"
+      :class="isInfoSent ? 'top-2.5' : '-top-full'"
+    >
+      <img src="../assets/icons/success_blue.svg" alt="#" />
+      <h1 class="text-[#0ACCBA] text-[16px] font-bold">
+        Muvaffaqiyatli yuborildi!
+      </h1>
     </div>
   </div>
 </template>
@@ -420,7 +419,7 @@ export default {
       }
     },
     formatPhoneNumber() {
-      const num = document.getElementById("cornum");
+      const num = document.getElementById("validator_num");
       let inputValue = this.phone
         .replace(/\D/g, "")
         .replace("9", "")
@@ -466,7 +465,7 @@ export default {
       }
     },
     formatNameValue() {
-      const name = document.getElementById("corname");
+      const name = document.getElementById("validator_name");
       let inputValue = this.name;
       if (inputValue.length == 0) {
         name.classList.add("invalid");
@@ -493,14 +492,14 @@ export default {
         this.valid__Name == null ||
         this.is__Valid == null
       ) {
-        const name = document.getElementById("corname");
-        const num = document.getElementById("cornum");
+        const name = document.getElementById("validator_name");
+        const num = document.getElementById("validator_num");
 
         num.classList.add("invalid");
         name.classList.add("invalid");
       } else if (this.is__Valid == true && this.valid__Name == true) {
-        const name = document.getElementById("corname");
-        const num = document.getElementById("cornum");
+        const name = document.getElementById("validator_name");
+        const num = document.getElementById("validator_num");
 
         num.classList.remove("invalid");
         name.classList.remove("invalid");
@@ -508,6 +507,9 @@ export default {
         setTimeout(() => {
           this.isModal = false;
         }, 3000);
+        setTimeout(() => {
+          this.isInfoSent = false;
+        }, 2000);
         axios
           .post("https://crm.redapp.uz/api/customer/", body)
           .then((response) => {
