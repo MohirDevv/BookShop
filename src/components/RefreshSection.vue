@@ -26,7 +26,7 @@
     </div>
     <div class="xlmain m-auto flex items-center justify-center">
       <div
-        class="slice_images xl:hidden flex items-center justify-center gap-[2.5px]"
+        class="slice_images1 xl:hidden flex items-center justify-center gap-[2.5px]"
       >
         <img
           src="../assets/images/mobile/book_one.png"
@@ -43,19 +43,19 @@
       </div>
 
       <div
-        class="slice_images hidden xl:flex items-center justify-center gap-[2.5px] pr-[30px]"
+        class="slice_images2 hidden xl:flex items-center justify-center gap-[2.5px] pr-[30px]"
       >
         <img
           data-aos="fade-up"
           data-aos-duration="1000"
-          class="w-[400px] h-[630px]"
+          class="img1 w-[400px] h-[630px]"
           src="../assets/images/desktop/book_one.png"
           alt="#"
         />
         <img
           data-aos="fade-down"
           data-aos-duration="1000"
-          class="w-[220px] h-[630px]"
+          class="img2 w-[220px] h-[630px]"
           src="../assets/images/desktop/book_two.png"
           alt="#"
         />
@@ -152,14 +152,12 @@
         <div
           class="ending flex items-center justify-center pt-[50px] 2xl:ml-[30px]"
         >
-          <div
-            class="btn flex items-center justify-center px-[30px] py-[16px] rounded-[5px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mr-[30px]"
+          <button
+            class="btn flex items-center justify-center px-[30px] py-[16px] rounded-[5px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mr-[30px] text-white text-[16px] font-bold"
             @click="isModal = true"
           >
-            <button class="text-white text-[16px] font-bold">
-              <p class="w-[130px]">Buyurtma berish</p>
-            </button>
-          </div>
+            <p class="w-[130px]">Buyurtma berish</p>
+          </button>
           <div class="car w-[320px] flex flex-col">
             <div class="div w-[310px] relative flex items-center">
               <p class="h-[20px] text-[#47474F] text-[14px] font-medium">
@@ -285,7 +283,9 @@
       class="btn xl:hidden m-auto max-w-[350px] flex items-center justify-center px-[20px] py-[16px] rounded-[5px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mb-[50px]"
       @click="isModal = true"
     >
-      <button class="text-white text-[16px] font-bold">SOTIB OLISH</button>
+      <button class="text-white text-[16px] font-bold cursor-pointer">
+        SOTIB OLISH
+      </button>
       <teleport to="body">
         <div class="" v-if="isModal">
           <div
@@ -350,16 +350,12 @@
                 @input="formatPhoneNumber()"
               />
 
-              <div
-                class="btn w-[350px] xl:w-[600px] flex items-center justify-center py-[16px] rounded-[8px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mb-[24px] xl:mb-[50px]"
+              <button
+                class="btn w-[350px] xl:w-[600px] flex items-center justify-center py-[16px] rounded-[8px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mb-[24px] xl:mb-[50px] text-white text-[16px] font-bold"
+                @click="sendData"
               >
-                <button
-                  class="text-white text-[16px] font-bold"
-                  @click="sendData"
-                >
-                  YUBORISH
-                </button>
-              </div>
+                YUBORISH
+              </button>
             </div>
           </div>
         </div>
@@ -525,8 +521,8 @@ export default {
 </script>
 
 <style scoped>
-.modal{
-  transition: .5s;
+.modal {
+  transition: 0.5s;
 }
 .btn:hover {
   border: 3px solid #00ffe6;

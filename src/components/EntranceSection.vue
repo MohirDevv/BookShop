@@ -214,16 +214,12 @@
                   @input="formatPhoneNumber()"
                 />
 
-                <div
-                  class="btn w-[350px] xl:w-[600px] flex items-center justify-center py-[16px] rounded-[8px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mb-[24px] xl:mb-[50px]"
+                <button
+                  class="button text-white text-[16px] font-bold w-[350px] xl:w-[600px] flex items-center justify-center py-[16px] rounded-[8px] border-[#CFFFFA80] border-[3px] bg-[#0ACCBA] mb-[24px] xl:mb-[50px]"
+                  @click="sendData"
                 >
-                  <button
-                    class="text-white text-[16px] font-bold"
-                    @click="sendData"
-                  >
-                    YUBORISH
-                  </button>
-                </div>
+                  YUBORISH
+                </button>
               </div>
             </div>
           </div>
