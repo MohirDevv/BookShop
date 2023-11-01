@@ -134,7 +134,7 @@
     </div>
   </div>
 
-  <div class="container hidden  xl:block m-auto bg-white pt-[150px]">
+  <div class="container hidden  xl:block m-auto bg-white pt-[150px] overflow-x-hidden">
     <div
       class="aboutSh m-auto w-[1280px] rounded-[15px] flex items-center justify-center"
     >

@@ -162,7 +162,7 @@
               <p class="w-[130px]">Buyurtma berish</p>
             </button>
           </div>
-          <div class="car w-[320px] flex flex-col">
+          <div class="car w-[320px] flex flex-col ">
             <div class="div w-[310px] relative flex items-center">
               <p class="h-[20px] text-[#47474F] text-[14px] font-medium">
                 O'zbekiston bo'ylab bepul yetkazib berish
@@ -182,7 +182,7 @@
             </div>
 
             <img
-              class="m-auto w-[300px] flex-wrap"
+              class="m-auto w-[300px]"
               src="../assets/images/mobile/line.png"
               alt="#"
             />

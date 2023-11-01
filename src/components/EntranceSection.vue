@@ -32,12 +32,12 @@
             </h1>
             <div class="mainTitle xl:flex xl:items-end">
               <h1
-                class="h-[50px] xl:h-[100px] text-white text-[42px] xl:text-[80px] font-extrabold xl:leading-[90px] xl:pr-[10px]"
+                class="h-[50px] xl:h-[100px] text-white text-[42px] xl:text-[80px] 2xl:text-[90px] font-extrabold xl:leading-[90px] xl:pr-[10px]"
               >
                 YANGILANISH
               </h1>
               <p
-                class="xl:h-[85px] text-white text-[24px] xl:text-[40px] font-bold xl:leading-[90px] xl:lowercase"
+                class="xl:h-[85px] text-white text-[24px] xl:text-[40px] 2xl:text-[50px] font-bold xl:leading-[90px] xl:lowercase"
               >
                 kursi
               </p>
@@ -79,7 +79,7 @@
                 alt="#"
               />
               <h2
-                class="w-[230px] text-white text-[15px] xl:text-[18px] font-semibold"
+                class="w-[230px] text-white text-[15px] xl:text-[18px] 2xl:text-[22px] font-semibold"
               >
                 O'zbekiston bo'ylab yetkazib <br class="block xl:hidden" />
                 berish bepul
@@ -128,7 +128,7 @@
             >
               <button
                 @click="scrollToFooter"
-                class="text-white text-[20px] font-bold px-[20px] py-[16px]"
+                class="text-white text-[20px] font-bold px-[20px] py-[16px] 2xl:px-[40px]"
               >
                 <p class="w-[130px]">SOTIB OLISH</p>
               </button>
@@ -429,7 +429,7 @@ export default {
     width: 250px;
     height: 250px;
     position: absolute;
-    top: 10%;
+    top: 1%;
     left: 8%;
     transform: translate(80%, -40%);
   }
@@ -439,6 +439,16 @@ export default {
   iframe {
     width: 420px;
     height: 350px;
+  }
+
+  .Lwrapper {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1536px) {
+  iframe {
+    width: 520px;
+    height: 390px;
   }
 
   .Lwrapper {
