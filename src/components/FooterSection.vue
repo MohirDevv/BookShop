@@ -279,7 +279,12 @@ export default {
         phone_number: this.phone.replaceAll("-", "").replaceAll(" ", ""),
         project: "shaxnoza-siddiqova",
       };
-      if (this.validName !== true || this.isValid !== true) {
+      if (
+        this.validName !== true ||
+        this.isValid !== true ||
+        this.validName == null ||
+        this.isValid == null
+      ) {
         const name = document.getElementById("name");
         const num = document.getElementById("input");
         const name1 = document.getElementById("name1");
@@ -289,7 +294,6 @@ export default {
         num1.classList.add("invalid");
         name1.classList.add("invalid");
       } else if (this.isValid == true && this.validName == true) {
-        console.log(this.isValid);
         const name = document.getElementById("name");
         const num = document.getElementById("input");
         const name1 = document.getElementById("name1");

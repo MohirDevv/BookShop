@@ -334,14 +334,18 @@ export default {
         phone_number: this.phone.replaceAll("-", "").replaceAll(" ", ""),
         project: "shaxnoza-siddiqova",
       };
-      if (this.isVAlidName !== true || this.isValidNum !== true) {
+      if (
+        this.isVAlidName !== true ||
+        this.isValidNum !== true ||
+        this.isVAlidName == null ||
+        this.isValidNum == null
+      ) {
         const name = document.getElementById("validator_name");
         const num = document.getElementById("validator_num");
 
         num.classList.add("invalid");
         name.classList.add("invalid");
       } else if (this.isValidNum == true && this.isVAlidName == true) {
-        console.log(this.isValidNum);
         const name = document.getElementById("validator_name");
         const num = document.getElementById("validator_num");
 

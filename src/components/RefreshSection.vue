@@ -487,21 +487,27 @@ export default {
         phone_number: this.phone.replaceAll("-", "").replaceAll(" ", ""),
         project: "shaxnoza-siddiqova",
       };
-      if (this.valid__Name !== true || this.is__Valid !== true) {
+      if (
+        this.valid__Name !== true ||
+        this.is__Valid !== true ||
+        this.valid__Name == null ||
+        this.is__Valid == null
+      ) {
         const name = document.getElementById("corname");
         const num = document.getElementById("cornum");
 
         num.classList.add("invalid");
         name.classList.add("invalid");
       } else if (this.is__Valid == true && this.valid__Name == true) {
-        console.log(this.is__Valid);
         const name = document.getElementById("corname");
         const num = document.getElementById("cornum");
 
         num.classList.remove("invalid");
         name.classList.remove("invalid");
-        // this.isModal = false;
         this.isInfoSent = true;
+        setTimeout(() => {
+          this.isModal = false;
+        }, 3000);
         axios
           .post("https://crm.redapp.uz/api/customer/", body)
           .then((response) => {
