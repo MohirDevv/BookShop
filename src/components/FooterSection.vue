@@ -191,11 +191,7 @@ export default {
   },
   methods: {
     copyTextNoInput() {
-      const storage = document.createElement("textarea");
-      storage.value = "8600 0304 5497 4787";
-      document.body.appendChild(storage);
-      storage.select();
-      document.execCommand("copy");
+      navigator.clipboard.writeText('8600 0304 5497 4787');
       this.isCopied = true;
       if ((this.isCopied = true)) {
         setTimeout(() => {
