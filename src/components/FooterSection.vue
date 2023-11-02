@@ -55,7 +55,7 @@
             alt="#"
           />
           <h1 class="text-white text-[14px] font-normal">
-            To'lovni qilib bo'lgach, skrinshotni jo'nating
+            To'lovni qilib bo'lgach, <br class="block xl:hidden" /> skrinshotni jo'nating
           </h1>
         </div>
       </div>

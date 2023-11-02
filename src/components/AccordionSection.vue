@@ -62,7 +62,7 @@
           <p
             class="m-auto max-w-[330px] xl:min-w-[800px] pl-[13px] xl:pl-[0px] xl:pt-[15px]"
           >
-            Agar siz 2 ta kitob xarid qilsanigz 1 ta kitobni BEPUL qo’lga
+            Agar siz 2 ta kitob xarid qilsanigz 1 ta kitobni BEPUL qo'lga
             kiritasiz.
           </p>
         </div>
@@ -122,9 +122,9 @@
           <p
             class="m-auto max-w-[330px] xl:min-w-[750px] pl-[13px] xl:pl-[0px] xl:pt-[15px] xl:mr-[50px]"
           >
-            Pochta orqali O’zbekistoning istalgan joyiga 1 kun ichida yetkazib
+            Pochta orqali O'zbekistoning istalgan joyiga 1 kun ichida yetkazib
             beriladi. Kitob kelishi bilan sizga pochtadan telefon qilishadi va
-            pochtaga kelib olib ketishingiz kerak bo’ladi.
+            pochtaga kelib olib ketishingiz kerak bo'ladi.
           </p>
         </div>
       </div>

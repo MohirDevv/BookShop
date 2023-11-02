@@ -195,7 +195,7 @@
         <div class="subtitl">
           <h1 class="text-[#009789] text-[18px] font-medium">1-kun</h1>
           <p class="text-[#47474F] text-[14px] font-medium">
-            To'sqinlar va chiqindilar
+            To'siqlar va chiqindilar
           </p>
         </div>
       </div>

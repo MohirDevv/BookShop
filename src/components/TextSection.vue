@@ -7,17 +7,17 @@
         data-aos="fade-down"
         class="title max-w-[310px] text-[#152221] text-[24px] text-center font-bold"
       >
-        Mening har bir trening darsim hozir 300.000 so’mni tashkil qiladi.
-        «Yangilanish fursati yetdi!» kitobi esa 99.000 so’m edi.
+        Mening har bir trening darsim hozir 300.000 so'mni tashkil qiladi.
+        «Yangilanish fursati yetdi!» kitobi esa 99.000 so'm edi.
       </div>
       <div
         data-aos="fade-down"
         class="subtitle max-w-[350px] text-[#47474F] text-[14px] text-center font-medium leading-[20px] pb-[24px]"
       >
         Siz esa ATIGI 79.000 evaziga men bilan 12 ta online treningga ega
-        bo’lasiz, hamda «Yangilanish fursati yetdi!» kitobiga ega bo’lasiz.
-        Bundan tashqari kitobimizni O’zbekistoning istalgan nuqtasiga 1 kun
-        ichida BEPUL yetkazib berishadi. Bunday imkoniyatdan unumli foydalaning
+        bo'lasiz, hamda «Yangilanish fursati yetdi!» kitobiga ega bo'lasiz.
+        Bundan tashqari kitobimizni O'zbekistoning istalgan nuqtasiga 1 kun
+        ichida BEPUL yetkazib berishadi. Bunday imkoniyatdan unumli foydalaning,
         chunki chegirma uchun joylar chegaralangan.
       </div>
     </div>
@@ -42,7 +42,7 @@
         >
           Bu shunchaki oddiy kitob emas. Har bir mavzu so'ngida qaydlar uchun
           joylar qoldirilgan. Siz ushbu kataklarni kitobda aytilgan mavzu hamda
-          vazifalar bo’yicha to’ldirasiz va guruhga vazifani tashlaysiz.
+          vazifalar bo'yicha to'ldirasiz va guruhga vazifani tashlaysiz.
         </p>
         <div class="subtitle">
           <p
@@ -67,14 +67,14 @@
       data-aos-duration="1000"
     >
       <h1 class="text-[#152221] text-[34px] font-bold w-[760px]">
-        Mening har bir trening darsim hozir 300.000 so’mni tashkil qiladi.
-        «Yangilanish fursati yetdi!» kitobi esa 99.000 so’m edi.
+        Mening har bir trening darsim hozir 300.000 so'mni tashkil qiladi.
+        «Yangilanish fursati yetdi!» kitobi esa 99.000 so'm edi.
       </h1>
       <p class="text-[#47474F] text-[18px] font-medium leading-6 w-[660px]">
         Siz esa ATIGI <span class="font-extrabold">79.000</span> evaziga men
-        bilan 12 ta online treningga ega bo’lasiz, hamda «Yangilanish fursati
-        yetdi!» kitobiga ega bo’lasiz. Bundan tashqari kitobimizni
-        O’zbekistoning istalgan nuqtasiga 1 kun ichida BEPUL yetkazib berishadi.
+        bilan 12 ta online treningga ega bo'lasiz, hamda «Yangilanish fursati
+        yetdi!» kitobiga ega bo'lasiz. Bundan tashqari kitobimizni
+        O'zbekistoning istalgan nuqtasiga 1 kun ichida BEPUL yetkazib berishadi.
         Bunday imkoniyatdan unumli foydalaning chunki chegirma uchun joylar
         chegaralangan.
       </p>
@@ -97,7 +97,7 @@
           >
             Bu shunchaki oddiy kitob emas. Har bir mavzu so'ngida qaydlar uchun
             joylar qoldirilgan. Siz ushbu kataklarni kitobda aytilgan mavzu
-            hamda vazifalar bo’yicha to’ldirasiz va guruhga vazifani tashlaysiz.
+            hamda vazifalar bo'yicha to'ldirasiz va guruhga vazifani tashlaysiz.
           </p>
           <div class="subtitle">
             <p

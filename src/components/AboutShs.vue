@@ -33,7 +33,7 @@
           alt="#"
         />
         <p class="w-[280px] text-white text-[14px] font-normal">
-          O'zbekistonda yagona Mentorlik klubi asoschisiasd asd
+          O'zbekistonda yagona Mentorlik klubi asoschisi
         </p>
       </div>
       <div
@@ -85,7 +85,7 @@
           alt="#"
         />
         <p class="w-[280px] text-white text-[14px] font-normal">
-          Ishbilarmon ayol 2019 ko'rik tanlovi Toshkent shaxar g'olibasi va shu
+          Ishbilarmon ayol 2019 ko'rik tanlovi Toshkent shahar g'olibasi va shu
           yil Respublikada 2-o'rin sohibasi
         </p>
       </div>
@@ -99,7 +99,7 @@
           alt="#"
         />
         <p class="w-[280px] text-white text-[14px] font-normal">
-          100 ta eng yaxshi Innovasion loyiha ko'rik tanlovi Respublika 1-o'rin
+          100 ta eng yaxshi Innovatsion loyiha ko'rik tanlovi Respublika 1-o'rin
           g'olibasi
         </p>
       </div>
