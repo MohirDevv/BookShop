@@ -54,7 +54,7 @@
             src="../assets/icons/info.svg"
             alt="#"
           />
-          <h1 class="text-white text-[14px] font-normal">
+          <h1 class="text-white text-[13px] xl:text-[14px] font-normal">
             To'lovni qilib bo'lgach, <br class="block xl:hidden" /> skrinshotni jo'nating
           </h1>
         </div>
