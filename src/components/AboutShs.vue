@@ -1,12 +1,13 @@
 <template>
   <div
-    class="wrapper block  xl:hidden bg-[url('/src/assets/images/mobile/shS_bg.png')] bg-cover bg-no-repeat pt-[230px]"
+    class="wrapper block xl:hidden bg-[url('/src/assets/images/mobile/shS_bg.png')] bg-cover bg-no-repeat pt-[230px]"
   >
-    <img
+    <div class="shS w-full h-full pb-[190px]"></div>
+    <!-- <img
       class="shS relative pb-[190px]"
       src="/src/assets/images/mobile/shS.png"
       alt="#"
-    />
+    /> -->
 
     <div
       class="mainCard m-auto max-w-[350px] flex items-center justify-center bg-[#599993b5] backdrop-blur-[18px] rounded-[10px]"
@@ -134,7 +135,9 @@
     </div>
   </div>
 
-  <div class="container hidden  xl:block m-auto bg-white pt-[150px] overflow-x-hidden">
+  <div
+    class="container hidden xl:block m-auto bg-white pt-[200px] overflow-x-hidden"
+  >
     <div
       class="aboutSh m-auto w-[1280px] rounded-[15px] flex items-center justify-center"
     >
@@ -192,11 +195,12 @@
           </p>
         </div>
       </div>
-      <img
+      <div class="shS shS-full w-[430px] h-[600px]"></div>
+      <!-- <img
         class="shS m-auto w-[430px] pb-[190px]"
         src="/src/assets/images/desktop/shS.png"
         alt="#"
-      />
+      /> -->
 
       <div
         class="mainCard m-auto mb-[50px] w-[380px] flex items-center justify-center backdrop-blur-[18px] rounded-[10px]"
@@ -288,10 +292,12 @@ export default {
   max-width: 100%;
 }
 .shS {
-  content: "";
+  background-image: url(../assets/images/mobile/shS.png);
+  background-position: center;
+  background-repeat: no-repeat;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -65%);
 }
 
 .card {
@@ -309,13 +315,28 @@ export default {
 
 @media screen and (min-width: 1280px) {
   .shS {
-    content: "";
+    background-image: url(../assets/images/desktop/shS.png);
+    background-position: center;
+    background-repeat: no-repeat;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 7.1%);
+    transform: translate(-50%, -13%);
   }
-  .container{
+  .container {
     width: 100%;
   }
 }
+/* @media screen and (min-width: 1536px) {
+  .shS {
+    background-image: url(../assets/images/desktop/shS.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -13%);
+  }
+  .container {
+    width: 100%;
+  }
+} */
 </style>

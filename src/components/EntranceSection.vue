@@ -63,11 +63,14 @@
               <span class="text-[15px] text-[#00FFE6] font-extrabold pl-[10px]">
                 "YANGILANISH FURSATI YETDI" KITOBI
               </span>
-              <img
+              <div class="book w-[200px] h-[200px]">
+
+              </div>
+              <!-- <img
                 class="book w-[200px] h-[200px]"
                 src="../assets/images/desktop/book.png"
                 alt="#"
-              />
+              /> -->
             </div>
 
             <div
@@ -388,9 +391,14 @@ export default {
 .book {
   content: "";
   position: absolute;
-  top: -10%;
-  left: 10%;
+  top: -42%;
+  left: 20%;
   transform: translate(50%, -50%);
+  scale: 0.7;
+  background-image: url(../assets/images/desktop/book.png);
+  background-position: center;
+  width: 200px;
+  height: 200px;
 }
 
 .invalid {
@@ -432,8 +440,9 @@ export default {
     width: 250px;
     height: 250px;
     position: absolute;
-    top: 1%;
-    left: 8%;
+    top: -10%;
+    left: 12%;
+    scale: 0.9;
     transform: translate(80%, -40%);
   }
 }
